@@ -1,0 +1,27 @@
+{
+  "name": "lostsaga-database",
+  "version": "1.0.0",
+  "description": "Open-source Lost Saga database and visual website",
+  "license": "MIT",
+  "scripts": {
+    "fetch": "tsx scripts/index.ts",
+    "typecheck": "tsc --noEmit",
+    "dev": "cd site && npm run dev",
+    "build": "cd site && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rifadev26/lostsaga-database.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/rifadev26/lostsaga-database/issues"
+  },
+  "homepage": "https://github.com/rifadev26/lostsaga-database#readme",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
