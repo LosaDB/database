@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function HomePage() {
   const sortedHeroes = [...heroes].sort(
-    (a, b) => parseInt(a.code, 10) - parseInt(b.code, 10)
+    (a, b) => parseInt(a.code, 10) - parseInt(b.code, 10),
   );
   const regularHeroes = sortedHeroes.filter(isRegularHero);
 
@@ -46,10 +46,7 @@ export default function HomePage() {
             </p>
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href="/heroes"
-                className="ls-btn-blue h-11 gap-2 text-sm"
-              >
+              <Link href="/heroes" className="ls-btn-blue h-11 gap-2 text-sm">
                 Browse Heroes <ArrowRight className="h-4 w-4" />
               </Link>
               <a
@@ -63,38 +60,38 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="lg:col-span-5">
-            <div className="ls-card overflow-hidden">
-              <div className="p-5">
-                <p className="mb-2 text-xs font-bold uppercase text-muted-foreground">
+          <div className="flex justify-center lg:col-span-4 lg:col-start-9">
+            <div className="ls-card w-full max-w-sm overflow-hidden">
+              <div className="p-4">
+                <p className="mb-2 text-[10px] font-bold uppercase text-muted-foreground">
                   Latest Hero
                 </p>
-                <div className="ls-image-frame relative mb-3 aspect-square w-full">
+                <div className="ls-image-frame relative mb-3 aspect-[4/3] w-full overflow-hidden rounded-lg">
                   <ImageFallback
                     srcs={getHeroArtworkCandidates(latest).map(getAssetUrl)}
                     alt={latest.name}
                     fill
-                    className="object-contain p-6"
+                    className="object-contain p-3"
                     priority
-                    sizes="(max-width: 1024px) 100vw, 33vw"
+                    sizes="(max-width: 1024px) 80vw, 320px"
                   />
                 </div>
                 <div className="mb-2 flex items-center justify-between gap-2">
-                  <h2 className="truncate text-lg font-black text-foreground">
+                  <h2 className="truncate text-base font-black text-foreground">
                     {latest.name}
                   </h2>
                   <span className="rounded border border-[var(--border)] bg-[#0e1626] px-2 py-0.5 text-[10px] font-bold capitalize text-muted-foreground">
                     {latest.rarity}
                   </span>
                 </div>
-                <p className="line-clamp-3 text-sm text-muted-foreground">
+                <p className="line-clamp-2 text-xs text-muted-foreground">
                   {latest.summary}
                 </p>
                 <Link
                   href={`/heroes/${latest.code}`}
-                  className="ls-btn-blue mt-4 w-full text-xs"
+                  className="ls-btn-blue mt-3 h-9 w-full text-[11px]"
                 >
-                  Open Latest Hero <ArrowRight className="h-4 w-4" />
+                  Open Latest Hero <ArrowRight className="h-3.5 w-3.5" />
                 </Link>
               </div>
             </div>
