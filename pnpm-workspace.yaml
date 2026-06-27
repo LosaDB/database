@@ -1,0 +1,15 @@
+packages:
+  - "site"
+
+onlyBuiltDependencies:
+  - "esbuild"
+  - "sharp"
+  - "unrs-resolver"
+
+minimumReleaseAgeExclude:
+  - shadcn@4.11.1
+
+allowBuilds:
+  esbuild: true
+  sharp: true
+  unrs-resolver: true

@@ -6,6 +6,7 @@ import {
   FETCH_CONCURRENCY,
   IMAGE_CONCURRENCY,
   IMAGE_OUTPUT_DIR,
+  IMAGE_OUTPUT_DIR_REL,
   MAX_HERO,
 } from "../config";
 import { downloadQueue } from "../lib/downloader";
@@ -129,7 +130,7 @@ export async function rewriteHeroAssetPaths(): Promise<void> {
 
   for (const hero of heroes) {
     const code = String(hero.code);
-    const relBase = path.posix.join(IMAGE_OUTPUT_DIR, code);
+    const relBase = path.posix.join(IMAGE_OUTPUT_DIR_REL, code);
 
     const heroKeys = [
       "icon_m",

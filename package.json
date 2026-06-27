@@ -1,13 +1,15 @@
 {
   "name": "lostsaga-database",
   "version": "1.0.0",
+  "private": true,
   "description": "Open-source Lost Saga database and visual website",
   "license": "MIT",
+  "packageManager": "pnpm@11.8.0",
   "scripts": {
-    "fetch": "tsx scripts/index.ts",
-    "typecheck": "tsc --noEmit",
-    "dev": "cd site && npm run dev",
-    "build": "cd site && npm run build"
+    "fetch-data": "tsx scripts/index.ts",
+    "typecheck": "tsc --noEmit && pnpm -F @lostsaga/site typecheck",
+    "dev": "pnpm -F @lostsaga/site dev",
+    "build": "pnpm -F @lostsaga/site build"
   },
   "repository": {
     "type": "git",
