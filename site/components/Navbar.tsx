@@ -10,7 +10,7 @@ const navItems = [
   { href: "#", label: "Gears", sub: "Equipment", icon: Backpack },
   { href: "#", label: "Medals", sub: "Collection", icon: Shield },
   { href: "#", label: "Commands", sub: "Macro", icon: Terminal },
-  { href: "#", label: "Tools", sub: "Utilities", icon: Wrench },
+  { href: "/tools", label: "Tools", sub: "Utilities", icon: Wrench },
 ];
 
 export function Navbar() {

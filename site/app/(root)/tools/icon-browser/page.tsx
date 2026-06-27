@@ -1,0 +1,21 @@
+import { IconBrowser } from "@/components/IconBrowser";
+import { LayoutGrid } from "lucide-react";
+
+export const metadata = {
+  title: "UI Icon Browser — Lost Saga Database",
+  description:
+    "Browse and search every UI sprite icon from Lost Saga, clipped from the game’s sprite sheets.",
+};
+
+export default function IconBrowserPage() {
+  return (
+    <div className="mx-auto max-w-[1370px] px-4 py-6 sm:px-6 lg:px-8">
+      <div className="ls-section-header mb-4">
+        <LayoutGrid className="h-5 w-5" />
+        <span>UI Icon Browser</span>
+      </div>
+
+      <IconBrowser />
+    </div>
+  );
+}

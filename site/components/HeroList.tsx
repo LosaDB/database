@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { HeroFilters } from "./HeroFilters";
 import { HeroGrid } from "./HeroGrid";
 import { Hero } from "@/lib/data";
@@ -25,10 +25,16 @@ export function HeroList({
   const [selectedRarities, setSelectedRarities] = useState<string[]>([]);
   const [page, setPage] = useState(1);
 
+  const handleSearchChange = (value: string) => {
+    setSearch(value);
+    setPage(1);
+  };
+
   const toggleType = (type: string) => {
     setSelectedTypes((prev) =>
       prev.includes(type) ? prev.filter((t) => t !== type) : [...prev, type]
     );
+    setPage(1);
   };
 
   const toggleRarity = (rarity: string) => {
@@ -37,6 +43,7 @@ export function HeroList({
         ? prev.filter((r) => r !== rarity)
         : [...prev, rarity]
     );
+    setPage(1);
   };
 
   const filteredHeroes = useMemo(() => {
@@ -54,11 +61,6 @@ export function HeroList({
       return matchesSearch && matchesType && matchesRarity;
     });
   }, [heroes, search, selectedTypes, selectedRarities]);
-
-  // Reset to first page whenever filters/search change
-  useEffect(() => {
-    setPage(1);
-  }, [search, selectedTypes, selectedRarities]);
 
   const totalPages = useMemo(
     () => Math.max(1, Math.ceil(filteredHeroes.length / pageSize)),
@@ -78,7 +80,7 @@ export function HeroList({
       <aside className="h-fit lg:sticky lg:top-8">
         <HeroFilters
           search={search}
-          onSearchChange={setSearch}
+          onSearchChange={handleSearchChange}
           selectedTypes={selectedTypes}
           toggleType={toggleType}
           availableTypes={heroTypes}
