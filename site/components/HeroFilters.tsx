@@ -1,78 +1,37 @@
 "use client";
 
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import { Search, X } from "lucide-react";
 
 interface HeroFiltersProps {
   search: string;
   onSearchChange: (value: string) => void;
-  selectedTypes: string[];
-  toggleType: (type: string) => void;
+  typeFilter: string;
+  onTypeChange: (value: string) => void;
   availableTypes: string[];
-  selectedRarities: string[];
-  toggleRarity: (rarity: string) => void;
+  rarityFilter: string;
+  onRarityChange: (value: string) => void;
   availableRarities: string[];
-}
-
-function FilterChip({
-  label,
-  active,
-  onClick,
-}: {
-  label: string;
-  active: boolean;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`rounded-md border px-2.5 py-1 text-xs font-bold capitalize transition-all ${
-        active
-          ? "border-[#284f7f] bg-gradient-to-b from-[#6d9edc] to-[#2770cb] text-white"
-          : "border-[var(--border)] bg-[#0e1626] text-muted-foreground hover:border-[#3b82f6]/50 hover:text-foreground"
-      }`}
-    >
-      {label}
-    </button>
-  );
+  onClear: () => void;
 }
 
 export function HeroFilters({
   search,
   onSearchChange,
-  selectedTypes,
-  toggleType,
+  typeFilter,
+  onTypeChange,
   availableTypes,
-  selectedRarities,
-  toggleRarity,
+  rarityFilter,
+  onRarityChange,
   availableRarities,
+  onClear,
 }: HeroFiltersProps) {
-  const hasFilters =
-    search || selectedTypes.length > 0 || selectedRarities.length > 0;
-
-  const clearAll = () => {
-    onSearchChange("");
-    selectedTypes.forEach(toggleType);
-    selectedRarities.forEach(toggleRarity);
-  };
+  const hasFilters = search || typeFilter || rarityFilter;
 
   return (
-    <div className="ls-card h-fit space-y-4 p-4">
-      <div className="flex items-center justify-between">
-        <span className="text-sm font-bold text-foreground">Filters</span>
-        {hasFilters && (
-          <button
-            type="button"
-            onClick={clearAll}
-            className="flex items-center gap-1 text-xs font-semibold text-muted-foreground hover:text-primary"
-          >
-            <X className="h-3 w-3" /> Clear
-          </button>
-        )}
-      </div>
-
-      <div className="relative">
+    <div className="ls-card flex flex-col gap-3 p-4 lg:flex-row lg:items-end">
+      <div className="relative flex-1">
         <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
         <Input
           type="text"
@@ -83,36 +42,61 @@ export function HeroFilters({
         />
       </div>
 
-      <div className="space-y-2">
-        <span className="text-xs font-bold uppercase text-muted-foreground">
-          Type
-        </span>
-        <div className="flex flex-wrap gap-2">
-          {availableTypes.map((type) => (
-            <FilterChip
-              key={type}
-              label={type}
-              active={selectedTypes.includes(type)}
-              onClick={() => toggleType(type)}
-            />
-          ))}
+      <div className="flex flex-col gap-1.5 sm:flex-row sm:items-end sm:gap-3">
+        <div className="flex flex-col gap-1.5">
+          <label
+            htmlFor="hero-type-filter"
+            className="text-[10px] font-bold uppercase text-muted-foreground"
+          >
+            Type
+          </label>
+          <select
+            id="hero-type-filter"
+            value={typeFilter}
+            onChange={(e) => onTypeChange(e.target.value)}
+            className="h-9 rounded-md border-2 border-[var(--border)] bg-[#0b1120] px-3 text-sm text-foreground capitalize focus-visible:ring-1 focus-visible:ring-primary/50 focus-visible:outline-none"
+          >
+            <option value="">All types</option>
+            {availableTypes.map((type) => (
+              <option key={type} value={type} className="capitalize">
+                {type}
+              </option>
+            ))}
+          </select>
         </div>
-      </div>
 
-      <div className="space-y-2">
-        <span className="text-xs font-bold uppercase text-muted-foreground">
-          Rarity
-        </span>
-        <div className="flex flex-wrap gap-2">
-          {availableRarities.map((rarity) => (
-            <FilterChip
-              key={rarity}
-              label={rarity}
-              active={selectedRarities.includes(rarity)}
-              onClick={() => toggleRarity(rarity)}
-            />
-          ))}
+        <div className="flex flex-col gap-1.5">
+          <label
+            htmlFor="hero-rarity-filter"
+            className="text-[10px] font-bold uppercase text-muted-foreground"
+          >
+            Rarity
+          </label>
+          <select
+            id="hero-rarity-filter"
+            value={rarityFilter}
+            onChange={(e) => onRarityChange(e.target.value)}
+            className="h-9 rounded-md border-2 border-[var(--border)] bg-[#0b1120] px-3 text-sm text-foreground capitalize focus-visible:ring-1 focus-visible:ring-primary/50 focus-visible:outline-none"
+          >
+            <option value="">All rarities</option>
+            {availableRarities.map((rarity) => (
+              <option key={rarity} value={rarity} className="capitalize">
+                {rarity}
+              </option>
+            ))}
+          </select>
         </div>
+
+        {hasFilters && (
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={onClear}
+            className="shrink-0 gap-1"
+          >
+            <X className="h-4 w-4" /> Clear
+          </Button>
+        )}
       </div>
     </div>
   );

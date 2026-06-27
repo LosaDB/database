@@ -13,7 +13,7 @@ export default function HeroesPage() {
         <Users className="h-5 w-5" />
         <span>Hero Database</span>
         <span className="ml-auto rounded-full bg-white/10 px-2 py-0.5 text-xs font-bold">
-          {heroes.length}
+          {heroes.length.toLocaleString("en-US")}
         </span>
       </div>
 
