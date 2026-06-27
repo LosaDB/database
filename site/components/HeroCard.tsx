@@ -21,7 +21,8 @@ export function HeroCard({ hero }: HeroCardProps) {
             srcs={cardSrcs}
             alt={hero.name}
             fill
-            className="p-4 transition-opacity duration-200 group-hover:opacity-85"
+            objectFit="cover"
+            className="transition-opacity duration-200 group-hover:opacity-85"
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
           />
         </div>
