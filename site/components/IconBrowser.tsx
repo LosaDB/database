@@ -28,7 +28,7 @@ const IMAGESET_PAGE_SIZE = 48;
 function IconSprite({ icon }: { icon: UIIcon }) {
   return (
     <div
-      className="ls-image-frame inline-flex overflow-hidden"
+      className="relative overflow-hidden"
       style={{
         width: icon.width,
         height: icon.height,
@@ -41,6 +41,7 @@ function IconSprite({ icon }: { icon: UIIcon }) {
         loading="lazy"
         decoding="async"
         draggable={false}
+        className="absolute left-0 top-0"
         style={{
           width: icon.width,
           height: icon.height,
@@ -48,7 +49,6 @@ function IconSprite({ icon }: { icon: UIIcon }) {
           objectPosition: `${-icon.x}px ${-icon.y}px`,
           imageRendering: "pixelated",
         }}
-        className="shrink-0"
       />
     </div>
   );
@@ -323,11 +323,11 @@ export function IconBrowser() {
 
           <p className="text-xs text-muted-foreground">
             <span className="font-bold text-foreground">
-              {filteredImagesets.length.toLocaleString()}
+              {filteredImagesets.length.toLocaleString("en-US")}
             </span>{" "}
             of{" "}
             <span className="font-bold text-foreground">
-              {imagesets.length.toLocaleString()}
+              {imagesets.length.toLocaleString("en-US")}
             </span>{" "}
             imagesets
             {query.trim() && " (filtered)"}
@@ -357,7 +357,7 @@ export function IconBrowser() {
                       </span>
                     </div>
                     <p className="text-xs text-muted-foreground">
-                      {count.toLocaleString()} icon{count !== 1 ? "s" : ""}
+                      {count.toLocaleString("en-US")} icon{count !== 1 ? "s" : ""}
                     </p>
                   </button>
                 );
@@ -424,7 +424,7 @@ export function IconBrowser() {
             {selectedImageset}
           </h2>
           <p className="text-xs text-muted-foreground">
-            {selectedIcons.length.toLocaleString()} icon
+            {selectedIcons.length.toLocaleString("en-US")} icon
             {selectedIcons.length !== 1 ? "s" : ""} in this sheet
           </p>
         </div>
@@ -509,7 +509,7 @@ export function IconBrowser() {
             <LayoutGrid className="h-4 w-4" />
             <span className="text-sm">Icon Keys</span>
             <span className="ml-auto rounded-full bg-white/10 px-2 py-0.5 text-[10px] font-bold">
-              {filteredIcons.length.toLocaleString()}
+              {filteredIcons.length.toLocaleString("en-US")}
             </span>
           </div>
 

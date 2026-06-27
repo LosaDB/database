@@ -6,7 +6,7 @@ import { Users, Package, Backpack, Shield, Terminal, Wrench, Menu, X } from "luc
 
 const navItems = [
   { href: "/heroes", label: "Heroes", sub: "Database", icon: Users },
-  { href: "#", label: "Items", sub: "Compendium", icon: Package },
+  { href: "/items", label: "Items", sub: "Compendium", icon: Package },
   { href: "#", label: "Gears", sub: "Equipment", icon: Backpack },
   { href: "#", label: "Medals", sub: "Collection", icon: Shield },
   { href: "#", label: "Commands", sub: "Macro", icon: Terminal },
