@@ -3,7 +3,7 @@ import { ImageFallback } from "./ImageFallback";
 import {
   Hero,
   getAssetUrl,
-  getHeroIconCandidates,
+  getHeroCardImageCandidates,
 } from "@/lib/data";
 
 interface HeroCardProps {
@@ -11,14 +11,14 @@ interface HeroCardProps {
 }
 
 export function HeroCard({ hero }: HeroCardProps) {
-  const iconSrcs = getHeroIconCandidates(hero).map(getAssetUrl);
+  const cardSrcs = getHeroCardImageCandidates(hero).map(getAssetUrl);
 
   return (
     <Link href={`/heroes/${hero.code}`} className="group block">
       <div className="ls-card flex h-full flex-col overflow-hidden">
         <div className="ls-image-frame relative aspect-square w-full shrink-0">
           <ImageFallback
-            srcs={iconSrcs}
+            srcs={cardSrcs}
             alt={hero.name}
             fill
             className="p-4 transition-opacity duration-200 group-hover:opacity-85"
