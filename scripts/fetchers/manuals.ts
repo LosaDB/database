@@ -1,14 +1,14 @@
 import fsp from "node:fs/promises";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
-import { extractIop } from "../lib/iop";
+import { extractIop, applySecondaryXor } from "../lib/iop";
 import {
   CACHE_DIR,
   IOP_CACHE_DIR,
   readCachedOrDownload,
 } from "../lib/patch-manifest";
-import { IOP_DATA_KEY } from "../config";
 import { writeJson } from "../lib/utils";
+
 
 const MANUAL_INI_IOP = "config/sp2_etc_manual.ini.iop";
 const MANUAL_INI_NAME = "sp2_etc_manual.ini";
@@ -31,18 +31,6 @@ function decodeKorean(buf: Buffer): string {
   } catch {
     return new TextDecoder("euc-kr").decode(buf);
   }
-}
-
-function applySecondaryXor(data: Buffer): Buffer {
-  const len = data.length;
-  const result = Buffer.alloc(len);
-  for (let i = 0; i < len; i++) {
-    let b = data[i];
-    b ^= IOP_DATA_KEY[i % IOP_DATA_KEY.length];
-    b ^= IOP_DATA_KEY[(len - i) % IOP_DATA_KEY.length];
-    result[i] = b;
-  }
-  return result;
 }
 
 function parseManualSections(text: string): Record<number, ManualEntry> {

@@ -71,7 +71,7 @@ export interface ExtractOptions {
   password?: "kr" | "id" | "us" | "tw" | "sg" | "jp" | "th" | "cn" | "latin" | "eu";
 }
 
-function applySecondaryXor(data: Buffer): Buffer {
+export function applySecondaryXor(data: Buffer): Buffer {
   const len = data.length;
   const result = Buffer.alloc(len);
   for (let i = 0; i < len; i++) {

@@ -30,6 +30,7 @@ The project provides:
   - `data/hero-local.json` — hero data with local asset paths
   - `data/etc-items.json` — etc item data from `sp2_etcitem_info.ini.iop`
   - `data/etc-manuals.json` — item inventory manuals from `sp2_etc_manual.ini.iop`
+  - `data/gears.json` — gear data from `config/mercenary/{code}/{code}_item.ini.iop`
   - `data/ui-imageset.json` — UI texture imagesets
   - `data/ui-icons.json` — keyed icon lookup for UI sprites
   - `data/images/ui/` — extracted UI DDS/PNG assets
@@ -67,6 +68,7 @@ lostsaga-database/
 │   ├── hero-local.json          # hero data with local asset paths
 │   ├── etc-items.json           # etc item data
 │   ├── etc-manuals.json         # item inventory manuals
+│   ├── gears.json               # gear data
 │   ├── ui-imageset.json         # UI texture imagesets
 │   ├── ui-icons.json            # keyed icon lookup for UI sprites
 │   └── images/                  # generated image assets
@@ -77,7 +79,8 @@ lostsaga-database/
 │   │   ├── heroes.ts            # hero + gear image fetcher
 │   │   ├── textures.ts          # UI .iop texture fetcher
 │   │   ├── items.ts             # etc item data fetcher
-│   │   └── manuals.ts           # item manual fetcher
+│   │   ├── manuals.ts           # item manual fetcher
+│   │   └── gears.ts             # gear data fetcher
 │   ├── lib/
 │   │   ├── iop.ts               # Lost Saga .iop extractor
 │   │   ├── dds-to-png.ts        # uncompressed DDS → PNG fallback
@@ -120,6 +123,8 @@ The `scripts/index.ts` pipeline runs through the fetchers in `scripts/fetchers/`
    - `data/etc-items.json`
 4. `fetchManuals()` — downloads `config/sp2_etc_manual.ini.iop`, applies the secondary XOR, parses `[ManualN]` sections, and writes:
    - `data/etc-manuals.json`
+5. `fetchGears()` — downloads `config/mercenary/{code}/{code}_item.ini.iop` and `{code}_extraitem.ini.iop` for every hero, applies the secondary XOR, parses `[itemN]` sections, merges default gear with `hero-local.json`, and writes:
+   - `data/gears.json`
 
 ### Running the pipeline
 
@@ -142,8 +147,8 @@ pnpm run fetch-data
 
 - [x] Etc item listing page (`/items`) with search, group filter, and type-code filter
 - [x] Etc item detail page (`/items/[id]`) with metadata and inventory manual
-- [ ] Gear listing page (`/gears`) with search and filters
-- [ ] Gear detail page (`/gears/[id]`)
+- [x] Gear listing page (`/gears`) with search, type/rarity/source filters
+- [x] Gear detail page (`/gears/[id]`)
 - [ ] Medal collection page (`/medals`)
 - [ ] Command reference page (`/commands`)
 

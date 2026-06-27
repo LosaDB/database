@@ -18,6 +18,7 @@ https://lostsaga-database.vercel.app
 | `data/hero-local.json` | Hero data with local image asset paths |
 | `data/etc-items.json` | Etc item data parsed from `sp2_etcitem_info.ini.iop` |
 | `data/etc-manuals.json` | Item inventory manuals parsed from `sp2_etc_manual.ini.iop` |
+| `data/gears.json` | Gear data parsed from per-hero `*_item.ini.iop` / `*_extraitem.ini.iop` |
 | `data/ui-imageset.json` | UI texture imagesets |
 | `data/ui-icons.json` | Keyed icon lookup for UI sprites |
 | `data/images/heroes/` | Hero and gear image assets |
@@ -31,6 +32,8 @@ https://lostsaga-database.vercel.app
 - `/heroes/[code]` — hero detail page with gear and image gallery.
 - `/items` — etc item database with search, group filter, and type-code filter.
 - `/items/[id]` — item detail page with metadata and inventory manual.
+- `/gears` — gear database with search, type, rarity, and source filters.
+- `/gears/[id]` — gear detail page with stats and skill info.
 - `/tools/icon-browser` — UI sprite-sheet inspector.
 
 ## Quick start

@@ -23,7 +23,9 @@ export const IOP_PASSWORDS = {
 };
 
 // Secondary XOR key table from ioLocalParent.cpp (bPassword = false -> data key).
+// The C++ array is [MAX_KEY = 30]; the 30th byte is implicitly zero.
 export const IOP_DATA_KEY = Uint8Array.from([
   48, 29, 96, 1, 9, 48, 57, 213, 178, 123, 67, 90, 2, 4, 254, 255, 6, 8, 9, 23,
   90, 44, 214, 199, 108, 119, 3, 2, 2, 0,
 ]);
+
