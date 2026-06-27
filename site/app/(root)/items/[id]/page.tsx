@@ -3,9 +3,9 @@ import { notFound } from "next/navigation";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
-import { etcItems, itemById } from "@/lib/server/items";
+import { etcItems, itemById, manualById } from "@/lib/server/items";
 import { ItemIcon } from "@/components/ItemIcon";
-import { ArrowLeft, Package, Info } from "lucide-react";
+import { ArrowLeft, Package, Info, BookOpen } from "lucide-react";
 
 interface ItemPageProps {
   params: Promise<{ id: string }>;
@@ -59,6 +59,9 @@ export default async function ItemPage({ params }: ItemPageProps) {
   const { id } = await params;
   const item = itemById.get(Number(id));
   if (!item || Number.isNaN(Number(id))) notFound();
+
+  const manual =
+    item.inventoryManual > 0 ? manualById.get(item.inventoryManual) : undefined;
 
   return (
     <>
@@ -185,6 +188,23 @@ export default async function ItemPage({ params }: ItemPageProps) {
           </div>
         </div>
       </section>
+
+      {manual && (
+        <section className="ls-card p-5">
+          <div className="ls-section-header mb-4">
+            <BookOpen className="h-4 w-4" />
+            <span>Inventory Manual</span>
+            <span className="ml-auto rounded-full bg-white/10 px-2 py-0.5 text-[10px] font-bold">
+              #{item.inventoryManual}
+            </span>
+          </div>
+          <div className="max-h-[60vh] overflow-auto rounded-lg border-2 border-[var(--border)] bg-[#0b1120] p-4">
+            <p className="whitespace-pre-wrap text-sm leading-relaxed text-foreground">
+              {manual.text}
+            </p>
+          </div>
+        </section>
+      )}
     </>
   );
 }

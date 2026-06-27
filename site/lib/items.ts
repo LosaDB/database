@@ -8,6 +8,18 @@ export interface ItemIcon {
   height: number;
 }
 
+export interface ManualSegment {
+  lineNo: number;
+  segmentNo: number;
+  text: string;
+}
+
+export interface ManualEntry {
+  id: number;
+  text: string;
+  rawSegments: ManualSegment[];
+}
+
 export interface EtcItem {
   id: number;
   section: string;
