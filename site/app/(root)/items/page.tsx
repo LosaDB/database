@@ -1,5 +1,5 @@
 import { ItemList } from "@/components/ItemList";
-import { etcItems } from "@/lib/server/items";
+import { etcItems, itemGroups } from "@/lib/server/items";
 import { Package } from "lucide-react";
 
 export const metadata = {
@@ -19,7 +19,7 @@ export default function ItemsPage() {
         </span>
       </div>
 
-      <ItemList items={etcItems} />
+      <ItemList items={etcItems} itemGroups={itemGroups} />
     </>
   );
 }

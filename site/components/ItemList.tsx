@@ -1,126 +1,127 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Search, X, ChevronLeft, ChevronRight } from "lucide-react";
-import type { EtcItem, ItemIcon } from "@/lib/items";
+import { ItemIcon } from "@/components/ItemIcon";
+import type { EtcItem } from "@/lib/items";
 
 const PAGE_SIZE = 48;
-const MAX_ICON_PREVIEW = 48;
-
-function ItemSprite({ icon }: { icon: ItemIcon }) {
-  const maxDim = Math.max(icon.width, icon.height);
-  const scale =
-    maxDim > MAX_ICON_PREVIEW ? MAX_ICON_PREVIEW / maxDim : 1;
-  const scaledWidth = Math.max(1, Math.round(icon.width * scale));
-  const scaledHeight = Math.max(1, Math.round(icon.height * scale));
-
-  return (
-    <div
-      className="relative overflow-hidden"
-      style={{
-        width: scaledWidth,
-        height: scaledHeight,
-      }}
-    >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={icon.pngUrl}
-        alt={icon.name}
-        loading="lazy"
-        decoding="async"
-        className="absolute left-0 top-0 max-w-none max-h-none"
-        style={{
-          marginLeft: Math.round(-icon.x * scale),
-          marginTop: Math.round(-icon.y * scale),
-          transform: `scale(${scale})`,
-          transformOrigin: "top left",
-        }}
-      />
-    </div>
-  );
-}
 
 function ItemCard({ item }: { item: EtcItem }) {
   return (
-    <div className="ls-card flex items-center gap-3 p-3">
-      <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded bg-[#0b1120]">
-        {item.icon ? (
-          <ItemSprite icon={item.icon} />
-        ) : (
-          <div className="h-full w-full bg-muted" />
-        )}
-      </div>
-      <div className="min-w-0 flex-1">
-        <p
-          className="truncate text-sm font-bold text-foreground"
-          title={item.name}
-        >
-          {item.name || item.shopName}
-        </p>
-        <p className="truncate text-xs text-muted-foreground">
-          #{item.id}
-          {item.iconKey && (
-            <span className="ml-2 font-mono text-[10px]">{item.iconKey}</span>
-          )}
-        </p>
-        <div className="mt-1 flex flex-wrap items-center gap-1.5 text-[10px]">
-          {item.group !== undefined && (
-            <span className="rounded bg-[#0e1626] px-1.5 py-0.5 text-muted-foreground">
-              Group {item.group}
-            </span>
-          )}
-          {item.value !== undefined && item.value > 0 && (
-            <span className="rounded bg-[#0e1626] px-1.5 py-0.5 text-muted-foreground">
-              ×{item.value}
-            </span>
-          )}
-          {item.cash !== undefined && item.cash > 0 && (
-            <span className="rounded bg-[#0e1626] px-1.5 py-0.5 text-[#f59e0b]">
-              {item.cash.toLocaleString("en-US")} cash
-            </span>
-          )}
-          {item.sellPeso > 0 && (
-            <span className="rounded bg-[#0e1626] px-1.5 py-0.5 text-muted-foreground">
-              {item.sellPeso.toLocaleString("en-US")} peso
-            </span>
-          )}
-          {!item.active && (
-            <span className="rounded bg-[#0e1626] px-1.5 py-0.5 text-destructive">
-              Inactive
-            </span>
+    <Link href={`/items/${item.id}`} className="group block cursor-pointer">
+      <div className="ls-card flex items-center gap-3 p-3 h-full">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded bg-[#0b1120]">
+          {item.icon ? (
+            <ItemIcon icon={item.icon} maxSize={48} />
+          ) : (
+            <div className="h-full w-full bg-muted" />
           )}
         </div>
+        <div className="min-w-0 flex-1">
+          <p
+            className="truncate text-sm font-bold text-foreground transition-colors group-hover:text-primary"
+            title={item.name}
+          >
+            {item.name || item.shopName}
+          </p>
+          <p className="truncate text-xs text-muted-foreground">
+            #{item.id}
+            {item.iconKey && (
+              <span className="ml-2 font-mono text-[10px]">{item.iconKey}</span>
+            )}
+          </p>
+          <div className="mt-1 flex flex-wrap items-center gap-1.5 text-[10px]">
+            <span className="rounded bg-[#0e1626] px-1.5 py-0.5 font-mono text-muted-foreground">
+              Code {item.type}
+            </span>
+            {item.value !== undefined && item.value > 0 && (
+              <span className="rounded bg-[#0e1626] px-1.5 py-0.5 text-muted-foreground">
+                ×{item.value}
+              </span>
+            )}
+            {item.cash !== undefined && item.cash > 0 && (
+              <span className="rounded bg-[#0e1626] px-1.5 py-0.5 text-[#f59e0b]">
+                {item.cash.toLocaleString("en-US")} cash
+              </span>
+            )}
+            {item.sellPeso > 0 && (
+              <span className="rounded bg-[#0e1626] px-1.5 py-0.5 text-muted-foreground">
+                {item.sellPeso.toLocaleString("en-US")} peso
+              </span>
+            )}
+            {!item.active && (
+              <span className="rounded bg-[#0e1626] px-1.5 py-0.5 text-destructive">
+                Inactive
+              </span>
+            )}
+          </div>
+        </div>
+        <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100" />
       </div>
-    </div>
+    </Link>
   );
 }
 
 interface ItemListProps {
   items: EtcItem[];
+  itemGroups: number[];
 }
 
-export function ItemList({ items }: ItemListProps) {
+export function ItemList({ items, itemGroups }: ItemListProps) {
   const [search, setSearch] = useState("");
+  const [groupFilter, setGroupFilter] = useState<string>("");
+  const [typeFilter, setTypeFilter] = useState("");
   const [page, setPage] = useState(1);
+
+  const hasFilters = search.trim() || groupFilter || typeFilter.trim();
 
   const handleSearchChange = (value: string) => {
     setSearch(value);
     setPage(1);
   };
 
+  const handleGroupChange = (value: string) => {
+    setGroupFilter(value);
+    setPage(1);
+  };
+
+  const handleTypeChange = (value: string) => {
+    setTypeFilter(value);
+    setPage(1);
+  };
+
+  const clearFilters = () => {
+    setSearch("");
+    setGroupFilter("");
+    setTypeFilter("");
+    setPage(1);
+  };
+
   const filteredItems = useMemo(() => {
     const query = search.trim().toLowerCase();
-    if (!query) return items;
+    const typeQuery = typeFilter.trim();
+
     return items.filter((item) => {
+      if (groupFilter === "none") {
+        if (item.group !== undefined) return false;
+      } else if (groupFilter !== "") {
+        if (item.group !== Number(groupFilter)) return false;
+      }
+
+      if (typeQuery && !String(item.type).includes(typeQuery)) return false;
+
+      if (!query) return true;
       const idMatch = String(item.id).includes(query);
       const nameMatch = item.name.toLowerCase().includes(query);
       const shopNameMatch = item.shopName.toLowerCase().includes(query);
       const iconMatch = item.iconKey?.toLowerCase().includes(query) ?? false;
       return idMatch || nameMatch || shopNameMatch || iconMatch;
     });
-  }, [items, search]);
+  }, [items, search, groupFilter, typeFilter]);
 
   const totalPages = useMemo(
     () => Math.max(1, Math.ceil(filteredItems.length / PAGE_SIZE)),
@@ -134,7 +135,7 @@ export function ItemList({ items }: ItemListProps) {
 
   return (
     <div className="space-y-4">
-      <div className="ls-card flex flex-col gap-3 p-4 sm:flex-row sm:items-end">
+      <div className="ls-card flex flex-col gap-3 p-4 lg:flex-row lg:items-end">
         <div className="relative flex-1">
           <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <Input
@@ -146,16 +147,53 @@ export function ItemList({ items }: ItemListProps) {
           />
         </div>
 
-        {search && (
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => handleSearchChange("")}
-            className="shrink-0 gap-1"
-          >
-            <X className="h-4 w-4" /> Clear
-          </Button>
-        )}
+        <div className="flex flex-col gap-1.5 sm:flex-row sm:items-end sm:gap-3">
+          <div className="flex flex-col gap-1.5">
+            <label htmlFor="group-filter" className="text-[10px] font-bold uppercase text-muted-foreground">
+              Group
+            </label>
+            <select
+              id="group-filter"
+              value={groupFilter}
+              onChange={(e) => handleGroupChange(e.target.value)}
+              className="h-9 rounded-md border-2 border-[var(--border)] bg-[#0b1120] px-3 text-sm text-foreground focus-visible:ring-1 focus-visible:ring-primary/50 focus-visible:outline-none"
+            >
+              <option value="">All groups</option>
+              <option value="none">Ungrouped</option>
+              {itemGroups.map((g) => (
+                <option key={g} value={String(g)}>
+                  Group {g}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div className="flex flex-col gap-1.5">
+            <label htmlFor="type-filter" className="text-[10px] font-bold uppercase text-muted-foreground">
+              Type code
+            </label>
+            <Input
+              id="type-filter"
+              type="text"
+              inputMode="numeric"
+              placeholder="e.g. 3000019"
+              value={typeFilter}
+              onChange={(e) => handleTypeChange(e.target.value)}
+              className="border-2 border-[var(--border)] bg-[#0b1120] text-sm placeholder:text-muted-foreground focus-visible:ring-primary/50"
+            />
+          </div>
+
+          {hasFilters && (
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={clearFilters}
+              className="shrink-0 gap-1 sm:mb-0"
+            >
+              <X className="h-4 w-4" /> Clear
+            </Button>
+          )}
+        </div>
       </div>
 
       <p className="text-xs text-muted-foreground">
@@ -168,12 +206,12 @@ export function ItemList({ items }: ItemListProps) {
           {filteredItems.length.toLocaleString("en-US")}
         </span>{" "}
         items
-        {search.trim() && " (filtered)"}
+        {hasFilters && " (filtered)"}
       </p>
 
       {filteredItems.length === 0 ? (
         <div className="py-16 text-center text-sm text-muted-foreground">
-          No items match your search.
+          No items match your filters.
         </div>
       ) : (
         <>
