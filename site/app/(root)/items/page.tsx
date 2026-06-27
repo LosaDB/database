@@ -9,7 +9,13 @@ export const metadata = {
     "Browse every consumable, material, and collectible etc item in Lost Saga.",
 };
 
-export default function ItemsPage() {
+export default async function ItemsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  const params = await searchParams;
+
   return (
     <>
       <Breadcrumb items={[{ label: "Items" }]} />
@@ -22,7 +28,15 @@ export default function ItemsPage() {
         </span>
       </div>
 
-      <ItemList items={etcItems} itemGroups={itemGroups} />
+      <ItemList
+        items={etcItems}
+        itemGroups={itemGroups}
+        q={typeof params.q === "string" ? params.q : ""}
+        group={typeof params.group === "string" ? params.group : ""}
+        type={typeof params.type === "string" ? params.type : ""}
+        sort={typeof params.sort === "string" ? params.sort : "id"}
+        page={typeof params.page === "string" ? Number(params.page) : 1}
+      />
     </>
   );
 }

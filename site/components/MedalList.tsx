@@ -10,6 +10,14 @@ import type { Medal } from "@/lib/medals";
 
 const PAGE_SIZE = 48;
 
+const sortOptions = [
+  { value: "id", label: "Default (ID)" },
+  { value: "name", label: "Name" },
+  { value: "subType", label: "Sub Type" },
+  { value: "limitLevel", label: "Limit Level" },
+  { value: "sell", label: "Sell Peso" },
+];
+
 function MedalCard({ medal }: { medal: Medal }) {
   return (
     <Link href={`/medals/${medal.id}`} className="group block cursor-pointer">
@@ -66,22 +74,100 @@ function MedalCard({ medal }: { medal: Medal }) {
 interface MedalListProps {
   medals: Medal[];
   medalSubTypes: number[];
+  q?: string;
+  subType?: string;
+  hasManual?: string;
+  sort?: string;
+  page?: number;
 }
 
-export function MedalList({ medals, medalSubTypes }: MedalListProps) {
-  const [search, setSearch] = useState("");
-  const [subTypeFilter, setSubTypeFilter] = useState<string>("");
-  const [hasManualFilter, setHasManualFilter] = useState<string>("");
-  const [page, setPage] = useState(1);
+export function MedalList({
+  medals,
+  medalSubTypes,
+  q = "",
+  subType = "",
+  hasManual = "",
+  sort = "id",
+  page: initialPage = 1,
+}: MedalListProps) {
+  const [search, setSearch] = useState(q);
+  const [subTypeFilter, setSubTypeFilter] = useState(subType);
+  const [hasManualFilter, setHasManualFilter] = useState(hasManual);
+  const [sortKey, setSortKey] = useState(sort);
+  const [page, setPage] = useState(initialPage);
 
-  const hasFilters =
-    search.trim() || subTypeFilter || hasManualFilter;
+  const updateUrl = (
+    patch: Partial<{
+      q: string;
+      subType: string;
+      hasManual: string;
+      sort: string;
+      page: number;
+    }>,
+  ) => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    const next = {
+      q: search,
+      subType: subTypeFilter,
+      hasManual: hasManualFilter,
+      sort: sortKey,
+      page,
+      ...patch,
+    };
 
-  const clearFilters = () => {
-    setSearch("");
-    setSubTypeFilter("");
-    setHasManualFilter("");
+    const setOrDelete = (
+      key: string,
+      value: string | number,
+      defaultValue: string | number,
+    ) => {
+      if (value === defaultValue || value === "" || value === undefined) {
+        params.delete(key);
+      } else {
+        params.set(key, String(value));
+      }
+    };
+
+    setOrDelete("q", next.q, "");
+    setOrDelete("subType", next.subType, "");
+    setOrDelete("hasManual", next.hasManual, "");
+    setOrDelete("sort", next.sort, "id");
+    setOrDelete("page", next.page, 1);
+
+    const qs = params.toString();
+    window.history.replaceState(
+      {},
+      "",
+      `${window.location.pathname}${qs ? `?${qs}` : ""}`,
+    );
+  };
+
+  const handleSearchChange = (value: string) => {
+    setSearch(value);
     setPage(1);
+    updateUrl({ q: value, page: 1 });
+  };
+
+  const handleSubTypeChange = (value: string) => {
+    setSubTypeFilter(value);
+    setPage(1);
+    updateUrl({ subType: value, page: 1 });
+  };
+
+  const handleHasManualChange = (value: string) => {
+    setHasManualFilter(value);
+    setPage(1);
+    updateUrl({ hasManual: value, page: 1 });
+  };
+
+  const handleSortChange = (value: string) => {
+    setSortKey(value);
+    updateUrl({ sort: value });
+  };
+
+  const handlePageChange = (newPage: number) => {
+    setPage(newPage);
+    updateUrl({ page: newPage });
   };
 
   const filteredMedals = useMemo(() => {
@@ -104,15 +190,48 @@ export function MedalList({ medals, medalSubTypes }: MedalListProps) {
     });
   }, [medals, search, subTypeFilter, hasManualFilter]);
 
+  const sortedMedals = useMemo(() => {
+    const list = [...filteredMedals];
+    switch (sortKey) {
+      case "name":
+        list.sort((a, b) => a.name.localeCompare(b.name));
+        break;
+      case "subType":
+        list.sort((a, b) => (a.subMedalType ?? -1) - (b.subMedalType ?? -1));
+        break;
+      case "limitLevel":
+        list.sort((a, b) => (a.limitLevel ?? -1) - (b.limitLevel ?? -1));
+        break;
+      case "sell":
+        list.sort((a, b) => a.sellPeso - b.sellPeso);
+        break;
+      default:
+        list.sort((a, b) => a.id - b.id);
+    }
+    return list;
+  }, [filteredMedals, sortKey]);
+
   const totalPages = useMemo(
-    () => Math.max(1, Math.ceil(filteredMedals.length / PAGE_SIZE)),
-    [filteredMedals.length],
+    () => Math.max(1, Math.ceil(sortedMedals.length / PAGE_SIZE)),
+    [sortedMedals.length],
   );
 
   const paginatedMedals = useMemo(() => {
     const start = (page - 1) * PAGE_SIZE;
-    return filteredMedals.slice(start, start + PAGE_SIZE);
-  }, [filteredMedals, page]);
+    return sortedMedals.slice(start, start + PAGE_SIZE);
+  }, [sortedMedals, page]);
+
+  const hasFilters =
+    search.trim() || subTypeFilter || hasManualFilter || sortKey !== "id";
+
+  const clearFilters = () => {
+    setSearch("");
+    setSubTypeFilter("");
+    setHasManualFilter("");
+    setSortKey("id");
+    setPage(1);
+    updateUrl({ q: "", subType: "", hasManual: "", sort: "id", page: 1 });
+  };
 
   return (
     <div className="space-y-4">
@@ -123,10 +242,7 @@ export function MedalList({ medals, medalSubTypes }: MedalListProps) {
             type="text"
             placeholder="Search by name, id, icon key, or manual..."
             value={search}
-            onChange={(e) => {
-              setSearch(e.target.value);
-              setPage(1);
-            }}
+            onChange={(e) => handleSearchChange(e.target.value)}
             className="border-2 border-[var(--border)] bg-[#0b1120] pl-9 text-sm placeholder:text-muted-foreground focus-visible:ring-primary/50"
           />
         </div>
@@ -143,10 +259,7 @@ export function MedalList({ medals, medalSubTypes }: MedalListProps) {
               <select
                 id="medal-subtype-filter"
                 value={subTypeFilter}
-                onChange={(e) => {
-                  setSubTypeFilter(e.target.value);
-                  setPage(1);
-                }}
+                onChange={(e) => handleSubTypeChange(e.target.value)}
                 className="h-9 rounded-md border-2 border-[var(--border)] bg-[#0b1120] px-3 text-sm text-foreground focus-visible:ring-1 focus-visible:ring-primary/50 focus-visible:outline-none"
               >
                 <option value="">All sub types</option>
@@ -169,15 +282,33 @@ export function MedalList({ medals, medalSubTypes }: MedalListProps) {
             <select
               id="medal-manual-filter"
               value={hasManualFilter}
-              onChange={(e) => {
-                setHasManualFilter(e.target.value);
-                setPage(1);
-              }}
+              onChange={(e) => handleHasManualChange(e.target.value)}
               className="h-9 rounded-md border-2 border-[var(--border)] bg-[#0b1120] px-3 text-sm text-foreground focus-visible:ring-1 focus-visible:ring-primary/50 focus-visible:outline-none"
             >
               <option value="">All</option>
               <option value="yes">Has manual</option>
               <option value="no">No manual</option>
+            </select>
+          </div>
+
+          <div className="flex flex-col gap-1.5">
+            <label
+              htmlFor="medal-sort"
+              className="text-[10px] font-bold uppercase text-muted-foreground"
+            >
+              Sort
+            </label>
+            <select
+              id="medal-sort"
+              value={sortKey}
+              onChange={(e) => handleSortChange(e.target.value)}
+              className="h-9 rounded-md border-2 border-[var(--border)] bg-[#0b1120] px-3 text-sm text-foreground focus-visible:ring-1 focus-visible:ring-primary/50 focus-visible:outline-none"
+            >
+              {sortOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
             </select>
           </div>
 
@@ -201,13 +332,13 @@ export function MedalList({ medals, medalSubTypes }: MedalListProps) {
         </span>{" "}
         of{" "}
         <span className="font-bold text-foreground">
-          {filteredMedals.length.toLocaleString("en-US")}
+          {sortedMedals.length.toLocaleString("en-US")}
         </span>{" "}
         medals
         {hasFilters && " (filtered)"}
       </p>
 
-      {filteredMedals.length === 0 ? (
+      {sortedMedals.length === 0 ? (
         <div className="py-16 text-center text-sm text-muted-foreground">
           No medals match your filters.
         </div>
@@ -230,7 +361,7 @@ export function MedalList({ medals, medalSubTypes }: MedalListProps) {
               <Button
                 variant="outline"
                 size="sm"
-                onClick={() => setPage((p) => Math.max(1, p - 1))}
+                onClick={() => handlePageChange(Math.max(1, page - 1))}
                 disabled={page === 1 || totalPages === 1}
               >
                 <ChevronLeft className="h-4 w-4" />
@@ -239,7 +370,7 @@ export function MedalList({ medals, medalSubTypes }: MedalListProps) {
               <Button
                 variant="outline"
                 size="sm"
-                onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+                onClick={() => handlePageChange(Math.min(totalPages, page + 1))}
                 disabled={page === totalPages || totalPages === 1}
               >
                 <ChevronRight className="h-4 w-4" />

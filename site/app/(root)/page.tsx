@@ -19,6 +19,7 @@ import {
   Backpack,
   Shield,
   Wrench,
+  Search,
 } from "lucide-react";
 
 export const metadata = {
@@ -58,8 +59,8 @@ export default function HomePage() {
             </p>
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-              <Link href="/heroes" className="ls-btn-blue h-11 gap-2 text-sm">
-                Browse Heroes <ArrowRight className="h-4 w-4" />
+              <Link href="/search" className="ls-btn-blue h-11 gap-2 text-sm">
+                <Search className="h-4 w-4" /> Explore
               </Link>
               <a
                 href="https://github.com/rifadev26/lostsaga-database"

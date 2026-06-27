@@ -9,7 +9,13 @@ export const metadata = {
     "Browse every weapon, armor, helmet, and cloak in Lost Saga.",
 };
 
-export default function GearsPage() {
+export default async function GearsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  const params = await searchParams;
+
   return (
     <>
       <Breadcrumb items={[{ label: "Gears" }]} />
@@ -22,7 +28,17 @@ export default function GearsPage() {
         </span>
       </div>
 
-      <GearList gears={gears} gearTypes={gearTypes} gearRarities={gearRarities} />
+      <GearList
+        gears={gears}
+        gearTypes={gearTypes}
+        gearRarities={gearRarities}
+        q={typeof params.q === "string" ? params.q : ""}
+        type={typeof params.type === "string" ? params.type : ""}
+        rarity={typeof params.rarity === "string" ? params.rarity : ""}
+        extra={typeof params.extra === "string" ? params.extra : ""}
+        sort={typeof params.sort === "string" ? params.sort : "id"}
+        page={typeof params.page === "string" ? Number(params.page) : 1}
+      />
     </>
   );
 }

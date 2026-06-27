@@ -4,18 +4,19 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import {
-  Search,
-  X,
-  ChevronLeft,
-  ChevronRight,
-  Swords,
-  Shield,
-} from "lucide-react";
+import { Search, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { ItemIcon } from "@/components/ItemIcon";
 import type { Gear } from "@/lib/gears";
 
 const PAGE_SIZE = 48;
+
+const sortOptions = [
+  { value: "id", label: "Default (ID)" },
+  { value: "name", label: "Name" },
+  { value: "type", label: "Type" },
+  { value: "rarity", label: "Rarity" },
+  { value: "source", label: "Source" },
+];
 
 function GearCard({ gear }: { gear: Gear }) {
   return (
@@ -74,21 +75,113 @@ interface GearListProps {
   gears: Gear[];
   gearTypes: string[];
   gearRarities: string[];
+  q?: string;
+  type?: string;
+  rarity?: string;
+  extra?: string;
+  sort?: string;
+  page?: number;
 }
 
-export function GearList({ gears, gearTypes, gearRarities }: GearListProps) {
-  const [search, setSearch] = useState("");
-  const [typeFilter, setTypeFilter] = useState<string>("");
-  const [rarityFilter, setRarityFilter] = useState<string>("");
-  const [extraFilter, setExtraFilter] = useState<string>("");
-  const [page, setPage] = useState(1);
+export function GearList({
+  gears,
+  gearTypes,
+  gearRarities,
+  q = "",
+  type = "",
+  rarity = "",
+  extra = "",
+  sort = "id",
+  page: initialPage = 1,
+}: GearListProps) {
+  const [search, setSearch] = useState(q);
+  const [typeFilter, setTypeFilter] = useState(type);
+  const [rarityFilter, setRarityFilter] = useState(rarity);
+  const [extraFilter, setExtraFilter] = useState(extra);
+  const [sortKey, setSortKey] = useState(sort);
+  const [page, setPage] = useState(initialPage);
 
-  const hasFilters =
-    search.trim() || typeFilter || rarityFilter || extraFilter;
+  const updateUrl = (
+    patch: Partial<{
+      q: string;
+      type: string;
+      rarity: string;
+      extra: string;
+      sort: string;
+      page: number;
+    }>,
+  ) => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    const next = {
+      q: search,
+      type: typeFilter,
+      rarity: rarityFilter,
+      extra: extraFilter,
+      sort: sortKey,
+      page,
+      ...patch,
+    };
+
+    const setOrDelete = (
+      key: string,
+      value: string | number,
+      defaultValue: string | number,
+    ) => {
+      if (value === defaultValue || value === "" || value === undefined) {
+        params.delete(key);
+      } else {
+        params.set(key, String(value));
+      }
+    };
+
+    setOrDelete("q", next.q, "");
+    setOrDelete("type", next.type, "");
+    setOrDelete("rarity", next.rarity, "");
+    setOrDelete("extra", next.extra, "");
+    setOrDelete("sort", next.sort, "id");
+    setOrDelete("page", next.page, 1);
+
+    const qs = params.toString();
+    window.history.replaceState(
+      {},
+      "",
+      `${window.location.pathname}${qs ? `?${qs}` : ""}`,
+    );
+  };
 
   const handleSearchChange = (value: string) => {
     setSearch(value);
     setPage(1);
+    updateUrl({ q: value, page: 1 });
+  };
+
+  const handleTypeChange = (value: string) => {
+    setTypeFilter(value);
+    setPage(1);
+    updateUrl({ type: value, page: 1 });
+  };
+
+  const handleRarityChange = (value: string) => {
+    setRarityFilter(value);
+    setPage(1);
+    updateUrl({ rarity: value, page: 1 });
+  };
+
+  const handleExtraChange = (value: string) => {
+    setExtraFilter(value);
+    setPage(1);
+    updateUrl({ extra: value, page: 1 });
+  };
+
+  const handleSortChange = (value: string) => {
+    setSortKey(value);
+    updateUrl({ sort: value });
+  };
+
+  const handlePageChange = (newPage: number) => {
+    setPage(newPage);
+    updateUrl({ page: newPage });
   };
 
   const filteredGears = useMemo(() => {
@@ -110,22 +203,52 @@ export function GearList({ gears, gearTypes, gearRarities }: GearListProps) {
     });
   }, [gears, search, typeFilter, rarityFilter, extraFilter]);
 
+  const sortedGears = useMemo(() => {
+    const list = [...filteredGears];
+    switch (sortKey) {
+      case "name":
+        list.sort((a, b) => a.name.localeCompare(b.name));
+        break;
+      case "type":
+        list.sort((a, b) => a.itemType.localeCompare(b.itemType));
+        break;
+      case "rarity":
+        list.sort((a, b) => (a.rarity || "").localeCompare(b.rarity || ""));
+        break;
+      case "source":
+        list.sort((a, b) => Number(a.isExtra) - Number(b.isExtra));
+        break;
+      default:
+        list.sort((a, b) => a.id - b.id);
+    }
+    return list;
+  }, [filteredGears, sortKey]);
+
   const totalPages = useMemo(
-    () => Math.max(1, Math.ceil(filteredGears.length / PAGE_SIZE)),
-    [filteredGears.length],
+    () => Math.max(1, Math.ceil(sortedGears.length / PAGE_SIZE)),
+    [sortedGears.length],
   );
 
   const paginatedGears = useMemo(() => {
     const start = (page - 1) * PAGE_SIZE;
-    return filteredGears.slice(start, start + PAGE_SIZE);
-  }, [filteredGears, page]);
+    return sortedGears.slice(start, start + PAGE_SIZE);
+  }, [sortedGears, page]);
+
+  const hasFilters =
+    search.trim() ||
+    typeFilter ||
+    rarityFilter ||
+    extraFilter ||
+    sortKey !== "id";
 
   const clearFilters = () => {
     setSearch("");
     setTypeFilter("");
     setRarityFilter("");
     setExtraFilter("");
+    setSortKey("id");
     setPage(1);
+    updateUrl({ q: "", type: "", rarity: "", extra: "", sort: "id", page: 1 });
   };
 
   return (
@@ -153,10 +276,7 @@ export function GearList({ gears, gearTypes, gearRarities }: GearListProps) {
             <select
               id="gear-type-filter"
               value={typeFilter}
-              onChange={(e) => {
-                setTypeFilter(e.target.value);
-                setPage(1);
-              }}
+              onChange={(e) => handleTypeChange(e.target.value)}
               className="h-9 rounded-md border-2 border-[var(--border)] bg-[#0b1120] px-3 text-sm text-foreground focus-visible:ring-1 focus-visible:ring-primary/50 focus-visible:outline-none"
             >
               <option value="">All types</option>
@@ -178,10 +298,7 @@ export function GearList({ gears, gearTypes, gearRarities }: GearListProps) {
             <select
               id="gear-rarity-filter"
               value={rarityFilter}
-              onChange={(e) => {
-                setRarityFilter(e.target.value);
-                setPage(1);
-              }}
+              onChange={(e) => handleRarityChange(e.target.value)}
               className="h-9 rounded-md border-2 border-[var(--border)] bg-[#0b1120] px-3 text-sm text-foreground focus-visible:ring-1 focus-visible:ring-primary/50 focus-visible:outline-none"
             >
               <option value="">All rarities</option>
@@ -203,15 +320,33 @@ export function GearList({ gears, gearTypes, gearRarities }: GearListProps) {
             <select
               id="gear-extra-filter"
               value={extraFilter}
-              onChange={(e) => {
-                setExtraFilter(e.target.value);
-                setPage(1);
-              }}
+              onChange={(e) => handleExtraChange(e.target.value)}
               className="h-9 rounded-md border-2 border-[var(--border)] bg-[#0b1120] px-3 text-sm text-foreground focus-visible:ring-1 focus-visible:ring-primary/50 focus-visible:outline-none"
             >
               <option value="">All</option>
               <option value="default">Default</option>
               <option value="extra">Extra</option>
+            </select>
+          </div>
+
+          <div className="flex flex-col gap-1.5">
+            <label
+              htmlFor="gear-sort"
+              className="text-[10px] font-bold uppercase text-muted-foreground"
+            >
+              Sort
+            </label>
+            <select
+              id="gear-sort"
+              value={sortKey}
+              onChange={(e) => handleSortChange(e.target.value)}
+              className="h-9 rounded-md border-2 border-[var(--border)] bg-[#0b1120] px-3 text-sm text-foreground focus-visible:ring-1 focus-visible:ring-primary/50 focus-visible:outline-none"
+            >
+              {sortOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
             </select>
           </div>
 
@@ -235,13 +370,13 @@ export function GearList({ gears, gearTypes, gearRarities }: GearListProps) {
         </span>{" "}
         of{" "}
         <span className="font-bold text-foreground">
-          {filteredGears.length.toLocaleString("en-US")}
+          {sortedGears.length.toLocaleString("en-US")}
         </span>{" "}
         gears
         {hasFilters && " (filtered)"}
       </p>
 
-      {filteredGears.length === 0 ? (
+      {sortedGears.length === 0 ? (
         <div className="py-16 text-center text-sm text-muted-foreground">
           No gears match your filters.
         </div>
@@ -264,7 +399,7 @@ export function GearList({ gears, gearTypes, gearRarities }: GearListProps) {
               <Button
                 variant="outline"
                 size="sm"
-                onClick={() => setPage((p) => Math.max(1, p - 1))}
+                onClick={() => handlePageChange(Math.max(1, page - 1))}
                 disabled={page === 1 || totalPages === 1}
               >
                 <ChevronLeft className="h-4 w-4" />
@@ -273,7 +408,7 @@ export function GearList({ gears, gearTypes, gearRarities }: GearListProps) {
               <Button
                 variant="outline"
                 size="sm"
-                onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+                onClick={() => handlePageChange(Math.min(totalPages, page + 1))}
                 disabled={page === totalPages || totalPages === 1}
               >
                 <ChevronRight className="h-4 w-4" />
