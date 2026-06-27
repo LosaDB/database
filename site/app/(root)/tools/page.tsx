@@ -3,10 +3,16 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import {
   LayoutGrid,
   Wrench,
-  Package,
-  Backpack,
-  Shield,
-  Terminal,
+  Image,
+  Box,
+  Play,
+  Bone,
+  Scroll,
+  Medal,
+  Layers,
+  Key,
+  Server,
+  Cloud,
 } from "lucide-react";
 
 export const metadata = {
@@ -21,48 +27,104 @@ interface Tool {
   description: string;
   icon: React.ElementType;
   available: boolean;
+  category: string;
 }
 
-const tools: Tool[] = [
+const allTools: Tool[] = [
   {
     href: "/tools/icon-browser",
-    label: "UI Icon Browser",
-    description:
-      "Search and inspect every UI sprite icon clipped from the game’s sprite sheets.",
+    label: "Icon Browser",
+    description: "Browse and inspect icons from Lost Saga UI Imagesets.",
     icon: LayoutGrid,
     available: true,
+    category: "Asset Conversion",
+  },
+  {
+    href: "#",
+    label: "LSC2DDS",
+    description: "Convert your GearDesign LSC file into DDS.",
+    icon: Image,
+    available: false,
+    category: "Asset Conversion",
+  },
+  {
+    href: "#",
+    label: "MSH to OBJ 3D Converter",
+    description: "Convert MSH engine files into 3D .obj formats.",
+    icon: Box,
+    available: false,
+    category: "Asset Conversion",
+  },
+  {
+    href: "#",
+    label: "Ani Viewer",
+    description: "View and inspect Lost Saga .ani animation files.",
+    icon: Play,
+    available: false,
+    category: "Asset Conversion",
+  },
+  {
+    href: "#",
+    label: "SKL Skeleton Viewer",
+    description: "Browse bone hierarchy from .skl skeleton files.",
+    icon: Bone,
+    available: false,
+    category: "Asset Conversion",
+  },
+  {
+    href: "#",
+    label: "Quest Generator",
+    description: "Create custom quests for Lost Saga.",
+    icon: Scroll,
+    available: false,
+    category: "Creation Tools",
+  },
+  {
+    href: "#",
+    label: "Medal Generator",
+    description: "Create custom medals for Lost Saga.",
+    icon: Medal,
+    available: false,
+    category: "Creation Tools",
+  },
+  {
+    href: "#",
+    label: "3D Gear Designer",
+    description: "Design and customize character gear in a 3D viewer.",
+    icon: Layers,
+    available: false,
+    category: "Creation Tools",
+  },
+  {
+    href: "#",
+    label: "Password Generator",
+    description: "Encrypt and decrypt passwords for configuration files.",
+    icon: Key,
+    available: false,
+    category: "Developer Utilities",
+  },
+  {
+    href: "#",
+    label: "Server ID Generator",
+    description: "Convert IP addresses and ports to 64-bit Game Server IDs.",
+    icon: Server,
+    available: false,
+    category: "Developer Utilities",
+  },
+  {
+    href: "#",
+    label: "LSIcon CDN",
+    description: "Serve Lost Saga PNG textures from a CDN endpoint.",
+    icon: Cloud,
+    available: false,
+    category: "Developer Utilities",
   },
 ];
 
-const comingSoon: Tool[] = [
-  {
-    href: "#",
-    label: "Item Compendium",
-    description: "Browse every consumable, material, and collectible item.",
-    icon: Package,
-    available: false,
-  },
-  {
-    href: "#",
-    label: "Gear Database",
-    description: "Explore hero gear, weapons, and equipment sets.",
-    icon: Backpack,
-    available: false,
-  },
-  {
-    href: "#",
-    label: "Medal Collection",
-    description: "Track medals, titles, and achievements.",
-    icon: Shield,
-    available: false,
-  },
-  {
-    href: "#",
-    label: "Command Lookup",
-    description: "Search chat commands, emoticons, and macros.",
-    icon: Terminal,
-    available: false,
-  },
+const categoryOrder = [
+  "Asset Conversion",
+  "Creation Tools",
+  "Developer Utilities",
 ];
 
 function ToolCard({ tool }: { tool: Tool }) {
@@ -83,11 +145,15 @@ function ToolCard({ tool }: { tool: Tool }) {
           {tool.description}
         </p>
       </div>
-      {!tool.available && (
-        <span className="mt-auto rounded border border-[var(--border)] bg-[#0e1626] px-2 py-0.5 text-[10px] font-bold uppercase text-muted-foreground">
-          Coming soon
-        </span>
-      )}
+      <span
+        className={`mt-auto rounded border border-[var(--border)] px-2 py-0.5 text-[10px] font-bold uppercase ${
+          tool.available
+            ? "bg-[#22c55e]/10 text-[#22c55e]"
+            : "bg-[#0e1626] text-muted-foreground"
+        }`}
+      >
+        {tool.available ? "Active" : "Coming soon"}
+      </span>
     </div>
   );
 
@@ -106,29 +172,28 @@ export default function ToolsPage() {
       <div className="ls-section-header mb-6">
         <Wrench className="h-5 w-5" />
         <span>Tools</span>
+        <span className="ml-auto rounded-full bg-white/10 px-2 py-0.5 text-xs font-bold">
+          {allTools.filter((t) => t.available).length} / {allTools.length}
+        </span>
       </div>
 
-      <section className="mb-8">
-        <h2 className="mb-3 text-sm font-bold uppercase text-muted-foreground">
-          Available
-        </h2>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {tools.map((tool) => (
-            <ToolCard key={tool.label} tool={tool} />
-          ))}
-        </div>
-      </section>
+      {categoryOrder.map((category) => {
+        const categoryTools = allTools.filter((t) => t.category === category);
+        if (categoryTools.length === 0) return null;
 
-      <section>
-        <h2 className="mb-3 text-sm font-bold uppercase text-muted-foreground">
-          Coming soon
-        </h2>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {comingSoon.map((tool) => (
-            <ToolCard key={tool.label} tool={tool} />
-          ))}
-        </div>
-      </section>
+        return (
+          <section key={category} className="mb-8">
+            <h2 className="mb-3 text-sm font-bold uppercase text-muted-foreground">
+              {category}
+            </h2>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {categoryTools.map((tool) => (
+                <ToolCard key={tool.label} tool={tool} />
+              ))}
+            </div>
+          </section>
+        );
+      })}
     </>
   );
 }
