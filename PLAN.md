@@ -143,14 +143,16 @@ pnpm run fetch-data
 - [x] Apply fresh "Obsidian Cyan" dark theme design
 - [x] Deploy to Vercel
 
-### Phase 2 — Items, Gears & Equipment
+### Phase 2 — Items, Gears, Medals & Discovery
 
 - [x] Etc item listing page (`/items`) with search, group filter, and type-code filter
 - [x] Etc item detail page (`/items/[id]`) with metadata and inventory manual
-- [x] Gear listing page (`/gears`) with search, type/rarity/source filters
+- [x] Gear listing page (`/gears`) with search, type/rarity/source filters, sort, and pagination
 - [x] Gear detail page (`/gears/[id]`)
-- [ ] Medal collection page (`/medals`)
-- [ ] Command reference page (`/commands`)
+- [x] Medal collection page (`/medals`) with search, sub-type/manual filters, sort, and pagination
+- [x] Medal detail page (`/medals/[id]`)
+- [x] Global search page (`/search`) across heroes, items, gears, and medals
+- [ ] Command reference page (`/commands`) — removed from current scope
 
 ### Phase 3 — Tools
 

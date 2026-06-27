@@ -19,6 +19,7 @@ https://lostsaga-database.vercel.app
 | `data/etc-items.json` | Etc item data parsed from `sp2_etcitem_info.ini.iop` |
 | `data/etc-manuals.json` | Item inventory manuals parsed from `sp2_etc_manual.ini.iop` |
 | `data/gears.json` | Gear data parsed from per-hero `*_item.ini.iop` / `*_extraitem.ini.iop` |
+| `data/medals.json` | Medal data parsed from `sp2_etc_manual.ini.iop` medal sections |
 | `data/ui-imageset.json` | UI texture imagesets |
 | `data/ui-icons.json` | Keyed icon lookup for UI sprites |
 | `data/images/heroes/` | Hero and gear image assets |
@@ -28,13 +29,18 @@ https://lostsaga-database.vercel.app
 
 ## Current website features
 
-- `/heroes` — hero database with search, type filter, and rarity filter.
+- `/heroes` — hero database with search, type filter, rarity filter, sort, and pagination.
 - `/heroes/[code]` — hero detail page with gear and image gallery.
-- `/items` — etc item database with search, group filter, and type-code filter.
+- `/items` — etc item database with search, group filter, type-code filter, sort, and pagination.
 - `/items/[id]` — item detail page with metadata and inventory manual.
-- `/gears` — gear database with search, type, rarity, and source filters.
+- `/gears` — gear database with search, type, rarity, and source filters, sort, and pagination.
 - `/gears/[id]` — gear detail page with stats and skill info.
+- `/medals` — medal collection database with search, sub-type filter, manual filter, sort, and pagination.
+- `/medals/[id]` — medal detail page with stats, growth, and manual.
+- `/search` — global search across heroes, items, gears, and medals.
 - `/tools/icon-browser` — UI sprite-sheet inspector.
+
+Filters, sort, and page state are persisted in the URL so results can be shared.
 
 ## Quick start
 
@@ -49,7 +55,7 @@ This will:
 
 - Fetch heroes from the Lost Saga API.
 - Download hero/gear and UI image assets.
-- Generate `data/hero.json`, `data/hero-local.json`, `data/etc-items.json`, `data/etc-manuals.json`, `data/ui-imageset.json`, and `data/ui-icons.json`.
+- Generate `data/hero.json`, `data/hero-local.json`, `data/etc-items.json`, `data/etc-manuals.json`, `data/medals.json`, `data/ui-imageset.json`, and `data/ui-icons.json`.
 
 ### 2. Run the website locally
 
