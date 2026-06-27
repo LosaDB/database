@@ -9,13 +9,13 @@ export const metadata = {
 
 export default function IconBrowserPage() {
   return (
-    <div className="mx-auto max-w-[1370px] px-4 py-6 sm:px-6 lg:px-8">
+    <>
       <div className="ls-section-header mb-4">
         <LayoutGrid className="h-5 w-5" />
         <span>UI Icon Browser</span>
       </div>
 
       <IconBrowser />
-    </div>
+    </>
   );
 }

@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function HeroesPage() {
   return (
-    <div className="mx-auto max-w-[1370px] px-4 py-6 sm:px-6 lg:px-8">
+    <>
       <div className="ls-section-header mb-4">
         <Users className="h-5 w-5" />
         <span>Hero Database</span>
@@ -22,6 +22,6 @@ export default function HeroesPage() {
         heroTypes={heroTypes}
         heroRarities={heroRarities}
       />
-    </div>
+    </>
   );
 }

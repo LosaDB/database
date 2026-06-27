@@ -25,7 +25,7 @@ export default function HomePage() {
   const latestHeroes = regularHeroes.slice(-8).reverse();
 
   return (
-    <div className="mx-auto max-w-[1370px] px-4 py-6 sm:px-6 lg:px-8">
+    <>
       {/* Hero intro */}
       <section className="mb-10">
         <div className="grid items-center gap-6 lg:grid-cols-12 lg:gap-8">
@@ -130,6 +130,6 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-    </div>
+    </>
   );
 }

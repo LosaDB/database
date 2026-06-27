@@ -99,7 +99,7 @@ function ToolCard({ tool }: { tool: Tool }) {
 
 export default function ToolsPage() {
   return (
-    <div className="mx-auto max-w-[1370px] px-4 py-6 sm:px-6 lg:px-8">
+    <>
       <div className="ls-section-header mb-6">
         <Wrench className="h-5 w-5" />
         <span>Tools</span>
@@ -126,6 +126,6 @@ export default function ToolsPage() {
           ))}
         </div>
       </section>
-    </div>
+    </>
   );
 }
