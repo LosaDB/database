@@ -104,11 +104,11 @@ const allTools: Tool[] = [
     category: "Developer Utilities",
   },
   {
-    href: "#",
+    href: "/tools/svrid-generator",
     label: "Server ID Generator",
     description: "Convert IP addresses and ports to 64-bit Game Server IDs.",
     icon: Server,
-    available: false,
+    available: true,
     category: "Developer Utilities",
   },
   {
