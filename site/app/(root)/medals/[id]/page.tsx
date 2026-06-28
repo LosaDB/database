@@ -13,17 +13,28 @@ export async function generateStaticParams() {
   return medals.slice(0, 200).map((medal) => ({ id: String(medal.id) }));
 }
 
+function truncateDescription(text: string, max = 155): string {
+  const normalized = text.replace(/\s+/g, " ").trim();
+  if (normalized.length <= max) return normalized;
+  return normalized.slice(0, max).trimEnd() + "…";
+}
+
 export async function generateMetadata({ params }: MedalPageProps) {
   const { id } = await params;
   const medal = medalById.get(Number(id));
   if (!medal) return { title: "Medal Not Found" };
 
   const image = medal.icon?.pngUrl;
+  const description = medal.manual
+    ? truncateDescription(medal.manual)
+    : `${medal.name} — Lost Saga medal.`;
 
   return {
     title: medal.name,
+    description,
     openGraph: {
       title: medal.name,
+      description,
       images: image ? [{ url: image, alt: medal.name }] : [],
     },
     twitter: {

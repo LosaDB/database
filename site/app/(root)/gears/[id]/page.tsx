@@ -15,17 +15,30 @@ export async function generateStaticParams() {
   return gears.slice(0, 200).map((gear) => ({ id: String(gear.id) }));
 }
 
+function truncateDescription(text: string, max = 155): string {
+  const normalized = text.replace(/\s+/g, " ").trim();
+  if (normalized.length <= max) return normalized;
+  return normalized.slice(0, max).trimEnd() + "…";
+}
+
 export async function generateMetadata({ params }: GearPageProps) {
   const { id } = await params;
   const gear = gearById.get(Number(id));
   if (!gear) return { title: "Gear Not Found" };
 
   const image = gear.icon?.pngUrl;
+  const description = gear.skill?.desc
+    ? truncateDescription(gear.skill.desc)
+    : gear.skill?.name
+      ? `${gear.skill.name} gear for ${gear.heroName}.`
+      : `${gear.name} — Lost Saga gear.`;
 
   return {
     title: gear.name,
+    description,
     openGraph: {
       title: gear.name,
+      description,
       images: image ? [{ url: image, alt: gear.name }] : [],
     },
     twitter: {

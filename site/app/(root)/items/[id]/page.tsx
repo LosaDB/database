@@ -13,6 +13,12 @@ export async function generateStaticParams() {
   return etcItems.slice(0, 200).map((item) => ({ id: String(item.id) }));
 }
 
+function truncateDescription(text: string, max = 155): string {
+  const normalized = text.replace(/\s+/g, " ").trim();
+  if (normalized.length <= max) return normalized;
+  return normalized.slice(0, max).trimEnd() + "…";
+}
+
 export async function generateMetadata({ params }: ItemPageProps) {
   const { id } = await params;
   const item = itemById.get(Number(id));
@@ -20,11 +26,18 @@ export async function generateMetadata({ params }: ItemPageProps) {
 
   const name = item.name || item.shopName;
   const image = item.icon?.pngUrl;
+  const manual =
+    item.inventoryManual > 0 ? manualById.get(item.inventoryManual) : undefined;
+  const description = manual?.text
+    ? truncateDescription(manual.text)
+    : `${name} — Lost Saga etc item.`;
 
   return {
     title: name,
+    description,
     openGraph: {
       title: name,
+      description,
       images: image ? [{ url: image, alt: name }] : [],
     },
     twitter: {
