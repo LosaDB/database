@@ -241,6 +241,12 @@ export default function HomePage() {
         <div className="ls-section-header mb-4">
           <Wrench className="h-5 w-5" />
           <span>Tools</span>
+          <Link
+            href="/tools"
+            className="ml-auto text-xs font-bold text-white/80 hover:text-white hover:underline"
+          >
+            View All
+          </Link>
         </div>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
           <Link
