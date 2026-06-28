@@ -20,6 +20,9 @@ https://lostsaga-database.vercel.app
 | `data/etc-manuals.json` | Item inventory manuals parsed from `sp2_etc_manual.ini.iop` |
 | `data/gears.json` | Gear data parsed from per-hero `*_item.ini.iop` / `*_extraitem.ini.iop` |
 | `data/medals.json` | Medal data parsed from `sp2_etc_manual.ini.iop` medal sections |
+| `data/pets.json` | Pet data parsed from `sp2_pet_info.ini.iop` |
+| `data/pet-feed-info.json` | Pet feed/rank material data parsed from `sp2_pet_eat_info.ini.iop` |
+| `data/pet-manuals.json` | Pet inventory manuals parsed from `sp2_pet_inven_manual.ini.iop` |
 | `data/ui-imageset.json` | UI texture imagesets |
 | `data/ui-icons.json` | Keyed icon lookup for UI sprites |
 | `data/images/heroes/` | Hero and gear image assets |
@@ -37,7 +40,9 @@ https://lostsaga-database.vercel.app
 - `/gears/[id]` — gear detail page with stats and skill info.
 - `/medals` — medal collection database with search, sub-type filter, manual filter, sort, and pagination.
 - `/medals/[id]` — medal detail page with stats, growth, and manual.
-- `/search` — global search across heroes, items, gears, and medals.
+- `/pets` — pet database with search, rank filters, sort, and pagination.
+- `/pets/[id]` — pet detail page with rank views, stats, feed info, and manual.
+- `/search` — global search across heroes, items, gears, medals, and pets.
 - `/tools/icon-browser` — UI sprite-sheet inspector.
 
 Filters, sort, and page state are persisted in the URL so results can be shared.
@@ -55,7 +60,7 @@ This will:
 
 - Fetch heroes from the Lost Saga API.
 - Download hero/gear and UI image assets.
-- Generate `data/hero.json`, `data/hero-local.json`, `data/etc-items.json`, `data/etc-manuals.json`, `data/medals.json`, `data/ui-imageset.json`, and `data/ui-icons.json`.
+- Generate `data/hero.json`, `data/hero-local.json`, `data/etc-items.json`, `data/etc-manuals.json`, `data/medals.json`, `data/pets.json`, `data/pet-feed-info.json`, `data/pet-manuals.json`, `data/ui-imageset.json`, and `data/ui-icons.json`.
 
 ### 2. Run the website locally
 

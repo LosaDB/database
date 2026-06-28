@@ -86,7 +86,8 @@ export default async function MedalPage({ params }: MedalPageProps) {
   const medal = medalById.get(Number(id));
   if (!medal || Number.isNaN(Number(id))) notFound();
 
-  const statLabels = ["STR", "AGI", "INT", "HP"];
+  const charGrowthLabels = ["Attack", "Defense", "Move Speed", "Dexterity"];
+  const itemGrowthLabels = ["Weapon", "Armor", "Helmet", "Cloak"];
 
   return (
     <>
@@ -160,11 +161,15 @@ export default async function MedalPage({ params }: MedalPageProps) {
           <div className="space-y-3">
             <Field
               label="Character Growth"
-              value={<GrowthRow values={medal.charGrowth} labels={statLabels} />}
+              value={
+                <GrowthRow values={medal.charGrowth} labels={charGrowthLabels} />
+              }
             />
             <Field
               label="Item Growth"
-              value={<GrowthRow values={medal.itemGrowth} labels={statLabels} />}
+              value={
+                <GrowthRow values={medal.itemGrowth} labels={itemGrowthLabels} />
+              }
             />
           </div>
 

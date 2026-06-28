@@ -20,7 +20,8 @@ export const metadata: Metadata = {
     default: "Lost Saga Database",
     template: "%s — Lost Saga Database",
   },
-  description: "Open-source Lost Saga heroes, gears, items, and assets.",
+  description:
+    "All-in-one Lost Saga database and toolset. Search heroes, gears, items, medals, pets, and assets — built by the community, for the community.",
   openGraph: {
     type: "website",
     siteName: "Lost Saga Database",

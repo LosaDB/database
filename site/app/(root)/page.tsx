@@ -11,6 +11,7 @@ import { heroes } from "@/lib/server/data";
 import { etcItems } from "@/lib/server/items";
 import { gears } from "@/lib/server/gears";
 import { medals } from "@/lib/server/medals";
+import { pets } from "@/lib/server/pets";
 import {
   ArrowRight,
   GitFork,
@@ -18,12 +19,13 @@ import {
   Package,
   Backpack,
   Shield,
+  Bone,
   Wrench,
   Search,
 } from "lucide-react";
 
 export const metadata = {
-  title: "Lost Saga Database — Heroes, Gears, Items & Medals",
+  title: "Lost Saga Database — Heroes, Gears, Items, Medals & Pets",
 };
 
 export default function HomePage() {
@@ -49,7 +51,7 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-3 text-lg font-semibold italic text-[#22c55e]">
-              Every hero. Every gear. Every item. Every medal.
+              All-in-one Lost Saga database and toolset — heroes, gears, items, medals, pets, and more.
             </p>
 
             <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground">
@@ -201,6 +203,31 @@ export default function HomePage() {
               name={medal.name}
               icon={medal.icon}
               label="View Medal"
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* Pets preview */}
+      <section className="mb-10">
+        <div className="ls-section-header mb-4">
+          <Bone className="h-5 w-5" />
+          <span>Pets</span>
+          <Link
+            href="/pets"
+            className="ml-auto text-xs font-bold text-white/80 hover:text-white hover:underline"
+          >
+            View All
+          </Link>
+        </div>
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
+          {pets.slice(0, 8).map((pet) => (
+            <PreviewCard
+              key={pet.id}
+              href={`/pets/${pet.id}`}
+              name={pet.views[0]?.name || `Pet #${pet.id}`}
+              icon={pet.views[0]?.icon ?? null}
+              label="View Pet"
             />
           ))}
         </div>

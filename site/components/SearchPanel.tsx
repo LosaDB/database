@@ -6,17 +6,26 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { PreviewCard } from "@/components/PreviewCard";
 import { ImageFallback } from "@/components/ImageFallback";
-import { Search, X, Users, Package, Backpack, Shield } from "lucide-react";
+import {
+  Search,
+  X,
+  Users,
+  Package,
+  Backpack,
+  Shield,
+  Bone,
+} from "lucide-react";
 import type { Hero } from "@/lib/data";
 import { getAssetUrl, getHeroCardImageCandidates } from "@/lib/data";
 import type { EtcItem } from "@/lib/items";
 import type { Gear } from "@/lib/gears";
 import type { Medal } from "@/lib/medals";
+import type { Pet } from "@/lib/pets";
 
 const PREVIEW_LIMIT = 8;
 const SELECTED_LIMIT = 48;
 
-type Category = "all" | "heroes" | "items" | "gears" | "medals";
+type Category = "all" | "heroes" | "items" | "gears" | "medals" | "pets";
 
 interface CategoryConfig {
   key: Category;
@@ -32,6 +41,7 @@ const categories: CategoryConfig[] = [
   { key: "items", label: "Items", icon: Package, href: "/items", color: "#a855f7" },
   { key: "gears", label: "Gears", icon: Backpack, href: "/gears", color: "#f59e0b" },
   { key: "medals", label: "Medals", icon: Shield, href: "/medals", color: "#ef4444" },
+  { key: "pets", label: "Pets", icon: Bone, href: "/pets", color: "#f97316" },
 ];
 
 interface SearchPanelProps {
@@ -39,6 +49,7 @@ interface SearchPanelProps {
   items: EtcItem[];
   gears: Gear[];
   medals: Medal[];
+  pets: Pet[];
   initialQuery: string;
   initialCategory: Category;
 }
@@ -90,6 +101,16 @@ function medalMatches(medal: Medal, query: string): boolean {
   );
 }
 
+function petMatches(pet: Pet, query: string): boolean {
+  if (!query) return false;
+  const q = query.toLowerCase();
+  return (
+    pet.views.some((v) => v.name.toLowerCase().includes(q)) ||
+    String(pet.id).includes(q) ||
+    pet.manual.toLowerCase().includes(q)
+  );
+}
+
 function HeroResultCard({ hero }: { hero: Hero }) {
   return (
     <Link href={`/heroes/${hero.code}`} className="group block">
@@ -125,6 +146,7 @@ export function SearchPanel({
   items,
   gears,
   medals,
+  pets,
   initialQuery,
   initialCategory,
 }: SearchPanelProps) {
@@ -172,17 +194,21 @@ export function SearchPanel({
       items: q ? items.filter((i) => itemMatches(i, q)) : [],
       gears: q ? gears.filter((g) => gearMatches(g, q)) : [],
       medals: q ? medals.filter((m) => medalMatches(m, q)) : [],
+      pets: q ? pets.filter((p) => petMatches(p, q)) : [],
     };
-  }, [heroes, items, gears, medals, query]);
+  }, [heroes, items, gears, medals, pets, query]);
 
   const totalCount =
     results.heroes.length +
     results.items.length +
     results.gears.length +
-    results.medals.length;
+    results.medals.length +
+    results.pets.length;
 
   const activeCategories =
-    category === "all" ? categories.slice(1) : categories.slice(1).filter((c) => c.key === category);
+    category === "all"
+      ? categories.slice(1)
+      : categories.slice(1).filter((c) => c.key === category);
 
   return (
     <div className="space-y-6">
@@ -191,7 +217,7 @@ export function SearchPanel({
           <Search className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
           <Input
             type="text"
-            placeholder="Search heroes, items, gears, and medals..."
+            placeholder="Search heroes, items, gears, medals, and pets..."
             value={query}
             onChange={(e) => handleQueryChange(e.target.value)}
             className="h-12 border-2 border-[var(--border)] bg-[#0b1120] pl-11 text-base placeholder:text-muted-foreground focus-visible:ring-primary/50"
@@ -241,7 +267,7 @@ export function SearchPanel({
 
       {!query.trim() && (
         <div className="py-16 text-center text-sm text-muted-foreground">
-          Enter a search term to find heroes, items, gears, and medals.
+          Enter a search term to find heroes, items, gears, medals, and pets.
         </div>
       )}
 
@@ -296,7 +322,7 @@ export function SearchPanel({
                       label="View Gear"
                     />
                   ))
-                ) : (
+                ) : cat.key === "medals" ? (
                   (preview as Medal[]).map((medal) => (
                     <PreviewCard
                       key={medal.id}
@@ -304,6 +330,16 @@ export function SearchPanel({
                       name={medal.name}
                       icon={medal.icon}
                       label="View Medal"
+                    />
+                  ))
+                ) : (
+                  (preview as Pet[]).map((pet) => (
+                    <PreviewCard
+                      key={pet.id}
+                      href={`/pets/${pet.id}`}
+                      name={pet.views[0]?.name || `Pet #${pet.id}`}
+                      icon={pet.views[0]?.icon ?? null}
+                      label="View Pet"
                     />
                   ))
                 )}
