@@ -92,8 +92,8 @@ export const iopPasswordPresets: IopPasswordPreset[] = [
     label: "Korea — Primary (iosuccess#@)",
     plaintext: "iosuccess#@",
     encrypted: [
-      -82, 113, 83, 71, 30, 71, 41, -105, 34, 127, 109, 19, 60, -14, 42, 118,
-      45, 120, 31, 31,
+      -105, 112, 108, 127, 62, 66, 9, -43, 53, 4, 64, 39, 70, -90, 108, 33,
+      93, 10, 31, 31,
     ],
   },
   {
@@ -101,8 +101,8 @@ export const iopPasswordPresets: IopPasswordPreset[] = [
     label: "Korea — Secondary (XrFrI0%3BF%!0Dcx$30-)",
     plaintext: "XrFrI0%3BF%!0Dcx$30-",
     encrypted: [
-      -102, 111, 44, 95, 11, 121, 31, -33, 18, 101, 116, 72, 117, -112, 26,
-      117, 111, 109, 31, 31,
+      -90, 109, 89, 120, 20, 17, 73, -107, 4, 97, 37, 6, 118, -30, 15, 89,
+      121, 57, 47, 50,
     ],
   },
   {
@@ -160,24 +160,6 @@ export const iopPasswordPresets: IopPasswordPreset[] = [
     ],
   },
   {
-    code: "jp-0",
-    label: "Japan — Primary (EDgei%^df930%#fj!_=])",
-    plaintext: "EDgei%^df930%#fj!_=]",
-    encrypted: [
-      -69, 91, 120, 111, 52, 4, 50, -62, 32, 30, 51, 23, 99, -123, 10, 75,
-      124, 85, 34, 66,
-    ],
-  },
-  {
-    code: "jp-1",
-    label: "Japan — Secondary (@7$gjTRreie][!323O++)",
-    plaintext: "@7$gjTRreie][!323O++",
-    encrypted: [
-      -66, 40, 59, 109, 55, 117, 62, -44, 35, 78, 101, 122, 29, -121, 95, 19,
-      110, 69, 52, 52,
-    ],
-  },
-  {
     code: "th-0",
     label: "Thailand — Primary (K3$dls49YU#$#eoE3054)",
     plaintext: "K3$dls49YU#$#eoE3054",
@@ -196,6 +178,60 @@ export const iopPasswordPresets: IopPasswordPreset[] = [
     ],
   },
   {
+    code: "jp-0",
+    label: "Japan — Primary (EDgei%^df930%#fj!_=])",
+    plaintext: "EDgei%^df930%#fj!_=]",
+    encrypted: [
+      -69, 91, 120, 111, 52, 4, 50, -62, 32, 30, 51, 23, 99, -123, 10, 75,
+      124, 85, 34, 66,
+    ],
+  },
+  {
+    code: "jp-1",
+    label: "Japan — Secondary (@7$gjTRreie][!323O++)",
+    plaintext: "@7$gjTRreie][!323O++",
+    encrypted: [
+      -66, 40, 59, 109, 55, 117, 62, -44, 35, 78, 101, 122, 29, -121, 95, 19,
+      110, 69, 52, 52,
+    ],
+  },
+  {
+    code: "sg-0",
+    label: "Singapore — Primary (EDgei%^df930%#fj!_=])",
+    plaintext: "EDgei%^df930%#fj!_=]",
+    encrypted: [
+      -69, 91, 120, 111, 52, 4, 50, -62, 32, 30, 51, 23, 99, -123, 10, 75,
+      124, 85, 34, 66,
+    ],
+  },
+  {
+    code: "sg-1",
+    label: "Singapore — Secondary (@7$gjTRreie][!323O++)",
+    plaintext: "@7$gjTRreie][!323O++",
+    encrypted: [
+      -66, 40, 59, 109, 55, 117, 62, -44, 35, 78, 101, 122, 29, -121, 95, 19,
+      110, 69, 52, 52,
+    ],
+  },
+  {
+    code: "ph-0",
+    label: "Philippine — Primary (-)4TRfkl-41$%dgkrm05)",
+    plaintext: "-)4TRfkl-41$%dgkrm05",
+    encrypted: [
+      -45, 54, 43, 94, 15, 71, 7, -54, 107, 19, 49, 3, 99, -62, 11, 74, 47,
+      103, 47, 42,
+    ],
+  },
+  {
+    code: "ph-1",
+    label: "Philippine — Secondary (|059rtuGReowo@##tkg0)",
+    plaintext: "|059rtuGReowo@##tkg0",
+    encrypted: [
+      -126, 47, 42, 51, 47, 85, 25, -31, 20, 66, 111, 80, 41, -26, 79, 2, 41,
+      97, 120, 47,
+    ],
+  },
+  {
     code: "cn-0",
     label: "China — Primary (-)4TRfkl-41$%dgkrm05)",
     plaintext: "-)4TRfkl-41$%dgkrm05",
@@ -211,6 +247,60 @@ export const iopPasswordPresets: IopPasswordPreset[] = [
     encrypted: [
       -126, 47, 42, 51, 47, 85, 25, -31, 20, 66, 111, 80, 41, -26, 79, 2, 41,
       97, 120, 47,
+    ],
+  },
+  {
+    code: "eu-0",
+    label: "EU — Primary (Efedf12-Asv)",
+    plaintext: "Efedf12-Asv",
+    encrypted: [
+      -69, 121, 122, 110, 59, 16, 94, -117, 7, 84, 118, 39, 70, -90, 108, 33,
+      93, 10, 31, 31,
+    ],
+  },
+  {
+    code: "eu-1",
+    label: "EU — Secondary (fegG-24qw##4dfe52%3*)",
+    plaintext: "fegG-24qw##4dfe52%3*",
+    encrypted: [
+      -104, 122, 120, 77, 112, 19, 88, -41, 49, 4, 35, 19, 34, -64, 9, 20,
+      111, 47, 44, 53,
+    ],
+  },
+  {
+    code: "latin-0",
+    label: "Latin America — Primary (dus!qhdaksl)",
+    plaintext: "dus!qhdaksl",
+    encrypted: [
+      -102, 106, 108, 43, 44, 73, 8, -57, 45, 84, 108, 39, 70, -90, 108, 33,
+      93, 10, 31, 31,
+    ],
+  },
+  {
+    code: "latin-1",
+    label: "Latin America — Secondary (tkdjqqn!dlfEhrqkfhgo)",
+    plaintext: "tkdjqqn!dlfEhrqkfhgo",
+    encrypted: [
+      -118, 116, 123, 96, 44, 80, 2, -121, 34, 75, 102, 98, 46, -44, 29, 74,
+      59, 98, 120, 112,
+    ],
+  },
+  {
+    code: "br-0",
+    label: "Brazil — Primary (dus!qhdaksl)",
+    plaintext: "dus!qhdaksl",
+    encrypted: [
+      -102, 106, 108, 43, 44, 73, 8, -57, 45, 84, 108, 39, 70, -90, 108, 33,
+      93, 10, 31, 31,
+    ],
+  },
+  {
+    code: "br-1",
+    label: "Brazil — Secondary (tkdjqqn!dlfEhrqkfhgo)",
+    plaintext: "tkdjqqn!dlfEhrqkfhgo",
+    encrypted: [
+      -118, 116, 123, 96, 44, 80, 2, -121, 34, 75, 102, 98, 46, -44, 29, 74,
+      59, 98, 120, 112,
     ],
   },
 ];
