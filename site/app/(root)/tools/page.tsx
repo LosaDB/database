@@ -96,11 +96,11 @@ const allTools: Tool[] = [
     category: "Creation Tools",
   },
   {
-    href: "#",
+    href: "/tools/pass-generator",
     label: "Password Generator",
-    description: "Encrypt and decrypt passwords for configuration files.",
+    description: "Encrypt and decrypt IOP archive passwords using the client cipher.",
     icon: Key,
-    available: false,
+    available: true,
     category: "Developer Utilities",
   },
   {

@@ -201,7 +201,7 @@ pnpm run fetch-data
 
 - [x] Icon browser (`/tools/icon-browser`)
 - [x] Quest generator (`/tools/quest-generator`)
-- [ ] Pass generator (`/tools/pass-generator`)
+- [x] Pass generator (`/tools/pass-generator`)
 - [ ] SRV ID generator (`/tools/srv-id-generator`)
 
 ### Phase 4 — Community Features
