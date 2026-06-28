@@ -1,6 +1,7 @@
 import { Scroll } from "lucide-react";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { QuestGenerator } from "@/components/QuestGenerator";
+import { questPresents } from "@/lib/server/quest-presents";
 
 export const metadata = {
   title: "Quest Generator — Lost Saga Database",
@@ -32,6 +33,9 @@ export default function QuestGeneratorPage() {
       <div className="ls-section-header mb-4">
         <Scroll className="h-5 w-5" />
         <span>Quest Generator</span>
+        <span className="ml-2 rounded bg-yellow-500/20 px-1.5 py-0.5 text-[10px] font-black uppercase tracking-wide text-yellow-400">
+          Beta
+        </span>
       </div>
 
       <p className="mb-6 text-sm text-muted-foreground">
@@ -41,7 +45,7 @@ export default function QuestGeneratorPage() {
         the generated INI snippet on the right.
       </p>
 
-      <QuestGenerator />
+      <QuestGenerator presents={questPresents} />
     </>
   );
 }

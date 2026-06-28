@@ -29,6 +29,8 @@ import {
   generateQuestIni,
   downloadIni,
 } from "@/lib/quest";
+import { QuestPreview } from "@/components/QuestPreview";
+import { type QuestPresentInfo } from "@/lib/quest-present";
 
 const MONTH_OPTIONS = Array.from({ length: 12 }, (_, i) => ({
   value: i + 1,
@@ -263,7 +265,11 @@ function DateTimeField({
   );
 }
 
-export function QuestGenerator() {
+export function QuestGenerator({
+  presents,
+}: {
+  presents: Record<number, QuestPresentInfo>;
+}) {
   const [quest, setQuest] = useState<Quest>(createDefaultQuest());
   const [activeSub, setActiveSub] = useState(1);
   const [copied, setCopied] = useState(false);
@@ -478,6 +484,14 @@ export function QuestGenerator() {
       </div>
 
       <section className="ls-card flex flex-col gap-4 p-5 lg:sticky lg:top-4 lg:h-fit lg:self-start">
+        <div className="ls-section-header">
+          <Scroll className="h-4 w-4" />
+          <span className="text-sm">Preview</span>
+        </div>
+        <QuestPreview quest={quest} presents={presents} />
+
+        <div className="border-t border-[var(--border)]" />
+
         <div className="ls-section-header">
           <Scroll className="h-4 w-4" />
           <span className="text-sm">Generated INI</span>
