@@ -14,13 +14,16 @@ interface HeroPageProps {
   params: Promise<{ server: string; code: string }>;
 }
 
+export const revalidate = 604800; // 7 hari
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
   const params: Array<{ server: string; code: string }> = [];
 
   for (const server of SERVERLIST) {
     try {
       const heroByCode = await loadHeroByCode(server.alias);
-      for (const code of heroByCode.keys()) {
+      for (const [code] of Array.from(heroByCode.entries()).slice(0, 48)) {
         params.push({ server: server.alias, code });
       }
     } catch {

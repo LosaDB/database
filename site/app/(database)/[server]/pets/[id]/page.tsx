@@ -17,6 +17,9 @@ interface PetPageProps {
   params: Promise<{ server: string; id: string }>;
 }
 
+export const revalidate = 604800; // 7 hari
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
   const params: Array<{ server: string; id: string }> = [];
 
@@ -24,7 +27,7 @@ export async function generateStaticParams() {
     try {
       const pets = await loadPets(server.alias);
       params.push(
-        ...pets.map((pet) => ({
+        ...pets.slice(0, 48).map((pet) => ({
           server: server.alias,
           id: String(pet.id),
         })),

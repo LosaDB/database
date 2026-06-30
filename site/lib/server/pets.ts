@@ -1,10 +1,8 @@
-import { readFile } from "node:fs/promises";
 import type { Pet, PetFeedRank, PetManual } from "@/lib/pets";
-import { getServerDataPath } from "./path";
+import { loadServerData } from "./data-source";
 
 async function readPets(alias: string): Promise<Pet[]> {
-  const raw = await readFile(getServerDataPath(alias, "pets.json"), "utf8");
-  return JSON.parse(raw) as Pet[];
+  return loadServerData<Pet[]>(alias, "pets.json");
 }
 
 export async function loadPets(alias: string): Promise<Pet[]> {
@@ -19,21 +17,13 @@ export async function loadPetById(alias: string): Promise<Map<number, Pet>> {
 export async function loadPetFeedRanks(
   alias: string,
 ): Promise<PetFeedRank[]> {
-  const raw = await readFile(
-    getServerDataPath(alias, "pet-feed-info.json"),
-    "utf8",
-  );
-  return JSON.parse(raw) as PetFeedRank[];
+  return loadServerData<PetFeedRank[]>(alias, "pet-feed-info.json");
 }
 
 async function readPetManualsRecord(
   alias: string,
 ): Promise<Record<number, PetManual>> {
-  const raw = await readFile(
-    getServerDataPath(alias, "pet-manuals.json"),
-    "utf8",
-  );
-  return JSON.parse(raw) as Record<number, PetManual>;
+  return loadServerData<Record<number, PetManual>>(alias, "pet-manuals.json");
 }
 
 export async function loadPetManuals(alias: string): Promise<PetManual[]> {

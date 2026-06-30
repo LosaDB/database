@@ -11,6 +11,8 @@ export const metadata = {
     "Browse every medal, rank badge, and medal inventory item in Lost Saga.",
 };
 
+export const revalidate = 604800; // 7 hari
+
 export default async function MedalsPage({
   params,
   searchParams,

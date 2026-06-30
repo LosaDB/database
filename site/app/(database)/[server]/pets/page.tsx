@@ -11,6 +11,8 @@ export const metadata = {
     "Browse every pet, rank, and pet ability in Lost Saga.",
 };
 
+export const revalidate = 604800; // 7 hari
+
 export default async function PetsPage({
   params,
   searchParams,

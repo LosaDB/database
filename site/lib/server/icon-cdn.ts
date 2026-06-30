@@ -1,10 +1,8 @@
-import { readFile } from "node:fs/promises";
 import { buildIconMap, type IconCdnEntry, type IconCdnMap } from "@/lib/ui-icons";
-import { getServerDataPath } from "./path";
+import { loadServerData } from "./data-source";
 
 export async function loadIconCdn(alias: string): Promise<IconCdnMap> {
-  const raw = await readFile(getServerDataPath(alias, "icon-cdn.json"), "utf8");
-  const entries = JSON.parse(raw) as IconCdnEntry[];
+  const entries = await loadServerData<IconCdnEntry[]>(alias, "icon-cdn.json");
 
   if (!Array.isArray(entries)) {
     throw new Error(

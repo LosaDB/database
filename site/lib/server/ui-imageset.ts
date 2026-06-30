@@ -1,13 +1,8 @@
-import { readFile } from "node:fs/promises";
 import type { UIImageset } from "@/lib/ui-icons";
-import { getServerDataPath } from "./path";
+import { loadServerData } from "./data-source";
 
 export async function loadUIImagesets(alias: string): Promise<UIImageset[]> {
-  const raw = await readFile(
-    getServerDataPath(alias, "ui-imageset.json"),
-    "utf8",
-  );
-  const imagesets = JSON.parse(raw) as UIImageset[];
+  const imagesets = await loadServerData<UIImageset[]>(alias, "ui-imageset.json");
 
   if (!Array.isArray(imagesets)) {
     throw new Error(

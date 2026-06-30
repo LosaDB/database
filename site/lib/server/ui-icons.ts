@@ -1,10 +1,8 @@
-import { readFile } from "node:fs/promises";
 import { buildIconMap, type UIIcon, type UIIconsMap } from "@/lib/ui-icons";
-import { getServerDataPath } from "./path";
+import { loadServerData } from "./data-source";
 
 export async function loadUIIcons(alias: string): Promise<UIIconsMap> {
-  const raw = await readFile(getServerDataPath(alias, "ui-icons.json"), "utf8");
-  const icons = JSON.parse(raw) as UIIcon[];
+  const icons = await loadServerData<UIIcon[]>(alias, "ui-icons.json");
 
   if (!Array.isArray(icons)) {
     throw new Error(

@@ -1,10 +1,8 @@
-import { readFile } from "node:fs/promises";
 import type { Gear } from "@/lib/gears";
-import { getServerDataPath } from "./path";
+import { loadServerData } from "./data-source";
 
 async function readGears(alias: string): Promise<Gear[]> {
-  const raw = await readFile(getServerDataPath(alias, "gears.json"), "utf8");
-  return JSON.parse(raw) as Gear[];
+  return loadServerData<Gear[]>(alias, "gears.json");
 }
 
 export async function loadGears(alias: string): Promise<Gear[]> {

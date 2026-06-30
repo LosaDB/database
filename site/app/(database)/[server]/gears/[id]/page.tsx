@@ -13,6 +13,9 @@ interface GearPageProps {
   params: Promise<{ server: string; id: string }>;
 }
 
+export const revalidate = 604800; // 7 hari
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
   const params: Array<{ server: string; id: string }> = [];
 
@@ -20,7 +23,7 @@ export async function generateStaticParams() {
     try {
       const gears = await loadGears(server.alias);
       params.push(
-        ...gears.slice(0, 200).map((gear) => ({
+        ...gears.slice(0, 48).map((gear) => ({
           server: server.alias,
           id: String(gear.id),
         })),
