@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import {
@@ -33,11 +34,10 @@ function getIconKey(entry: IconCdnEntry): string {
   return `${entry.imageset}#${entry.name}`;
 }
 
-function sortedIconKeys(entries: IconCdnEntry[]): string[] {
+function iconKeys(entries: IconCdnEntry[]): string[] {
   return entries
     .filter((icon) => icon.width > 0 && icon.height > 0)
-    .map(getIconKey)
-    .sort((a, b) => a.localeCompare(b));
+    .map(getIconKey);
 }
 
 function buildIconMap(entries: IconCdnEntry[]): Map<string, IconCdnEntry> {
@@ -59,7 +59,7 @@ export function IconCdnBrowser({
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
 
   const iconsByKey = useMemo(() => buildIconMap(initialData), [initialData]);
-  const allKeys = useMemo(() => sortedIconKeys(initialData), [initialData]);
+  const allKeys = useMemo(() => iconKeys(initialData), [initialData]);
 
   const filteredKeys = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -176,19 +176,20 @@ export function IconCdnBrowser({
           </div>
 
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-start">
-            <div className="flex h-32 w-32 items-center justify-center rounded-lg border-2 border-[var(--border)] bg-[#0b1120] p-2">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+            <div className="relative flex h-32 w-32 items-center justify-center rounded-lg border-2 border-[var(--border)] bg-[#0b1120] p-2">
+              <Image
                 src={selectedIcon.iconPngUrl}
                 alt={selectedKey ?? ""}
-                className="max-h-full max-w-full object-contain"
+                fill
+                sizes="128px"
+                className="object-contain"
                 style={{ imageRendering: "pixelated" }}
               />
             </div>
 
             <div className="min-w-0 flex-1 space-y-3">
               <div>
-                <p className="mb-1 text-[10px] font-bold uppercase text-muted-foreground">
+                <p className="mb-1 font-bold uppercase text-muted-foreground">
                   Key
                 </p>
                 <div className="flex items-center gap-2">
@@ -243,7 +244,7 @@ export function IconCdnBrowser({
         </div>
       ) : (
         <>
-          <div className="grid grid-cols-9 gap-2">
+          <div className="grid grid-cols-4 lg:grid-cols-9 gap-2">
             {paginatedKeys.map((key) => {
               const icon = iconsByKey.get(key);
               if (!icon) return null;
@@ -255,18 +256,22 @@ export function IconCdnBrowser({
                   type="button"
                   onClick={() => setSelectedKey(key)}
                   className={`group relative flex aspect-square items-center justify-center rounded border-2 bg-[#0b1120] p-1 transition-colors hover:border-primary/50 ${
-                    isSelected ? "border-primary" : "border-[var(--border)]"
+                    isSelected
+                      ? "border-primary"
+                      : "border-[var(--border)] cursor-pointer"
                   }`}
                   title={key}
                 >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={icon.iconPngUrl}
                     alt={key}
-                    loading="lazy"
+                    width={icon.width}
+                    height={icon.height}
+                    sizes="(max-width: 1024px) 25vw, 12vw"
+                    loading="eager"
                     decoding="async"
                     draggable={false}
-                    className="max-h-full max-w-full object-contain"
+                    className="object-contain w-auto"
                     style={{ imageRendering: "pixelated" }}
                   />
                 </button>

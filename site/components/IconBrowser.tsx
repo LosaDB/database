@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import {
@@ -14,7 +15,7 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
-import { UIIcon, UIImageset, type UIIconsMap } from "@/lib/ui-icons";
+import { UIIcon, UIImageset, type UIIconsMap, getIconCdnUrl } from "@/lib/ui-icons";
 
 const IMAGESET_PAGE_SIZE = 48;
 
@@ -27,21 +28,16 @@ function IconSprite({ icon }: { icon: UIIcon }) {
         height: icon.height,
       }}
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={icon.pngUrl}
+      <Image
+        src={getIconCdnUrl(icon.imageset, icon.name)}
         alt={`${icon.imageset}#${icon.name}`}
+        width={icon.width}
+        height={icon.height}
         loading="lazy"
         decoding="async"
         draggable={false}
-        className="absolute left-0 top-0"
-        style={{
-          width: icon.width,
-          height: icon.height,
-          objectFit: "none",
-          objectPosition: `${-icon.x}px ${-icon.y}px`,
-          imageRendering: "pixelated",
-        }}
+        className="object-contain"
+        style={{ imageRendering: "pixelated" }}
       />
     </div>
   );

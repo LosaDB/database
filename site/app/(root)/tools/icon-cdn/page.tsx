@@ -5,6 +5,8 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { Cloud } from "lucide-react";
 import type { IconCdnEntry } from "@/lib/ui-icons";
 
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "LSIcon CDN — Lost Saga Database",
   description:
@@ -15,6 +17,8 @@ export default async function IconCdnPage() {
   const filePath = path.join(process.cwd(), "..", "data", "icon-cdn.json");
   const raw = await readFile(filePath, "utf-8");
   const icons = JSON.parse(raw) as IconCdnEntry[];
+  // eslint-disable-next-line react-hooks/purity -- dynamic per-request shuffle
+  const shuffled = [...icons].sort(() => Math.random() - 0.5);
 
   return (
     <>
@@ -30,7 +34,7 @@ export default async function IconCdnPage() {
         <span>LSIcon CDN</span>
       </div>
 
-      <IconCdnBrowser initialData={icons} />
+      <IconCdnBrowser initialData={shuffled} />
     </>
   );
 }

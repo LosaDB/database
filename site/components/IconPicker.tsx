@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useRef, useState } from "react";
+import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { getIconKey, type IconCdnEntry, type IconCdnMap } from "@/lib/ui-icons";
 import { Search, ChevronDown, Check } from "lucide-react";
@@ -16,25 +17,17 @@ function CdnIconThumb({
   icon: IconCdnEntry;
   size: number;
 }) {
-  const scale = Math.min(
-    size / Math.max(icon.width, icon.height, 1),
-    1,
-  );
-  const width = Math.floor(icon.width * scale);
-  const height = Math.floor(icon.height * scale);
-
   return (
     <div
       style={{ width: size, height: size }}
       className="relative flex shrink-0 items-center justify-center overflow-hidden rounded border border-[var(--border)] bg-[#0b1120]"
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         src={icon.iconPngUrl}
         alt={icon.name}
-        width={width}
-        height={height}
-        className="max-h-full max-w-full object-contain"
+        fill
+        sizes={`${size}px`}
+        className="object-contain"
         style={{ imageRendering: "pixelated" }}
       />
     </div>

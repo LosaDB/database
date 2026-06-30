@@ -36,6 +36,13 @@ export interface IconCdnEntry {
 export type UIIconsMap = Record<string, UIIcon>;
 export type IconCdnMap = Record<string, IconCdnEntry>;
 
+const ICON_CDN_BASE =
+  "https://cdn.jsdelivr.net/gh/rifadev26/lostsaga-database@main/data/images/icon";
+
+export function getIconCdnUrl(imageset: string, name: string): string {
+  return `${ICON_CDN_BASE}/${encodeURIComponent(`${imageset}#${name}`)}.png`;
+}
+
 interface IconWithKey {
   imageset: string;
   name: string;

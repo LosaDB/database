@@ -1,12 +1,10 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { type Quest } from "@/lib/quest";
-import {
-  type QuestPresentInfo,
-  formatPresentLabel,
-} from "@/lib/quest-present";
+import { type QuestPresentInfo, formatPresentLabel } from "@/lib/quest-present";
 import { type IconCdnEntry, type IconCdnMap } from "@/lib/ui-icons";
 import {
   Coins,
@@ -53,27 +51,27 @@ const PRESENT_COLORS: Record<number, string> = {
   9: "text-blue-600",
 };
 
-function formatDate(date: { year: number; month: number; date: number; hour: number }) {
+function formatDate(date: {
+  year: number;
+  month: number;
+  date: number;
+  hour: number;
+}) {
   return `${date.year}-${String(date.month).padStart(2, "0")}-${String(date.date).padStart(2, "0")} ${String(date.hour).padStart(2, "0")}:00`;
 }
 
-function CdnIconImage({
-  icon,
-  size,
-}: {
-  icon: IconCdnEntry;
-  size: number;
-}) {
+function CdnIconImage({ icon, size }: { icon: IconCdnEntry; size: number }) {
   return (
     <div
-      className="flex items-center justify-center overflow-hidden"
+      className="relative flex items-center justify-center overflow-hidden"
       style={{ width: size, height: size }}
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         src={icon.iconPngUrl}
         alt={icon.name}
-        className="max-h-full max-w-full object-contain"
+        fill
+        sizes={`${size}px`}
+        className="object-contain"
         style={{ imageRendering: "pixelated" }}
       />
     </div>
@@ -130,7 +128,7 @@ function RewardSlot({
   theme: "normal" | "event";
 }) {
   const Icon = present
-    ? PRESENT_ICONS[present.type] ?? HelpCircle
+    ? (PRESENT_ICONS[present.type] ?? HelpCircle)
     : undefined;
 
   return (
@@ -226,7 +224,6 @@ export function QuestPreview({ quest, presents, icons }: QuestPreviewProps) {
   const descriptionLines = useMemo(() => {
     if (!sub) return [];
     const lines: string[] = [];
-    if (sub.title) lines.push(sub.title);
     if (sub.progress) {
       sub.progress.split(/\\n|\n/).forEach((line) => {
         if (line.trim()) lines.push(line.trim());

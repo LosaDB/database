@@ -1,6 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import type { ItemIcon } from "@/lib/items";
+import { getIconCdnUrl } from "@/lib/ui-icons";
 
 interface ItemIconProps {
   icon: ItemIcon;
@@ -22,21 +24,16 @@ export function ItemIcon({ icon, maxSize = 48, className }: ItemIconProps) {
         height: scaledHeight,
       }}
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={icon.pngUrl}
+      <Image
+        src={getIconCdnUrl(icon.imageset, icon.name)}
         alt={icon.name}
+        width={scaledWidth}
+        height={scaledHeight}
         loading="lazy"
         decoding="async"
         draggable={false}
-        className="absolute left-0 top-0 max-w-none max-h-none"
-        style={{
-          marginLeft: Math.round(-icon.x * scale),
-          marginTop: Math.round(-icon.y * scale),
-          transform: `scale(${scale})`,
-          transformOrigin: "top left",
-          imageRendering: "pixelated",
-        }}
+        className="object-contain"
+        style={{ imageRendering: "pixelated" }}
       />
     </div>
   );

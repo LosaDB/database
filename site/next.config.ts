@@ -9,6 +9,8 @@ const nextConfig: NextConfig = {
         hostname: "cdn.jsdelivr.net",
       },
     ],
+    qualities: [100],
+    formats: ["image/webp"],
   },
 };
 
