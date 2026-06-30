@@ -1,11 +1,10 @@
 import { notFound } from "next/navigation";
 import { Separator } from "@/components/ui/separator";
 import { Breadcrumb } from "@/components/Breadcrumb";
-import { loadGearById, loadGears } from "@/lib/server/gears";
+import { loadGearById } from "@/lib/server/gears";
 import { ItemIcon } from "@/components/ItemIcon";
 import { ImageFallback } from "@/components/ImageFallback";
 import { Swords, Info } from "lucide-react";
-import { SERVERLIST } from "@/lib/servers";
 import { serverBreadcrumb } from "@/lib/breadcrumb";
 import { resolveServerParam } from "@/lib/server/params";
 
@@ -13,25 +12,7 @@ interface GearPageProps {
   params: Promise<{ server: string; id: string }>;
 }
 
-export async function generateStaticParams() {
-  const params: Array<{ server: string; id: string }> = [];
-
-  for (const server of SERVERLIST) {
-    try {
-      const gears = await loadGears(server.alias);
-      params.push(
-        ...gears.slice(0, 200).map((gear) => ({
-          server: server.alias,
-          id: String(gear.id),
-        })),
-      );
-    } catch {
-      // Skip alias with no data yet.
-    }
-  }
-
-  return params;
-}
+export const revalidate = 3600;
 
 function truncateDescription(text: string, max = 155): string {
   const normalized = text.replace(/\s+/g, " ").trim();

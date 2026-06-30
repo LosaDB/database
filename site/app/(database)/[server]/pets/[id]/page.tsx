@@ -4,12 +4,10 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import {
   loadPetById,
   loadPetFeedRanks,
-  loadPets,
   petStatLabels,
 } from "@/lib/server/pets";
 import { ItemIcon } from "@/components/ItemIcon";
 import { Bone, Info, BookOpen, Utensils } from "lucide-react";
-import { SERVERLIST } from "@/lib/servers";
 import { serverBreadcrumb } from "@/lib/breadcrumb";
 import { resolveServerParam } from "@/lib/server/params";
 
@@ -17,25 +15,7 @@ interface PetPageProps {
   params: Promise<{ server: string; id: string }>;
 }
 
-export async function generateStaticParams() {
-  const params: Array<{ server: string; id: string }> = [];
-
-  for (const server of SERVERLIST) {
-    try {
-      const pets = await loadPets(server.alias);
-      params.push(
-        ...pets.map((pet) => ({
-          server: server.alias,
-          id: String(pet.id),
-        })),
-      );
-    } catch {
-      // Skip alias with no data yet.
-    }
-  }
-
-  return params;
-}
+export const revalidate = 3600;
 
 function truncateDescription(text: string, max = 155): string {
   const normalized = text.replace(/\s+/g, " ").trim();

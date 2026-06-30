@@ -1,10 +1,9 @@
 import { notFound } from "next/navigation";
 import { Separator } from "@/components/ui/separator";
 import { Breadcrumb } from "@/components/Breadcrumb";
-import { loadMedalById, loadMedals } from "@/lib/server/medals";
+import { loadMedalById } from "@/lib/server/medals";
 import { ItemIcon } from "@/components/ItemIcon";
 import { Shield, Info, BookOpen, Award } from "lucide-react";
-import { SERVERLIST } from "@/lib/servers";
 import { serverBreadcrumb } from "@/lib/breadcrumb";
 import { resolveServerParam } from "@/lib/server/params";
 
@@ -12,25 +11,7 @@ interface MedalPageProps {
   params: Promise<{ server: string; id: string }>;
 }
 
-export async function generateStaticParams() {
-  const params: Array<{ server: string; id: string }> = [];
-
-  for (const server of SERVERLIST) {
-    try {
-      const medals = await loadMedals(server.alias);
-      params.push(
-        ...medals.slice(0, 200).map((medal) => ({
-          server: server.alias,
-          id: String(medal.id),
-        })),
-      );
-    } catch {
-      // Skip alias with no data yet.
-    }
-  }
-
-  return params;
-}
+export const revalidate = 3600;
 
 function truncateDescription(text: string, max = 155): string {
   const normalized = text.replace(/\s+/g, " ").trim();

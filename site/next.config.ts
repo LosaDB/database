@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "cdn.jsdelivr.net",
-        pathname: "/gh/rifadev26/lostsaga-assets/**",
+        pathname: "/gh/rifadev26/lostsaga-assets@*/**",
       },
     ],
   },

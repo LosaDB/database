@@ -6,7 +6,6 @@ import { loadHeroByCode } from "@/lib/server/data";
 import { ImageFallback } from "@/components/ImageFallback";
 import { HeroImageGallery } from "@/components/HeroImageGallery";
 import { Swords, Shield } from "lucide-react";
-import { SERVERLIST } from "@/lib/servers";
 import { serverBreadcrumb } from "@/lib/breadcrumb";
 import { resolveServerParam } from "@/lib/server/params";
 
@@ -14,22 +13,7 @@ interface HeroPageProps {
   params: Promise<{ server: string; code: string }>;
 }
 
-export async function generateStaticParams() {
-  const params: Array<{ server: string; code: string }> = [];
-
-  for (const server of SERVERLIST) {
-    try {
-      const heroByCode = await loadHeroByCode(server.alias);
-      for (const code of heroByCode.keys()) {
-        params.push({ server: server.alias, code });
-      }
-    } catch {
-      // Server data not available yet; skip static params for this alias.
-    }
-  }
-
-  return params;
-}
+export const revalidate = 3600;
 
 export async function generateMetadata({ params }: HeroPageProps) {
   const { server, code } = await params;
