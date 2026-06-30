@@ -11,8 +11,6 @@ export const metadata = {
     "Browse every weapon, armor, helmet, and cloak in Lost Saga.",
 };
 
-export const revalidate = 604800; // 7 hari
-
 export default async function GearsPage({
   params,
   searchParams,

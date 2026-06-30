@@ -27,8 +27,6 @@ interface ServerHomePageProps {
   params: Promise<{ server: string }>;
 }
 
-export const revalidate = 604800; // 7 hari
-
 export async function generateMetadata({ params }: ServerHomePageProps) {
   const { server: rawServer } = await params;
   const serverInfo = SERVERLIST.find(

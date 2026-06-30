@@ -1,8 +1,10 @@
+import { readFile } from "node:fs/promises";
 import type { Medal } from "@/lib/medals";
-import { loadServerData } from "./data-source";
+import { getServerDataPath } from "./path";
 
 async function readMedals(alias: string): Promise<Medal[]> {
-  return loadServerData<Medal[]>(alias, "medals.json");
+  const raw = await readFile(getServerDataPath(alias, "medals.json"), "utf8");
+  return JSON.parse(raw) as Medal[];
 }
 
 export async function loadMedals(alias: string): Promise<Medal[]> {

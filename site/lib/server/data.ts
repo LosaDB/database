@@ -1,4 +1,5 @@
-import { loadServerData } from "./data-source";
+import { readFile } from "node:fs/promises";
+import { getServerDataPath } from "./path";
 
 export interface Skill {
   name: string;
@@ -43,7 +44,8 @@ export interface Hero {
 }
 
 async function readHeroes(alias: string): Promise<Hero[]> {
-  return loadServerData<Hero[]>(alias, "mercenary.json");
+  const raw = await readFile(getServerDataPath(alias, "mercenary.json"), "utf8");
+  return JSON.parse(raw) as Hero[];
 }
 
 export async function loadHeroes(alias: string): Promise<Hero[]> {

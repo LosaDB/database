@@ -12,9 +12,6 @@ interface MedalPageProps {
   params: Promise<{ server: string; id: string }>;
 }
 
-export const revalidate = 604800; // 7 hari
-export const dynamicParams = true;
-
 export async function generateStaticParams() {
   const params: Array<{ server: string; id: string }> = [];
 
@@ -22,7 +19,7 @@ export async function generateStaticParams() {
     try {
       const medals = await loadMedals(server.alias);
       params.push(
-        ...medals.slice(0, 48).map((medal) => ({
+        ...medals.slice(0, 200).map((medal) => ({
           server: server.alias,
           id: String(medal.id),
         })),

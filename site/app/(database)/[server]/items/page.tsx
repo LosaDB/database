@@ -11,8 +11,6 @@ export const metadata = {
     "Browse every consumable, material, and collectible etc item in Lost Saga.",
 };
 
-export const revalidate = 604800; // 7 hari
-
 export default async function ItemsPage({
   params,
   searchParams,

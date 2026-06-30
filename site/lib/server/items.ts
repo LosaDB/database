@@ -1,14 +1,20 @@
+import { readFile } from "node:fs/promises";
 import type { EtcItem, ManualEntry } from "@/lib/items";
-import { loadServerData } from "./data-source";
+import { getServerDataPath } from "./path";
 
 async function readItems(alias: string): Promise<EtcItem[]> {
-  return loadServerData<EtcItem[]>(alias, "etc-items.json");
+  const raw = await readFile(getServerDataPath(alias, "etc-items.json"), "utf8");
+  return JSON.parse(raw) as EtcItem[];
 }
 
 async function readManualsRecord(
   alias: string,
 ): Promise<Record<number, ManualEntry>> {
-  return loadServerData<Record<number, ManualEntry>>(alias, "etc-manuals.json");
+  const raw = await readFile(
+    getServerDataPath(alias, "etc-manuals.json"),
+    "utf8",
+  );
+  return JSON.parse(raw) as Record<number, ManualEntry>;
 }
 
 export async function loadItems(alias: string): Promise<EtcItem[]> {

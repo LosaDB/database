@@ -13,8 +13,6 @@ export const metadata = {
   title: "Heroes — Lost Saga Database",
 };
 
-export const revalidate = 604800; // 7 hari
-
 export default async function HeroesPage({
   params,
   searchParams,
