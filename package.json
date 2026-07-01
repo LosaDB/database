@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rifadev26/lostsaga-database.git"
+    "url": "git+https://github.com/LosaDB/database.git"
   },
   "keywords": [],
   "author": "",
   "bugs": {
-    "url": "https://github.com/rifadev26/lostsaga-database/issues"
+    "url": "https://github.com/LosaDB/database/issues"
   },
-  "homepage": "https://github.com/rifadev26/lostsaga-database#readme",
+  "homepage": "https://github.com/LosaDB/database#readme",
   "devDependencies": {
     "@marcuth/dds-to-png": "^0.0.4",
     "@types/node": "^22.0.0",

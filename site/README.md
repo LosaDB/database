@@ -1,6 +1,6 @@
 # Lost Saga Database — Website
 
-The Next.js frontend for the [Lost Saga Database](https://github.com/rifadev26/lostsaga-database).
+The Next.js frontend for the [Lost Saga Database](https://github.com/LosaDB/database).
 
 Live site: [https://lostsaga-database.vercel.app](https://lostsaga-database.vercel.app)
 

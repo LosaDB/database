@@ -21,7 +21,7 @@ export function Footer() {
             Heroes
           </Link>
           <a
-            href="https://github.com/rifadev26/lostsaga-database"
+            href="https://github.com/LosaDB/database"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary"

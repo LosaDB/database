@@ -31,7 +31,7 @@ export default function HomePage() {
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <a
-                href="https://github.com/rifadev26/lostsaga-database"
+                href="https://github.com/LosaDB"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ls-btn-green h-11 gap-2 text-sm"
