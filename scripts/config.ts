@@ -15,7 +15,7 @@ export const SITE_DIR = path.join(ROOT_DIR, "site");
 export const PUBLIC_DIR = path.join(SITE_DIR, "public");
 export const ASSETS_REPO_DIR = path.join(ROOT_DIR, "..", "lostsaga-assets");
 export const ASSETS_IMAGE_BASE_URL =
-  "https://cdn.jsdelivr.net/gh/rifadev26/lostsaga-assets@main/images";
+  "https://cdn.lsdevhub.com/images";
 
 // ZipCrypto passwords for Lost Saga .iop archives (Korean client).
 export const IOP_PASSWORDS = {
