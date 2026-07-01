@@ -3,6 +3,7 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { getServerConfigDir, getServerDataDir } from "../config";
 import { readPlainIni, parseIniSections, normalizeNumber } from "../lib/ini-loader";
+import { loadStringTable, resolveStr, resolveStrFields } from "../lib/str-resolver";
 import { readJson, writeJson } from "../lib/utils";
 
 const MEDAL_INFO_NAME = "sp2_medalitem_info.ini";
@@ -108,7 +109,10 @@ function parseUseClasses(values: Record<string, string>): number[] {
   return out;
 }
 
-function parseManualSections(text: string): Record<number, MedalManualEntry> {
+function parseManualSections(
+  text: string,
+  stringTable?: import("../lib/str-resolver").StringTable,
+): Record<number, MedalManualEntry> {
   const manuals: Record<number, MedalManualEntry> = {};
   let currentId: number | null = null;
 
@@ -143,10 +147,14 @@ function parseManualSections(text: string): Record<number, MedalManualEntry> {
 
     const lineNo = Number(textMatch[1]);
     const segmentNo = Number(textMatch[2]);
+    const sectionName = `Manual${currentId}`;
+    const resolvedText = stringTable
+      ? resolveStr(value, "sp2_medal_inven_manual", sectionName, stringTable)
+      : value;
     manuals[currentId].rawSegments.push({
       lineNo,
       segmentNo,
-      text: value,
+      text: resolvedText,
     });
   }
 
@@ -189,9 +197,19 @@ export async function parseMedals(alias: string): Promise<void> {
   const dataDir = getServerDataDir(alias);
   await fsp.mkdir(dataDir, { recursive: true });
 
+  const stringTable = await loadStringTable(alias);
+
   console.log(`[${alias}] Reading medal item info...`);
   const infoText = await readServerMedalIni(configDir, MEDAL_INFO_NAME);
-  const infoSections = parseIniSections(infoText);
+  const infoSections = parseIniSections(infoText).map((section) => ({
+    ...section,
+    fields: resolveStrFields(
+      section.fields,
+      "sp2_medalitem_info",
+      section.name,
+      stringTable,
+    ),
+  }));
   await writeJson(path.join(dataDir, "medals-raw.json"), infoSections);
   console.log(
     `[${alias}] Wrote ${infoSections.length} raw sections to medals-raw.json`,
@@ -199,7 +217,7 @@ export async function parseMedals(alias: string): Promise<void> {
 
   console.log(`[${alias}] Reading medal manual...`);
   const manualText = await readServerMedalIni(configDir, MEDAL_MANUAL_NAME);
-  const manuals = parseManualSections(manualText);
+  const manuals = parseManualSections(manualText, stringTable);
   console.log(
     `[${alias}] Parsed ${Object.keys(manuals).length} medal manual entries`,
   );

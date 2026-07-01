@@ -4,6 +4,7 @@ import { pathToFileURL } from "node:url";
 import { getServerConfigDir, getServerDataDir } from "../config";
 import { readPlainIni, parseIniSections, normalizeNumber } from "../lib/ini-loader";
 import { runWithConcurrency } from "../lib/queue";
+import { loadStringTable, resolveStrFields } from "../lib/str-resolver";
 import { exists, readJson, writeJson } from "../lib/utils";
 import type { Gear, GearIcon, GearSkill, Hero } from "./heroes";
 
@@ -117,6 +118,7 @@ export async function parseGears(alias: string): Promise<void> {
     console.warn(`[${alias}] ${ICON_CDN_JSON} not found; gear icons will be empty`);
   }
 
+  const stringTable = await loadStringTable(alias);
   const allGears: Gear[] = [];
 
   let heroesWithBase = 0;
@@ -147,6 +149,7 @@ export async function parseGears(alias: string): Promise<void> {
     function pushGear(
       sections: ReturnType<typeof parseIniSections> | null,
       isExtra: boolean,
+      iniName: string | string[],
     ) {
       if (!sections) return;
 
@@ -155,7 +158,7 @@ export async function parseGears(alias: string): Promise<void> {
         const itemNumber = parseItemNumber(section.name);
         if (itemNumber === null) continue;
 
-        const f = section.fields;
+        const f = resolveStrFields(section.fields, iniName, section.name, stringTable);
         const generatedCode = Number(
           `${hero.code}${String(itemNumber).padStart(2, "0")}`,
         );
@@ -203,8 +206,19 @@ export async function parseGears(alias: string): Promise<void> {
       }
     }
 
-    pushGear(baseSections, false);
-    pushGear(extraSections, true);
+    function gearIniName(type: "item" | "extraitem"): string | string[] {
+      const heroCodeNum = Number(hero.code);
+      // Reform (R-) heroes reuse gear strings from their base hero. Try the
+      // reform-specific file first, then fall back to the base hero file.
+      if (hero.rarity === "reform" && heroCodeNum > 500) {
+        const baseCode = String(heroCodeNum - 500).padStart(3, "0");
+        return [`${hero.code}_${type}`, `${baseCode}_${type}`];
+      }
+      return `${hero.code}_${type}`;
+    }
+
+    pushGear(baseSections, false, gearIniName("item"));
+    pushGear(extraSections, true, gearIniName("extraitem"));
 
     heroGears.sort((a, b) => a.itemNumber - b.itemNumber);
     allGears.push(...heroGears);

@@ -8,6 +8,7 @@ import {
   normalizeNumber,
   normalizeFloat,
 } from "../lib/ini-loader";
+import { loadStringTable, resolveStr, resolveStrFields } from "../lib/str-resolver";
 import { readJson, writeJson } from "../lib/utils";
 
 const PET_INFO_NAME = "sp2_pet_info.ini";
@@ -186,7 +187,10 @@ function parseFeedRanks(
   return ranks;
 }
 
-function parseManualSections(text: string): Record<number, PetManual> {
+function parseManualSections(
+  text: string,
+  stringTable?: import("../lib/str-resolver").StringTable,
+): Record<number, PetManual> {
   const manuals: Record<number, PetManual> = {};
   let currentId: number | null = null;
 
@@ -221,10 +225,14 @@ function parseManualSections(text: string): Record<number, PetManual> {
 
     const lineNo = Number(textMatch[1]);
     const segmentNo = Number(textMatch[2]);
+    const sectionName = `Manual${currentId}`;
+    const resolvedText = stringTable
+      ? resolveStr(value, "sp2_pet_inven_manual", sectionName, stringTable)
+      : value;
     manuals[currentId].rawSegments.push({
       lineNo,
       segmentNo,
-      text: value,
+      text: resolvedText,
     });
   }
 
@@ -289,9 +297,19 @@ export async function parsePets(alias: string): Promise<void> {
   const dataDir = getServerDataDir(alias);
   await fsp.mkdir(dataDir, { recursive: true });
 
+  const stringTable = await loadStringTable(alias);
+
   console.log(`[${alias}] Reading pet info...`);
   const infoText = await readServerPetIni(configDir, PET_INFO_NAME);
-  const infoSections = parseIniSections(infoText);
+  const infoSections = parseIniSections(infoText).map((section) => ({
+    ...section,
+    fields: resolveStrFields(
+      section.fields,
+      "sp2_pet_info",
+      section.name,
+      stringTable,
+    ),
+  }));
   await writeJson(path.join(dataDir, "pets-raw.json"), infoSections);
   console.log(`[${alias}] Wrote ${infoSections.length} raw sections to pets-raw.json`);
 
@@ -306,7 +324,7 @@ export async function parsePets(alias: string): Promise<void> {
 
   console.log(`[${alias}] Reading pet manual...`);
   const manualText = await readServerPetIni(configDir, PET_MANUAL_NAME);
-  const manuals = parseManualSections(manualText);
+  const manuals = parseManualSections(manualText, stringTable);
   await writeJson(path.join(dataDir, "pet-manuals.json"), manuals);
   console.log(
     `[${alias}] Wrote ${Object.keys(manuals).length} manuals to pet-manuals.json`,

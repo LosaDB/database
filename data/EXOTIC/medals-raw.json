@@ -75605,7 +75605,7 @@
       "item_growth_2": "0",
       "item_growth_3": "0",
       "item_growth_4": "0",
-      "name": "STR(1)",
+      "name": "<Axe>",
       "manual": "14795",
       "sell_peso": "1000",
       "icon": "Foreign_pack_07#Axe"
@@ -75626,7 +75626,7 @@
       "item_growth_2": "0",
       "item_growth_3": "0",
       "item_growth_4": "0",
-      "name": "STR(1)",
+      "name": "<Bow>",
       "manual": "14796",
       "sell_peso": "1000",
       "icon": "Foreign_pack_07#Bow"
@@ -75647,7 +75647,7 @@
       "item_growth_2": "0",
       "item_growth_3": "0",
       "item_growth_4": "0",
-      "name": "STR(1)",
+      "name": "<Staff>",
       "manual": "14797",
       "sell_peso": "1000",
       "icon": "Foreign_pack_08#Staft"
@@ -75668,7 +75668,7 @@
       "item_growth_2": "0",
       "item_growth_3": "0",
       "item_growth_4": "0",
-      "name": "STR(1)",
+      "name": "<Heavy Armor>",
       "manual": "14798",
       "sell_peso": "1000",
       "icon": "Foreign_pack_07#Heavy_Armor"
@@ -75689,7 +75689,7 @@
       "item_growth_2": "6",
       "item_growth_3": "0",
       "item_growth_4": "0",
-      "name": "STR(1)",
+      "name": "<Light Armor>",
       "manual": "14799",
       "sell_peso": "1000",
       "icon": "Foreign_pack_07#Light_Armor"
@@ -75710,7 +75710,7 @@
       "item_growth_2": "12",
       "item_growth_3": "0",
       "item_growth_4": "0",
-      "name": "STR(1)",
+      "name": "<Robe>",
       "manual": "14800",
       "sell_peso": "1000",
       "icon": "Foreign_pack_08#Robe"
@@ -75731,7 +75731,7 @@
       "item_growth_2": "0",
       "item_growth_3": "0",
       "item_growth_4": "0",
-      "name": "STR(1)",
+      "name": "<Helmet>",
       "manual": "14801",
       "sell_peso": "1000",
       "icon": "Foreign_pack_07#Helmet"
@@ -75752,7 +75752,7 @@
       "item_growth_2": "0",
       "item_growth_3": "6",
       "item_growth_4": "0",
-      "name": "STR(1)",
+      "name": "<Circlet>",
       "manual": "14802",
       "sell_peso": "1000",
       "icon": "Foreign_pack_07#Circlet"
@@ -75773,7 +75773,7 @@
       "item_growth_2": "0",
       "item_growth_3": "12",
       "item_growth_4": "0",
-      "name": "STR(1)",
+      "name": "<Hat>",
       "manual": "14803",
       "sell_peso": "1000",
       "icon": "Foreign_pack_07#Hat"
@@ -75794,7 +75794,7 @@
       "item_growth_2": "0",
       "item_growth_3": "0",
       "item_growth_4": "0",
-      "name": "STR(1)",
+      "name": "<Shield>",
       "manual": "14804",
       "sell_peso": "1000",
       "icon": "Foreign_pack_08#Shield"
@@ -75815,7 +75815,7 @@
       "item_growth_2": "0",
       "item_growth_3": "0",
       "item_growth_4": "6",
-      "name": "STR(1)",
+      "name": "<Wings>",
       "manual": "14805",
       "sell_peso": "1000",
       "icon": "Foreign_pack_08#Wings"
@@ -75836,7 +75836,7 @@
       "item_growth_2": "0",
       "item_growth_3": "0",
       "item_growth_4": "12",
-      "name": "STR(1)",
+      "name": "<Cape>",
       "manual": "14806",
       "sell_peso": "1000",
       "icon": "Foreign_pack_07#Cape"
@@ -75857,7 +75857,7 @@
       "item_growth_2": "6",
       "item_growth_3": "0",
       "item_growth_4": "0",
-      "name": "STR(1)",
+      "name": "<Ring>",
       "manual": "14807",
       "sell_peso": "1000",
       "icon": "Foreign_pack_07#Ring"
@@ -75878,7 +75878,7 @@
       "item_growth_2": "0",
       "item_growth_3": "6",
       "item_growth_4": "0",
-      "name": "STR(1)",
+      "name": "<Earrings>",
       "manual": "14808",
       "sell_peso": "1000",
       "icon": "Foreign_pack_07#Earings"
@@ -75899,7 +75899,7 @@
       "item_growth_2": "0",
       "item_growth_3": "0",
       "item_growth_4": "6",
-      "name": "STR(1)",
+      "name": "<Necklace>",
       "manual": "14809",
       "sell_peso": "1000",
       "icon": "Foreign_pack_07#Necklace"
@@ -75920,7 +75920,7 @@
       "item_growth_2": "6",
       "item_growth_3": "6",
       "item_growth_4": "6",
-      "name": "STR(1)",
+      "name": "<Bracelet>",
       "manual": "14810",
       "sell_peso": "1000",
       "icon": "Foreign_pack_07#Bracelet"
@@ -75941,7 +75941,7 @@
       "item_growth_2": "0",
       "item_growth_3": "0",
       "item_growth_4": "0",
-      "name": "STR(1)",
+      "name": "<Amethys>",
       "manual": "14811",
       "sell_peso": "1000",
       "icon": "Foreign_pack_07#Amethyst"
@@ -75962,7 +75962,7 @@
       "item_growth_2": "0",
       "item_growth_3": "0",
       "item_growth_4": "0",
-      "name": "STR(1)",
+      "name": "<Jade>",
       "manual": "14812",
       "sell_peso": "1000",
       "icon": "Foreign_pack_07#Jade"
@@ -75983,7 +75983,7 @@
       "item_growth_2": "0",
       "item_growth_3": "0",
       "item_growth_4": "0",
-      "name": "STR(1)",
+      "name": "<Sapphire>",
       "manual": "14813",
       "sell_peso": "1000",
       "icon": "Foreign_pack_08#Sapphire"
@@ -76004,7 +76004,7 @@
       "item_growth_2": "0",
       "item_growth_3": "0",
       "item_growth_4": "0",
-      "name": "STR(1)",
+      "name": "<Ruby>",
       "manual": "14814",
       "sell_peso": "1000",
       "icon": "Foreign_pack_08#Ruby"
@@ -76025,7 +76025,7 @@
       "item_growth_2": "3",
       "item_growth_3": "3",
       "item_growth_4": "3",
-      "name": "STR(1)",
+      "name": "<Onyx>",
       "manual": "14815",
       "sell_peso": "1000",
       "icon": "Foreign_pack_07#Onyx"
@@ -76046,7 +76046,7 @@
       "item_growth_2": "6",
       "item_growth_3": "6",
       "item_growth_4": "6",
-      "name": "STR(1)",
+      "name": "<Diamond>",
       "manual": "14816",
       "sell_peso": "1000",
       "icon": "Foreign_pack_07#Diamond"
@@ -77342,7 +77342,7 @@
       "item_growth_2": "2",
       "item_growth_3": "2",
       "item_growth_4": "5",
-      "name": "STR(1)",
+      "name": "The One",
       "manual": "20034",
       "sell_peso": "1",
       "icon": "UIIconPackBB01#lsbb_christmas"

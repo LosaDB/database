@@ -10,7 +10,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Baby Mongchi",
         "iconKey": "PetIconPack001#pet01_1",
         "icon": {
           "id": 16021,
@@ -32,7 +32,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Baby Mongchi",
         "iconKey": "PetIconPack001#pet01_1",
         "icon": {
           "id": 16021,
@@ -54,7 +54,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Mongchi",
         "iconKey": "PetIconPack001#pet01_2",
         "icon": {
           "id": 16022,
@@ -76,7 +76,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Mongchi",
         "iconKey": "PetIconPack001#pet01_2",
         "icon": {
           "id": 16022,
@@ -98,7 +98,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "DJMongchi",
         "iconKey": "PetIconPack001#pet01_3",
         "icon": {
           "id": 16023,
@@ -147,7 +147,7 @@
       "pet_need_material": "55",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Baby Mongchi",
       "pet_view1_icon": "PetIconPack001#pet01_1",
       "pet_view1_model": "animodel/pet_004_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -155,7 +155,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_004_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Baby Mongchi",
       "pet_view2_icon": "PetIconPack001#pet01_1",
       "pet_view2_model": "animodel/pet_004_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -163,7 +163,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_004_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Mongchi",
       "pet_view3_icon": "PetIconPack001#pet01_2",
       "pet_view3_model": "animodel/pet_004_level2.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -171,7 +171,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_004_level2_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Mongchi",
       "pet_view4_icon": "PetIconPack001#pet01_2",
       "pet_view4_model": "animodel/pet_004_level2.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -179,7 +179,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_004_level2_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "DJMongchi",
       "pet_view5_icon": "PetIconPack001#pet01_3",
       "pet_view5_model": "animodel/pet_004_level3.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -217,7 +217,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Baby Boogie",
         "iconKey": "PetIconPack001#pet02_1",
         "icon": {
           "id": 16024,
@@ -239,7 +239,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Baby Boogie",
         "iconKey": "PetIconPack001#pet02_1",
         "icon": {
           "id": 16024,
@@ -261,7 +261,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Boogie",
         "iconKey": "PetIconPack001#pet02_2",
         "icon": {
           "id": 16025,
@@ -283,7 +283,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Boogie",
         "iconKey": "PetIconPack001#pet02_2",
         "icon": {
           "id": 16025,
@@ -305,7 +305,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Tae KwonBoogie",
         "iconKey": "PetIconPack001#pet02_3",
         "icon": {
           "id": 16026,
@@ -354,7 +354,7 @@
       "pet_need_material": "19",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Baby Boogie",
       "pet_view1_icon": "PetIconPack001#pet02_1",
       "pet_view1_model": "animodel/pet_007_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -362,7 +362,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_007_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Baby Boogie",
       "pet_view2_icon": "PetIconPack001#pet02_1",
       "pet_view2_model": "animodel/pet_007_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -370,7 +370,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_007_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Boogie",
       "pet_view3_icon": "PetIconPack001#pet02_2",
       "pet_view3_model": "animodel/pet_007_level2.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -378,7 +378,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_007_level1_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Boogie",
       "pet_view4_icon": "PetIconPack001#pet02_2",
       "pet_view4_model": "animodel/pet_007_level2.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -386,7 +386,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_007_level1_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Tae KwonBoogie",
       "pet_view5_icon": "PetIconPack001#pet02_3",
       "pet_view5_model": "animodel/pet_007_level3.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -424,7 +424,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Baby Bunny",
         "iconKey": "PetIconPack001#pet03_1",
         "icon": {
           "id": 16027,
@@ -446,7 +446,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Baby Bunny",
         "iconKey": "PetIconPack001#pet03_1",
         "icon": {
           "id": 16027,
@@ -468,7 +468,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Bunny",
         "iconKey": "PetIconPack001#pet03_2",
         "icon": {
           "id": 16028,
@@ -490,7 +490,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Bunny",
         "iconKey": "PetIconPack001#pet03_2",
         "icon": {
           "id": 16028,
@@ -512,7 +512,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "RiderBunny",
         "iconKey": "PetIconPack001#pet03_3",
         "icon": {
           "id": 16029,
@@ -561,7 +561,7 @@
       "pet_need_material": "17",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Baby Bunny",
       "pet_view1_icon": "PetIconPack001#pet03_1",
       "pet_view1_model": "animodel/pet_008_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -569,7 +569,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_008_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Baby Bunny",
       "pet_view2_icon": "PetIconPack001#pet03_1",
       "pet_view2_model": "animodel/pet_008_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -577,7 +577,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_008_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Bunny",
       "pet_view3_icon": "PetIconPack001#pet03_2",
       "pet_view3_model": "animodel/pet_008_level2.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -585,7 +585,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_008_level1_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Bunny",
       "pet_view4_icon": "PetIconPack001#pet03_2",
       "pet_view4_model": "animodel/pet_008_level2.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -593,7 +593,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_008_level1_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "RiderBunny",
       "pet_view5_icon": "PetIconPack001#pet03_3",
       "pet_view5_model": "animodel/pet_008_level3.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -631,7 +631,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Baby Corry",
         "iconKey": "PetIconPack001#pet04_1",
         "icon": {
           "id": 16030,
@@ -653,7 +653,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Baby Corry",
         "iconKey": "PetIconPack001#pet04_1",
         "icon": {
           "id": 16030,
@@ -675,7 +675,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Corry",
         "iconKey": "PetIconPack001#pet04_2",
         "icon": {
           "id": 16031,
@@ -697,7 +697,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Corry",
         "iconKey": "PetIconPack001#pet04_2",
         "icon": {
           "id": 16031,
@@ -719,7 +719,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Sailor Corry",
         "iconKey": "PetIconPack001#pet04_3",
         "icon": {
           "id": 16032,
@@ -768,7 +768,7 @@
       "pet_need_material": "2",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Baby Corry",
       "pet_view1_icon": "PetIconPack001#pet04_1",
       "pet_view1_model": "animodel/pet_006_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -776,7 +776,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_006_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Baby Corry",
       "pet_view2_icon": "PetIconPack001#pet04_1",
       "pet_view2_model": "animodel/pet_006_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -784,7 +784,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_006_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Corry",
       "pet_view3_icon": "PetIconPack001#pet04_2",
       "pet_view3_model": "animodel/pet_006_level2.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -792,7 +792,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_006_level1_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Corry",
       "pet_view4_icon": "PetIconPack001#pet04_2",
       "pet_view4_model": "animodel/pet_006_level2.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -800,7 +800,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_006_level1_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Sailor Corry",
       "pet_view5_icon": "PetIconPack001#pet04_3",
       "pet_view5_model": "animodel/pet_006_level3.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -838,7 +838,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Baby Nyang",
         "iconKey": "PetIconPack001#pet05_1",
         "icon": {
           "id": 16033,
@@ -860,7 +860,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Baby Nyang",
         "iconKey": "PetIconPack001#pet05_1",
         "icon": {
           "id": 16033,
@@ -882,7 +882,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Nyang",
         "iconKey": "PetIconPack001#pet05_2",
         "icon": {
           "id": 16034,
@@ -904,7 +904,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Nyang",
         "iconKey": "PetIconPack001#pet05_2",
         "icon": {
           "id": 16034,
@@ -926,7 +926,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Witch Hat Nyang",
         "iconKey": "PetIconPack001#pet05_3",
         "icon": {
           "id": 16035,
@@ -975,7 +975,7 @@
       "pet_need_material": "65",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Baby Nyang",
       "pet_view1_icon": "PetIconPack001#pet05_1",
       "pet_view1_model": "animodel/pet_002_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -983,7 +983,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_002_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Baby Nyang",
       "pet_view2_icon": "PetIconPack001#pet05_1",
       "pet_view2_model": "animodel/pet_002_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -991,7 +991,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_002_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Nyang",
       "pet_view3_icon": "PetIconPack001#pet05_2",
       "pet_view3_model": "animodel/pet_002_level2.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -999,7 +999,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_002_level1_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Nyang",
       "pet_view4_icon": "PetIconPack001#pet05_2",
       "pet_view4_model": "animodel/pet_002_level2.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -1007,7 +1007,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_002_level1_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Witch Hat Nyang",
       "pet_view5_icon": "PetIconPack001#pet05_3",
       "pet_view5_model": "animodel/pet_002_level3.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -1045,7 +1045,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Baby Dochi",
         "iconKey": "PetIconPack001#pet06_1",
         "icon": {
           "id": 16036,
@@ -1067,7 +1067,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Baby Dochi",
         "iconKey": "PetIconPack001#pet06_1",
         "icon": {
           "id": 16036,
@@ -1089,7 +1089,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Dochi",
         "iconKey": "PetIconPack001#pet06_2",
         "icon": {
           "id": 16037,
@@ -1111,7 +1111,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Dochi",
         "iconKey": "PetIconPack001#pet06_2",
         "icon": {
           "id": 16037,
@@ -1133,7 +1133,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Rough Dochi",
         "iconKey": "PetIconPack001#pet06_3",
         "icon": {
           "id": 16038,
@@ -1182,7 +1182,7 @@
       "pet_need_material": "6",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Baby Dochi",
       "pet_view1_icon": "PetIconPack001#pet06_1",
       "pet_view1_model": "animodel/pet_003_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -1190,7 +1190,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_003_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Baby Dochi",
       "pet_view2_icon": "PetIconPack001#pet06_1",
       "pet_view2_model": "animodel/pet_003_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -1198,7 +1198,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_003_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Dochi",
       "pet_view3_icon": "PetIconPack001#pet06_2",
       "pet_view3_model": "animodel/pet_003_level2.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -1206,7 +1206,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_003_level2_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Dochi",
       "pet_view4_icon": "PetIconPack001#pet06_2",
       "pet_view4_model": "animodel/pet_003_level2.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -1214,7 +1214,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_003_level2_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Rough Dochi",
       "pet_view5_icon": "PetIconPack001#pet06_3",
       "pet_view5_model": "animodel/pet_003_level3.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -1252,7 +1252,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Baby Pig",
         "iconKey": "PetIconPack001#pet07_1",
         "icon": {
           "id": 16039,
@@ -1274,7 +1274,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Baby Pig",
         "iconKey": "PetIconPack001#pet07_1",
         "icon": {
           "id": 16039,
@@ -1296,7 +1296,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pig",
         "iconKey": "PetIconPack001#pet07_2",
         "icon": {
           "id": 16040,
@@ -1318,7 +1318,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pig",
         "iconKey": "PetIconPack001#pet07_2",
         "icon": {
           "id": 16040,
@@ -1340,7 +1340,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Gentleman Pig",
         "iconKey": "PetIconPack001#pet07_3",
         "icon": {
           "id": 16041,
@@ -1389,7 +1389,7 @@
       "pet_need_material": "44",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Baby Pig",
       "pet_view1_icon": "PetIconPack001#pet07_1",
       "pet_view1_model": "animodel/pet_001_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -1397,7 +1397,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_001_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Baby Pig",
       "pet_view2_icon": "PetIconPack001#pet07_1",
       "pet_view2_model": "animodel/pet_001_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -1405,7 +1405,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_001_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pig",
       "pet_view3_icon": "PetIconPack001#pet07_2",
       "pet_view3_model": "animodel/pet_001_level2.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -1413,7 +1413,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_001_level1_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pig",
       "pet_view4_icon": "PetIconPack001#pet07_2",
       "pet_view4_model": "animodel/pet_001_level2.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -1421,7 +1421,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_001_level1_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Gentleman Pig",
       "pet_view5_icon": "PetIconPack001#pet07_3",
       "pet_view5_model": "animodel/pet_001_level3.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -1459,7 +1459,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Baby Koko",
         "iconKey": "PetIconPack001#pet08_1",
         "icon": {
           "id": 16042,
@@ -1481,7 +1481,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Baby Koko",
         "iconKey": "PetIconPack001#pet08_1",
         "icon": {
           "id": 16042,
@@ -1503,7 +1503,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Koko",
         "iconKey": "PetIconPack001#pet08_2",
         "icon": {
           "id": 16043,
@@ -1525,7 +1525,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Koko",
         "iconKey": "PetIconPack001#pet08_2",
         "icon": {
           "id": 16043,
@@ -1547,7 +1547,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Intelly Koko",
         "iconKey": "PetIconPack001#pet08_3",
         "icon": {
           "id": 16044,
@@ -1596,7 +1596,7 @@
       "pet_need_material": "26",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Baby Koko",
       "pet_view1_icon": "PetIconPack001#pet08_1",
       "pet_view1_model": "animodel/pet_005_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -1604,7 +1604,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_005_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Baby Koko",
       "pet_view2_icon": "PetIconPack001#pet08_1",
       "pet_view2_model": "animodel/pet_005_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -1612,7 +1612,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_005_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Koko",
       "pet_view3_icon": "PetIconPack001#pet08_2",
       "pet_view3_model": "animodel/pet_005_level2.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -1620,7 +1620,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_005_level2_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Koko",
       "pet_view4_icon": "PetIconPack001#pet08_2",
       "pet_view4_model": "animodel/pet_005_level2.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -1628,7 +1628,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_005_level2_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Intelly Koko",
       "pet_view5_icon": "PetIconPack001#pet08_3",
       "pet_view5_model": "animodel/pet_005_level3.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -1666,7 +1666,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Angel Dev K",
         "iconKey": "PetIconPack001#pet09_3",
         "icon": {
           "id": 16045,
@@ -1688,7 +1688,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Angel Dev K",
         "iconKey": "PetIconPack001#pet09_3",
         "icon": {
           "id": 16045,
@@ -1710,7 +1710,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Angel Dev K",
         "iconKey": "PetIconPack001#pet09_3",
         "icon": {
           "id": 16045,
@@ -1732,7 +1732,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Angel Dev K",
         "iconKey": "PetIconPack001#pet09_3",
         "icon": {
           "id": 16045,
@@ -1754,7 +1754,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Angel Dev K",
         "iconKey": "PetIconPack001#pet09_3",
         "icon": {
           "id": 16045,
@@ -1803,7 +1803,7 @@
       "pet_need_material": "5",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Angel Dev K",
       "pet_view1_icon": "PetIconPack001#pet09_3",
       "pet_view1_model": "animodel/pet_009_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -1811,7 +1811,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_009_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Angel Dev K",
       "pet_view2_icon": "PetIconPack001#pet09_3",
       "pet_view2_model": "animodel/pet_009_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -1819,7 +1819,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_009_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Angel Dev K",
       "pet_view3_icon": "PetIconPack001#pet09_3",
       "pet_view3_model": "animodel/pet_009_level1.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -1827,7 +1827,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_009_level1_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Angel Dev K",
       "pet_view4_icon": "PetIconPack001#pet09_3",
       "pet_view4_model": "animodel/pet_009_level1.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -1835,7 +1835,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_009_level1_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Angel Dev K",
       "pet_view5_icon": "PetIconPack001#pet09_3",
       "pet_view5_model": "animodel/pet_009_level1.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -1873,7 +1873,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Devil Dev K",
         "iconKey": "PetIconPack001#pet10_3",
         "icon": {
           "id": 16046,
@@ -1895,7 +1895,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Devil Dev K",
         "iconKey": "PetIconPack001#pet10_3",
         "icon": {
           "id": 16046,
@@ -1917,7 +1917,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Devil Dev K",
         "iconKey": "PetIconPack001#pet10_3",
         "icon": {
           "id": 16046,
@@ -1939,7 +1939,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Devil Dev K",
         "iconKey": "PetIconPack001#pet10_3",
         "icon": {
           "id": 16046,
@@ -1961,7 +1961,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Devil Dev K",
         "iconKey": "PetIconPack001#pet10_3",
         "icon": {
           "id": 16046,
@@ -2010,7 +2010,7 @@
       "pet_need_material": "81",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Devil Dev K",
       "pet_view1_icon": "PetIconPack001#pet10_3",
       "pet_view1_model": "animodel/pet_010_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -2018,7 +2018,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_009_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Devil Dev K",
       "pet_view2_icon": "PetIconPack001#pet10_3",
       "pet_view2_model": "animodel/pet_010_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -2026,7 +2026,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_009_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Devil Dev K",
       "pet_view3_icon": "PetIconPack001#pet10_3",
       "pet_view3_model": "animodel/pet_010_level1.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -2034,7 +2034,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_009_level1_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Devil Dev K",
       "pet_view4_icon": "PetIconPack001#pet10_3",
       "pet_view4_model": "animodel/pet_010_level1.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -2042,7 +2042,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_009_level1_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Devil Dev K",
       "pet_view5_icon": "PetIconPack001#pet10_3",
       "pet_view5_model": "animodel/pet_010_level1.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -2080,7 +2080,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Gigantic K",
         "iconKey": "PetIconPack001#pet11_3",
         "icon": {
           "id": 16047,
@@ -2102,7 +2102,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Gigantic K",
         "iconKey": "PetIconPack001#pet11_3",
         "icon": {
           "id": 16047,
@@ -2124,7 +2124,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Gigantic K",
         "iconKey": "PetIconPack001#pet11_3",
         "icon": {
           "id": 16047,
@@ -2146,7 +2146,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Gigantic K",
         "iconKey": "PetIconPack001#pet11_3",
         "icon": {
           "id": 16047,
@@ -2168,7 +2168,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Gigantic K",
         "iconKey": "PetIconPack001#pet11_3",
         "icon": {
           "id": 16047,
@@ -2217,7 +2217,7 @@
       "pet_need_material": "31",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Gigantic K",
       "pet_view1_icon": "PetIconPack001#pet11_3",
       "pet_view1_model": "animodel/pet_011_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -2225,7 +2225,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_011_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Gigantic K",
       "pet_view2_icon": "PetIconPack001#pet11_3",
       "pet_view2_model": "animodel/pet_011_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -2233,7 +2233,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_011_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Gigantic K",
       "pet_view3_icon": "PetIconPack001#pet11_3",
       "pet_view3_model": "animodel/pet_011_level1.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -2241,7 +2241,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_011_level1_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Gigantic K",
       "pet_view4_icon": "PetIconPack001#pet11_3",
       "pet_view4_model": "animodel/pet_011_level1.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -2249,7 +2249,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_011_level1_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Gigantic K",
       "pet_view5_icon": "PetIconPack001#pet11_3",
       "pet_view5_model": "animodel/pet_011_level1.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -2287,7 +2287,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Ifrit",
         "iconKey": "PetIconPack001#pet12_3",
         "icon": {
           "id": 16048,
@@ -2309,7 +2309,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Ifrit",
         "iconKey": "PetIconPack001#pet12_3",
         "icon": {
           "id": 16048,
@@ -2331,7 +2331,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Ifrit",
         "iconKey": "PetIconPack001#pet12_3",
         "icon": {
           "id": 16048,
@@ -2353,7 +2353,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Ifrit",
         "iconKey": "PetIconPack001#pet12_3",
         "icon": {
           "id": 16048,
@@ -2375,7 +2375,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Ifrit",
         "iconKey": "PetIconPack001#pet12_3",
         "icon": {
           "id": 16048,
@@ -2424,7 +2424,7 @@
       "pet_need_material": "4",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Ifrit",
       "pet_view1_icon": "PetIconPack001#pet12_3",
       "pet_view1_model": "animodel/pet_012_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -2432,7 +2432,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_012_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Ifrit",
       "pet_view2_icon": "PetIconPack001#pet12_3",
       "pet_view2_model": "animodel/pet_012_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -2440,7 +2440,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_012_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Ifrit",
       "pet_view3_icon": "PetIconPack001#pet12_3",
       "pet_view3_model": "animodel/pet_012_level1.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -2448,7 +2448,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_012_level1_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Ifrit",
       "pet_view4_icon": "PetIconPack001#pet12_3",
       "pet_view4_model": "animodel/pet_012_level1.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -2456,7 +2456,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_012_level1_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Ifrit",
       "pet_view5_icon": "PetIconPack001#pet12_3",
       "pet_view5_model": "animodel/pet_012_level1.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -2494,7 +2494,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Driad",
         "iconKey": "PetIconPack001#pet13_3",
         "icon": {
           "id": 16049,
@@ -2516,7 +2516,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Driad",
         "iconKey": "PetIconPack001#pet13_3",
         "icon": {
           "id": 16049,
@@ -2538,7 +2538,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Driad",
         "iconKey": "PetIconPack001#pet13_3",
         "icon": {
           "id": 16049,
@@ -2560,7 +2560,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Driad",
         "iconKey": "PetIconPack001#pet13_3",
         "icon": {
           "id": 16049,
@@ -2582,7 +2582,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Driad",
         "iconKey": "PetIconPack001#pet13_3",
         "icon": {
           "id": 16049,
@@ -2631,7 +2631,7 @@
       "pet_need_material": "27",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Driad",
       "pet_view1_icon": "PetIconPack001#pet13_3",
       "pet_view1_model": "animodel/pet_013_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -2639,7 +2639,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_013_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Driad",
       "pet_view2_icon": "PetIconPack001#pet13_3",
       "pet_view2_model": "animodel/pet_013_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -2647,7 +2647,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_013_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Driad",
       "pet_view3_icon": "PetIconPack001#pet13_3",
       "pet_view3_model": "animodel/pet_013_level1.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -2655,7 +2655,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_013_level1_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Driad",
       "pet_view4_icon": "PetIconPack001#pet13_3",
       "pet_view4_model": "animodel/pet_013_level1.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -2663,7 +2663,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_013_level1_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Driad",
       "pet_view5_icon": "PetIconPack001#pet13_3",
       "pet_view5_model": "animodel/pet_013_level1.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -2701,7 +2701,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Snow Princess",
         "iconKey": "PetIconPack001#pet14_3",
         "icon": {
           "id": 16050,
@@ -2723,7 +2723,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Snow Princess",
         "iconKey": "PetIconPack001#pet14_3",
         "icon": {
           "id": 16050,
@@ -2745,7 +2745,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Snow Princess",
         "iconKey": "PetIconPack001#pet14_3",
         "icon": {
           "id": 16050,
@@ -2767,7 +2767,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Snow Princess",
         "iconKey": "PetIconPack001#pet14_3",
         "icon": {
           "id": 16050,
@@ -2789,7 +2789,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Snow Princess",
         "iconKey": "PetIconPack001#pet14_3",
         "icon": {
           "id": 16050,
@@ -2838,7 +2838,7 @@
       "pet_need_material": "9",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Snow Princess",
       "pet_view1_icon": "PetIconPack001#pet14_3",
       "pet_view1_model": "animodel/pet_014_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -2846,7 +2846,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_014_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Snow Princess",
       "pet_view2_icon": "PetIconPack001#pet14_3",
       "pet_view2_model": "animodel/pet_014_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -2854,7 +2854,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_014_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Snow Princess",
       "pet_view3_icon": "PetIconPack001#pet14_3",
       "pet_view3_model": "animodel/pet_014_level1.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -2862,7 +2862,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_014_level1_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Snow Princess",
       "pet_view4_icon": "PetIconPack001#pet14_3",
       "pet_view4_model": "animodel/pet_014_level1.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -2870,7 +2870,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_014_level1_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Snow Princess",
       "pet_view5_icon": "PetIconPack001#pet14_3",
       "pet_view5_model": "animodel/pet_014_level1.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -2908,7 +2908,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Baby Racoon",
         "iconKey": "PetIconPack002#pet15_1",
         "icon": {
           "id": 16063,
@@ -2930,7 +2930,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Baby Racoon",
         "iconKey": "PetIconPack002#pet15_1",
         "icon": {
           "id": 16063,
@@ -2952,7 +2952,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Racoon",
         "iconKey": "PetIconPack002#pet15_2",
         "icon": {
           "id": 16064,
@@ -2974,7 +2974,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Racoon",
         "iconKey": "PetIconPack002#pet15_2",
         "icon": {
           "id": 16064,
@@ -2996,7 +2996,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Forest keeper Racoon",
         "iconKey": "PetIconPack002#pet15_3",
         "icon": {
           "id": 16065,
@@ -3045,7 +3045,7 @@
       "pet_need_material": "7",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Baby Racoon",
       "pet_view1_icon": "PetIconPack002#pet15_1",
       "pet_view1_model": "animodel/pet_015_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -3053,7 +3053,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_015_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Baby Racoon",
       "pet_view2_icon": "PetIconPack002#pet15_1",
       "pet_view2_model": "animodel/pet_015_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -3061,7 +3061,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_015_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Racoon",
       "pet_view3_icon": "PetIconPack002#pet15_2",
       "pet_view3_model": "animodel/pet_015_level2.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -3069,7 +3069,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_015_level2_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Racoon",
       "pet_view4_icon": "PetIconPack002#pet15_2",
       "pet_view4_model": "animodel/pet_015_level2.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -3077,7 +3077,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_015_level2_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Forest keeper Racoon",
       "pet_view5_icon": "PetIconPack002#pet15_3",
       "pet_view5_model": "animodel/pet_015_level3.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -3115,7 +3115,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Baby Pung",
         "iconKey": "PetIconPack002#pet16_1",
         "icon": {
           "id": 16066,
@@ -3137,7 +3137,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Baby Pung",
         "iconKey": "PetIconPack002#pet16_1",
         "icon": {
           "id": 16066,
@@ -3159,7 +3159,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pung",
         "iconKey": "PetIconPack002#pet16_2",
         "icon": {
           "id": 16067,
@@ -3181,7 +3181,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pung",
         "iconKey": "PetIconPack002#pet16_2",
         "icon": {
           "id": 16067,
@@ -3203,7 +3203,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Gas Gas Pung",
         "iconKey": "PetIconPack002#pet16_3",
         "icon": {
           "id": 16068,
@@ -3252,7 +3252,7 @@
       "pet_need_material": "8",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Baby Pung",
       "pet_view1_icon": "PetIconPack002#pet16_1",
       "pet_view1_model": "animodel/pet_016_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -3260,7 +3260,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_016_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Baby Pung",
       "pet_view2_icon": "PetIconPack002#pet16_1",
       "pet_view2_model": "animodel/pet_016_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -3268,7 +3268,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_016_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pung",
       "pet_view3_icon": "PetIconPack002#pet16_2",
       "pet_view3_model": "animodel/pet_016_level2.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -3276,7 +3276,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_016_level2_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pung",
       "pet_view4_icon": "PetIconPack002#pet16_2",
       "pet_view4_model": "animodel/pet_016_level2.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -3284,7 +3284,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_016_level2_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Gas Gas Pung",
       "pet_view5_icon": "PetIconPack002#pet16_3",
       "pet_view5_model": "animodel/pet_016_level3.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -3322,7 +3322,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Baby Foxie",
         "iconKey": "PetIconPack002#pet17_1",
         "icon": {
           "id": 16069,
@@ -3344,7 +3344,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Baby Foxie",
         "iconKey": "PetIconPack002#pet17_1",
         "icon": {
           "id": 16069,
@@ -3366,7 +3366,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Foxie",
         "iconKey": "PetIconPack002#pet17_2",
         "icon": {
           "id": 16070,
@@ -3388,7 +3388,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Foxie",
         "iconKey": "PetIconPack002#pet17_2",
         "icon": {
           "id": 16070,
@@ -3410,7 +3410,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Knight Foxie",
         "iconKey": "PetIconPack002#pet17_3",
         "icon": {
           "id": 16071,
@@ -3459,7 +3459,7 @@
       "pet_need_material": "36",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Baby Foxie",
       "pet_view1_icon": "PetIconPack002#pet17_1",
       "pet_view1_model": "animodel/pet_017_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -3467,7 +3467,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_017_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Baby Foxie",
       "pet_view2_icon": "PetIconPack002#pet17_1",
       "pet_view2_model": "animodel/pet_017_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -3475,7 +3475,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_017_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Foxie",
       "pet_view3_icon": "PetIconPack002#pet17_2",
       "pet_view3_model": "animodel/pet_017_level2.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -3483,7 +3483,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_017_level2_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Foxie",
       "pet_view4_icon": "PetIconPack002#pet17_2",
       "pet_view4_model": "animodel/pet_017_level2.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -3491,7 +3491,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_017_level2_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Knight Foxie",
       "pet_view5_icon": "PetIconPack002#pet17_3",
       "pet_view5_model": "animodel/pet_017_level3.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -3529,7 +3529,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Baby Mong Mong",
         "iconKey": "PetIconPack002#pet18_1",
         "icon": {
           "id": 16072,
@@ -3551,7 +3551,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Baby Mong Mong",
         "iconKey": "PetIconPack002#pet18_1",
         "icon": {
           "id": 16072,
@@ -3573,7 +3573,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Mong Mong",
         "iconKey": "PetIconPack002#pet18_2",
         "icon": {
           "id": 16073,
@@ -3595,7 +3595,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Mong Mong",
         "iconKey": "PetIconPack002#pet18_2",
         "icon": {
           "id": 16073,
@@ -3617,7 +3617,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Stone Monkey Mong Mong",
         "iconKey": "PetIconPack002#pet18_3",
         "icon": {
           "id": 16074,
@@ -3666,7 +3666,7 @@
       "pet_need_material": "51",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Baby Mong Mong",
       "pet_view1_icon": "PetIconPack002#pet18_1",
       "pet_view1_model": "animodel/pet_018_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -3674,7 +3674,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_018_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Baby Mong Mong",
       "pet_view2_icon": "PetIconPack002#pet18_1",
       "pet_view2_model": "animodel/pet_018_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -3682,7 +3682,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_018_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Mong Mong",
       "pet_view3_icon": "PetIconPack002#pet18_2",
       "pet_view3_model": "animodel/pet_018_level2.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -3690,7 +3690,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_018_level2_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Mong Mong",
       "pet_view4_icon": "PetIconPack002#pet18_2",
       "pet_view4_model": "animodel/pet_018_level2.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -3698,7 +3698,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_018_level2_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Stone Monkey Mong Mong",
       "pet_view5_icon": "PetIconPack002#pet18_3",
       "pet_view5_model": "animodel/pet_018_level3.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -3736,7 +3736,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Baby Sheep",
         "iconKey": "PetIconPack002#pet19_3",
         "icon": {
           "id": 16075,
@@ -3758,7 +3758,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Baby Sheep",
         "iconKey": "PetIconPack002#pet19_3",
         "icon": {
           "id": 16075,
@@ -3780,7 +3780,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Shane",
         "iconKey": "PetIconPack002#pet19_3",
         "icon": {
           "id": 16075,
@@ -3802,7 +3802,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Shane",
         "iconKey": "PetIconPack002#pet19_3",
         "icon": {
           "id": 16075,
@@ -3824,7 +3824,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Shane the Sheep",
         "iconKey": "PetIconPack002#pet19_3",
         "icon": {
           "id": 16075,
@@ -3873,7 +3873,7 @@
       "pet_need_material": "72",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Baby Sheep",
       "pet_view1_icon": "PetIconPack002#pet19_3",
       "pet_view1_model": "animodel/pet_019_level1.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -3881,7 +3881,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_019_level1_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Baby Sheep",
       "pet_view2_icon": "PetIconPack002#pet19_3",
       "pet_view2_model": "animodel/pet_019_level1.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -3889,7 +3889,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_019_level1_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Shane",
       "pet_view3_icon": "PetIconPack002#pet19_3",
       "pet_view3_model": "animodel/pet_019_level1.txt",
       "pet_view3_model_scale_x": "1.3f",
@@ -3897,7 +3897,7 @@
       "pet_view3_model_scale_z": "1.3f",
       "pet_view3_ani": "pet_019_level1_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Shane",
       "pet_view4_icon": "PetIconPack002#pet19_3",
       "pet_view4_model": "animodel/pet_019_level1.txt",
       "pet_view4_model_scale_x": "1.3f",
@@ -3905,7 +3905,7 @@
       "pet_view4_model_scale_z": "1.3f",
       "pet_view4_ani": "pet_019_level1_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Shane the Sheep",
       "pet_view5_icon": "PetIconPack002#pet19_3",
       "pet_view5_model": "animodel/pet_019_level1.txt",
       "pet_view5_model_scale_x": "1.5f",
@@ -3943,7 +3943,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Pet : Snack",
         "iconKey": "PetIconPack002#pet21_1",
         "icon": {
           "id": 16077,
@@ -3965,7 +3965,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Pet : Snack",
         "iconKey": "PetIconPack002#pet21_1",
         "icon": {
           "id": 16077,
@@ -3987,7 +3987,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pet : Snack",
         "iconKey": "PetIconPack002#pet21_1",
         "icon": {
           "id": 16077,
@@ -4009,7 +4009,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pet : Snack",
         "iconKey": "PetIconPack002#pet21_1",
         "icon": {
           "id": 16077,
@@ -4031,7 +4031,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Pet : Snack",
         "iconKey": "PetIconPack002#pet21_1",
         "icon": {
           "id": 16077,
@@ -4080,7 +4080,7 @@
       "pet_need_material": "2",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Pet : Snack",
       "pet_view1_icon": "PetIconPack002#pet21_1",
       "pet_view1_model": "animodel/pet_2014_champ_02.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -4088,7 +4088,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Pet : Snack",
       "pet_view2_icon": "PetIconPack002#pet21_1",
       "pet_view2_model": "animodel/pet_2014_champ_02.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -4096,7 +4096,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pet : Snack",
       "pet_view3_icon": "PetIconPack002#pet21_1",
       "pet_view3_model": "animodel/pet_2014_champ_02.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -4104,7 +4104,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pet : Snack",
       "pet_view4_icon": "PetIconPack002#pet21_1",
       "pet_view4_model": "animodel/pet_2014_champ_02.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -4112,7 +4112,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Pet : Snack",
       "pet_view5_icon": "PetIconPack002#pet21_1",
       "pet_view5_model": "animodel/pet_2014_champ_02.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -4150,7 +4150,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Pet : Bodyguard",
         "iconKey": "PetIconPack002#pet20_1",
         "icon": {
           "id": 16076,
@@ -4172,7 +4172,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Pet : Bodyguard",
         "iconKey": "PetIconPack002#pet20_1",
         "icon": {
           "id": 16076,
@@ -4194,7 +4194,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pet : Bodyguard",
         "iconKey": "PetIconPack002#pet20_1",
         "icon": {
           "id": 16076,
@@ -4216,7 +4216,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pet : Bodyguard",
         "iconKey": "PetIconPack002#pet20_1",
         "icon": {
           "id": 16076,
@@ -4238,7 +4238,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Pet : Bodyguard",
         "iconKey": "PetIconPack002#pet20_1",
         "icon": {
           "id": 16076,
@@ -4287,7 +4287,7 @@
       "pet_need_material": "23",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Pet : Bodyguard",
       "pet_view1_icon": "PetIconPack002#pet20_1",
       "pet_view1_model": "animodel/pet_2014_champ_01.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -4295,7 +4295,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Pet : Bodyguard",
       "pet_view2_icon": "PetIconPack002#pet20_1",
       "pet_view2_model": "animodel/pet_2014_champ_01.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -4303,7 +4303,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pet : Bodyguard",
       "pet_view3_icon": "PetIconPack002#pet20_1",
       "pet_view3_model": "animodel/pet_2014_champ_01.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -4311,7 +4311,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pet : Bodyguard",
       "pet_view4_icon": "PetIconPack002#pet20_1",
       "pet_view4_model": "animodel/pet_2014_champ_01.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -4319,7 +4319,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Pet : Bodyguard",
       "pet_view5_icon": "PetIconPack002#pet20_1",
       "pet_view5_model": "animodel/pet_2014_champ_01.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -4357,7 +4357,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Pet : Chan Yuan",
         "iconKey": "PetIconPack002#pet22_1",
         "icon": {
           "id": 16078,
@@ -4379,7 +4379,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Pet : Chan Yuan",
         "iconKey": "PetIconPack002#pet22_1",
         "icon": {
           "id": 16078,
@@ -4401,7 +4401,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pet : Chan Yuan",
         "iconKey": "PetIconPack002#pet22_1",
         "icon": {
           "id": 16078,
@@ -4423,7 +4423,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pet : Chan Yuan",
         "iconKey": "PetIconPack002#pet22_1",
         "icon": {
           "id": 16078,
@@ -4445,7 +4445,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Pet : Chan Yuan",
         "iconKey": "PetIconPack002#pet22_1",
         "icon": {
           "id": 16078,
@@ -4494,7 +4494,7 @@
       "pet_need_material": "5",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Pet : Chan Yuan",
       "pet_view1_icon": "PetIconPack002#pet22_1",
       "pet_view1_model": "animodel/pet_2014_champ_03.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -4502,7 +4502,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Pet : Chan Yuan",
       "pet_view2_icon": "PetIconPack002#pet22_1",
       "pet_view2_model": "animodel/pet_2014_champ_03.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -4510,7 +4510,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pet : Chan Yuan",
       "pet_view3_icon": "PetIconPack002#pet22_1",
       "pet_view3_model": "animodel/pet_2014_champ_03.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -4518,7 +4518,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pet : Chan Yuan",
       "pet_view4_icon": "PetIconPack002#pet22_1",
       "pet_view4_model": "animodel/pet_2014_champ_03.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -4526,7 +4526,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Pet : Chan Yuan",
       "pet_view5_icon": "PetIconPack002#pet22_1",
       "pet_view5_model": "animodel/pet_2014_champ_03.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -4564,7 +4564,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Pet : Nadila",
         "iconKey": "PetIconPack002#pet23_1",
         "icon": {
           "id": 16079,
@@ -4586,7 +4586,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Pet : Nadila",
         "iconKey": "PetIconPack002#pet23_1",
         "icon": {
           "id": 16079,
@@ -4608,7 +4608,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pet : Nadila",
         "iconKey": "PetIconPack002#pet23_1",
         "icon": {
           "id": 16079,
@@ -4630,7 +4630,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pet : Nadila",
         "iconKey": "PetIconPack002#pet23_1",
         "icon": {
           "id": 16079,
@@ -4652,7 +4652,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Pet : Nadila",
         "iconKey": "PetIconPack002#pet23_1",
         "icon": {
           "id": 16079,
@@ -4701,7 +4701,7 @@
       "pet_need_material": "120",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Pet : Nadila",
       "pet_view1_icon": "PetIconPack002#pet23_1",
       "pet_view1_model": "animodel/pet_gfriend_yerin.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -4709,7 +4709,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Pet : Nadila",
       "pet_view2_icon": "PetIconPack002#pet23_1",
       "pet_view2_model": "animodel/pet_gfriend_yerin.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -4717,7 +4717,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pet : Nadila",
       "pet_view3_icon": "PetIconPack002#pet23_1",
       "pet_view3_model": "animodel/pet_gfriend_yerin.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -4725,7 +4725,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pet : Nadila",
       "pet_view4_icon": "PetIconPack002#pet23_1",
       "pet_view4_model": "animodel/pet_gfriend_yerin.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -4733,7 +4733,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Pet : Nadila",
       "pet_view5_icon": "PetIconPack002#pet23_1",
       "pet_view5_model": "animodel/pet_gfriend_yerin.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -4771,7 +4771,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Pet : Vanny",
         "iconKey": "PetIconPack002#pet24_1",
         "icon": {
           "id": 16080,
@@ -4793,7 +4793,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Pet : Vanny",
         "iconKey": "PetIconPack002#pet24_1",
         "icon": {
           "id": 16080,
@@ -4815,7 +4815,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pet : Vanny",
         "iconKey": "PetIconPack002#pet24_1",
         "icon": {
           "id": 16080,
@@ -4837,7 +4837,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pet : Vanny",
         "iconKey": "PetIconPack002#pet24_1",
         "icon": {
           "id": 16080,
@@ -4859,7 +4859,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Pet : Vanny",
         "iconKey": "PetIconPack002#pet24_1",
         "icon": {
           "id": 16080,
@@ -4908,7 +4908,7 @@
       "pet_need_material": "102",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Pet : Vanny",
       "pet_view1_icon": "PetIconPack002#pet24_1",
       "pet_view1_model": "animodel/pet_gfriend_sinbi.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -4916,7 +4916,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Pet : Vanny",
       "pet_view2_icon": "PetIconPack002#pet24_1",
       "pet_view2_model": "animodel/pet_gfriend_sinbi.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -4924,7 +4924,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pet : Vanny",
       "pet_view3_icon": "PetIconPack002#pet24_1",
       "pet_view3_model": "animodel/pet_gfriend_sinbi.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -4932,7 +4932,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pet : Vanny",
       "pet_view4_icon": "PetIconPack002#pet24_1",
       "pet_view4_model": "animodel/pet_gfriend_sinbi.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -4940,7 +4940,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Pet : Vanny",
       "pet_view5_icon": "PetIconPack002#pet24_1",
       "pet_view5_model": "animodel/pet_gfriend_sinbi.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -4978,7 +4978,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Pet : Rory",
         "iconKey": "PetIconPack002#pet25_1",
         "icon": {
           "id": 16081,
@@ -5000,7 +5000,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Pet : Rory",
         "iconKey": "PetIconPack002#pet25_1",
         "icon": {
           "id": 16081,
@@ -5022,7 +5022,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pet : Rory",
         "iconKey": "PetIconPack002#pet25_1",
         "icon": {
           "id": 16081,
@@ -5044,7 +5044,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pet : Rory",
         "iconKey": "PetIconPack002#pet25_1",
         "icon": {
           "id": 16081,
@@ -5066,7 +5066,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Pet : Rory",
         "iconKey": "PetIconPack002#pet25_1",
         "icon": {
           "id": 16081,
@@ -5115,7 +5115,7 @@
       "pet_need_material": "7",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Pet : Rory",
       "pet_view1_icon": "PetIconPack002#pet25_1",
       "pet_view1_model": "animodel/pet_gfriend_sowon.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -5123,7 +5123,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Pet : Rory",
       "pet_view2_icon": "PetIconPack002#pet25_1",
       "pet_view2_model": "animodel/pet_gfriend_sowon.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -5131,7 +5131,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pet : Rory",
       "pet_view3_icon": "PetIconPack002#pet25_1",
       "pet_view3_model": "animodel/pet_gfriend_sowon.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -5139,7 +5139,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pet : Rory",
       "pet_view4_icon": "PetIconPack002#pet25_1",
       "pet_view4_model": "animodel/pet_gfriend_sowon.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -5147,7 +5147,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Pet : Rory",
       "pet_view5_icon": "PetIconPack002#pet25_1",
       "pet_view5_model": "animodel/pet_gfriend_sowon.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -5185,7 +5185,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Pet : Leona",
         "iconKey": "PetIconPack002#pet26_1",
         "icon": {
           "id": 16082,
@@ -5207,7 +5207,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Pet : Leona",
         "iconKey": "PetIconPack002#pet26_1",
         "icon": {
           "id": 16082,
@@ -5229,7 +5229,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pet : Leona",
         "iconKey": "PetIconPack002#pet26_1",
         "icon": {
           "id": 16082,
@@ -5251,7 +5251,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pet : Leona",
         "iconKey": "PetIconPack002#pet26_1",
         "icon": {
           "id": 16082,
@@ -5273,7 +5273,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Pet : Leona",
         "iconKey": "PetIconPack002#pet26_1",
         "icon": {
           "id": 16082,
@@ -5322,7 +5322,7 @@
       "pet_need_material": "126",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Pet : Leona",
       "pet_view1_icon": "PetIconPack002#pet26_1",
       "pet_view1_model": "animodel/pet_gfriend_umgi.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -5330,7 +5330,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Pet : Leona",
       "pet_view2_icon": "PetIconPack002#pet26_1",
       "pet_view2_model": "animodel/pet_gfriend_umgi.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -5338,7 +5338,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pet : Leona",
       "pet_view3_icon": "PetIconPack002#pet26_1",
       "pet_view3_model": "animodel/pet_gfriend_umgi.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -5346,7 +5346,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pet : Leona",
       "pet_view4_icon": "PetIconPack002#pet26_1",
       "pet_view4_model": "animodel/pet_gfriend_umgi.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -5354,7 +5354,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Pet : Leona",
       "pet_view5_icon": "PetIconPack002#pet26_1",
       "pet_view5_model": "animodel/pet_gfriend_umgi.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -5392,7 +5392,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Pet : Dessy",
         "iconKey": "PetIconPack002#pet27_1",
         "icon": {
           "id": 16083,
@@ -5414,7 +5414,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Pet : Dessy",
         "iconKey": "PetIconPack002#pet27_1",
         "icon": {
           "id": 16083,
@@ -5436,7 +5436,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pet : Dessy",
         "iconKey": "PetIconPack002#pet27_1",
         "icon": {
           "id": 16083,
@@ -5458,7 +5458,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pet : Dessy",
         "iconKey": "PetIconPack002#pet27_1",
         "icon": {
           "id": 16083,
@@ -5480,7 +5480,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Pet : Dessy",
         "iconKey": "PetIconPack002#pet27_1",
         "icon": {
           "id": 16083,
@@ -5529,7 +5529,7 @@
       "pet_need_material": "85",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Pet : Dessy",
       "pet_view1_icon": "PetIconPack002#pet27_1",
       "pet_view1_model": "animodel/pet_gfriend_yuju.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -5537,7 +5537,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Pet : Dessy",
       "pet_view2_icon": "PetIconPack002#pet27_1",
       "pet_view2_model": "animodel/pet_gfriend_yuju.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -5545,7 +5545,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pet : Dessy",
       "pet_view3_icon": "PetIconPack002#pet27_1",
       "pet_view3_model": "animodel/pet_gfriend_yuju.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -5553,7 +5553,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pet : Dessy",
       "pet_view4_icon": "PetIconPack002#pet27_1",
       "pet_view4_model": "animodel/pet_gfriend_yuju.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -5561,7 +5561,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Pet : Dessy",
       "pet_view5_icon": "PetIconPack002#pet27_1",
       "pet_view5_model": "animodel/pet_gfriend_yuju.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -5599,7 +5599,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Pet : Sabrina",
         "iconKey": "PetIconPack002#pet28_1",
         "icon": {
           "id": 16084,
@@ -5621,7 +5621,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Pet : Sabrina",
         "iconKey": "PetIconPack002#pet28_1",
         "icon": {
           "id": 16084,
@@ -5643,7 +5643,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pet : Sabrina",
         "iconKey": "PetIconPack002#pet28_1",
         "icon": {
           "id": 16084,
@@ -5665,7 +5665,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pet : Sabrina",
         "iconKey": "PetIconPack002#pet28_1",
         "icon": {
           "id": 16084,
@@ -5687,7 +5687,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Pet : Sabrina",
         "iconKey": "PetIconPack002#pet28_1",
         "icon": {
           "id": 16084,
@@ -5736,7 +5736,7 @@
       "pet_need_material": "138",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Pet : Sabrina",
       "pet_view1_icon": "PetIconPack002#pet28_1",
       "pet_view1_model": "animodel/pet_gfriend_eunha.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -5744,7 +5744,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Pet : Sabrina",
       "pet_view2_icon": "PetIconPack002#pet28_1",
       "pet_view2_model": "animodel/pet_gfriend_eunha.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -5752,7 +5752,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pet : Sabrina",
       "pet_view3_icon": "PetIconPack002#pet28_1",
       "pet_view3_model": "animodel/pet_gfriend_eunha.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -5760,7 +5760,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pet : Sabrina",
       "pet_view4_icon": "PetIconPack002#pet28_1",
       "pet_view4_model": "animodel/pet_gfriend_eunha.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -5768,7 +5768,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Pet : Sabrina",
       "pet_view5_icon": "PetIconPack002#pet28_1",
       "pet_view5_model": "animodel/pet_gfriend_eunha.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -5806,7 +5806,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Giant Lab",
         "iconKey": "PetIconPack002#pet29_1",
         "icon": {
           "id": 16085,
@@ -5828,7 +5828,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Giant Lab",
         "iconKey": "PetIconPack002#pet29_1",
         "icon": {
           "id": 16085,
@@ -5850,7 +5850,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Giant Lab",
         "iconKey": "PetIconPack002#pet29_1",
         "icon": {
           "id": 16085,
@@ -5872,7 +5872,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Giant Lab",
         "iconKey": "PetIconPack002#pet29_1",
         "icon": {
           "id": 16085,
@@ -5894,7 +5894,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Giant Lab",
         "iconKey": "PetIconPack002#pet29_1",
         "icon": {
           "id": 16085,
@@ -5943,7 +5943,7 @@
       "pet_need_material": "173",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Giant Lab",
       "pet_view1_icon": "PetIconPack002#pet29_1",
       "pet_view1_model": "animodel/pet_bangtan_RapMonster.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -5951,7 +5951,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Giant Lab",
       "pet_view2_icon": "PetIconPack002#pet29_1",
       "pet_view2_model": "animodel/pet_bangtan_RapMonster.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -5959,7 +5959,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Giant Lab",
       "pet_view3_icon": "PetIconPack002#pet29_1",
       "pet_view3_model": "animodel/pet_bangtan_RapMonster.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -5967,7 +5967,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Giant Lab",
       "pet_view4_icon": "PetIconPack002#pet29_1",
       "pet_view4_model": "animodel/pet_bangtan_RapMonster.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -5975,7 +5975,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Giant Lab",
       "pet_view5_icon": "PetIconPack002#pet29_1",
       "pet_view5_model": "animodel/pet_bangtan_RapMonster.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -6013,7 +6013,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Pet : Jin",
         "iconKey": "PetIconPack002#pet30_1",
         "icon": {
           "id": 16086,
@@ -6035,7 +6035,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Pet : Jin",
         "iconKey": "PetIconPack002#pet30_1",
         "icon": {
           "id": 16086,
@@ -6057,7 +6057,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pet : Jin",
         "iconKey": "PetIconPack002#pet30_1",
         "icon": {
           "id": 16086,
@@ -6079,7 +6079,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pet : Jin",
         "iconKey": "PetIconPack002#pet30_1",
         "icon": {
           "id": 16086,
@@ -6101,7 +6101,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Pet : Jin",
         "iconKey": "PetIconPack002#pet30_1",
         "icon": {
           "id": 16086,
@@ -6150,7 +6150,7 @@
       "pet_need_material": "173",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Pet : Jin",
       "pet_view1_icon": "PetIconPack002#pet30_1",
       "pet_view1_model": "animodel/pet_bangtan_Jin.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -6158,7 +6158,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Pet : Jin",
       "pet_view2_icon": "PetIconPack002#pet30_1",
       "pet_view2_model": "animodel/pet_bangtan_Jin.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -6166,7 +6166,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pet : Jin",
       "pet_view3_icon": "PetIconPack002#pet30_1",
       "pet_view3_model": "animodel/pet_bangtan_Jin.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -6174,7 +6174,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pet : Jin",
       "pet_view4_icon": "PetIconPack002#pet30_1",
       "pet_view4_model": "animodel/pet_bangtan_Jin.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -6182,7 +6182,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Pet : Jin",
       "pet_view5_icon": "PetIconPack002#pet30_1",
       "pet_view5_model": "animodel/pet_bangtan_Jin.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -6220,7 +6220,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Pet : Jay-Hop",
         "iconKey": "PetIconPack002#pet31_1",
         "icon": {
           "id": 16087,
@@ -6242,7 +6242,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Pet : Jay-Hop",
         "iconKey": "PetIconPack002#pet31_1",
         "icon": {
           "id": 16087,
@@ -6264,7 +6264,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pet : Jay-Hop",
         "iconKey": "PetIconPack002#pet31_1",
         "icon": {
           "id": 16087,
@@ -6286,7 +6286,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pet : Jay-Hop",
         "iconKey": "PetIconPack002#pet31_1",
         "icon": {
           "id": 16087,
@@ -6308,7 +6308,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Pet : Jay-Hop",
         "iconKey": "PetIconPack002#pet31_1",
         "icon": {
           "id": 16087,
@@ -6357,7 +6357,7 @@
       "pet_need_material": "173",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Pet : Jay-Hop",
       "pet_view1_icon": "PetIconPack002#pet31_1",
       "pet_view1_model": "animodel/pet_bangtan_J-Hope.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -6365,7 +6365,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Pet : Jay-Hop",
       "pet_view2_icon": "PetIconPack002#pet31_1",
       "pet_view2_model": "animodel/pet_bangtan_J-Hope.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -6373,7 +6373,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pet : Jay-Hop",
       "pet_view3_icon": "PetIconPack002#pet31_1",
       "pet_view3_model": "animodel/pet_bangtan_J-Hope.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -6381,7 +6381,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pet : Jay-Hop",
       "pet_view4_icon": "PetIconPack002#pet31_1",
       "pet_view4_model": "animodel/pet_bangtan_J-Hope.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -6389,7 +6389,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Pet : Jay-Hop",
       "pet_view5_icon": "PetIconPack002#pet31_1",
       "pet_view5_model": "animodel/pet_bangtan_J-Hope.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -6427,7 +6427,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Pet : Jimin",
         "iconKey": "PetIconPack002#pet32_1",
         "icon": {
           "id": 16088,
@@ -6449,7 +6449,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Pet : Jimin",
         "iconKey": "PetIconPack002#pet32_1",
         "icon": {
           "id": 16088,
@@ -6471,7 +6471,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pet : Jimin",
         "iconKey": "PetIconPack002#pet32_1",
         "icon": {
           "id": 16088,
@@ -6493,7 +6493,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pet : Jimin",
         "iconKey": "PetIconPack002#pet32_1",
         "icon": {
           "id": 16088,
@@ -6515,7 +6515,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Pet : Jimin",
         "iconKey": "PetIconPack002#pet32_1",
         "icon": {
           "id": 16088,
@@ -6564,7 +6564,7 @@
       "pet_need_material": "173",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Pet : Jimin",
       "pet_view1_icon": "PetIconPack002#pet32_1",
       "pet_view1_model": "animodel/pet_bangtan_JiMin.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -6572,7 +6572,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Pet : Jimin",
       "pet_view2_icon": "PetIconPack002#pet32_1",
       "pet_view2_model": "animodel/pet_bangtan_JiMin.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -6580,7 +6580,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pet : Jimin",
       "pet_view3_icon": "PetIconPack002#pet32_1",
       "pet_view3_model": "animodel/pet_bangtan_JiMin.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -6588,7 +6588,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pet : Jimin",
       "pet_view4_icon": "PetIconPack002#pet32_1",
       "pet_view4_model": "animodel/pet_bangtan_JiMin.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -6596,7 +6596,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Pet : Jimin",
       "pet_view5_icon": "PetIconPack002#pet32_1",
       "pet_view5_model": "animodel/pet_bangtan_JiMin.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -6634,7 +6634,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Pet : Jeong Guk",
         "iconKey": "PetIconPack002#pet33_1",
         "icon": {
           "id": 16089,
@@ -6656,7 +6656,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Pet : Jeong Guk",
         "iconKey": "PetIconPack002#pet33_1",
         "icon": {
           "id": 16089,
@@ -6678,7 +6678,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pet : Jeong Guk",
         "iconKey": "PetIconPack002#pet33_1",
         "icon": {
           "id": 16089,
@@ -6700,7 +6700,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pet : Jeong Guk",
         "iconKey": "PetIconPack002#pet33_1",
         "icon": {
           "id": 16089,
@@ -6722,7 +6722,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Pet : Jeong Guk",
         "iconKey": "PetIconPack002#pet33_1",
         "icon": {
           "id": 16089,
@@ -6771,7 +6771,7 @@
       "pet_need_material": "173",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Pet : Jeong Guk",
       "pet_view1_icon": "PetIconPack002#pet33_1",
       "pet_view1_model": "animodel/pet_bangtan_JungKook.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -6779,7 +6779,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Pet : Jeong Guk",
       "pet_view2_icon": "PetIconPack002#pet33_1",
       "pet_view2_model": "animodel/pet_bangtan_JungKook.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -6787,7 +6787,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pet : Jeong Guk",
       "pet_view3_icon": "PetIconPack002#pet33_1",
       "pet_view3_model": "animodel/pet_bangtan_JungKook.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -6795,7 +6795,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pet : Jeong Guk",
       "pet_view4_icon": "PetIconPack002#pet33_1",
       "pet_view4_model": "animodel/pet_bangtan_JungKook.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -6803,7 +6803,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Pet : Jeong Guk",
       "pet_view5_icon": "PetIconPack002#pet33_1",
       "pet_view5_model": "animodel/pet_bangtan_JungKook.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -6841,7 +6841,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Pet : Sugar",
         "iconKey": "PetIconPack002#pet34_1",
         "icon": {
           "id": 16090,
@@ -6863,7 +6863,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Pet : Sugar",
         "iconKey": "PetIconPack002#pet34_1",
         "icon": {
           "id": 16090,
@@ -6885,7 +6885,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pet : Sugar",
         "iconKey": "PetIconPack002#pet34_1",
         "icon": {
           "id": 16090,
@@ -6907,7 +6907,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pet : Sugar",
         "iconKey": "PetIconPack002#pet34_1",
         "icon": {
           "id": 16090,
@@ -6929,7 +6929,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Pet : Sugar",
         "iconKey": "PetIconPack002#pet34_1",
         "icon": {
           "id": 16090,
@@ -6978,7 +6978,7 @@
       "pet_need_material": "173",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Pet : Sugar",
       "pet_view1_icon": "PetIconPack002#pet34_1",
       "pet_view1_model": "animodel/pet_bangtan_Suga.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -6986,7 +6986,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Pet : Sugar",
       "pet_view2_icon": "PetIconPack002#pet34_1",
       "pet_view2_model": "animodel/pet_bangtan_Suga.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -6994,7 +6994,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pet : Sugar",
       "pet_view3_icon": "PetIconPack002#pet34_1",
       "pet_view3_model": "animodel/pet_bangtan_Suga.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -7002,7 +7002,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pet : Sugar",
       "pet_view4_icon": "PetIconPack002#pet34_1",
       "pet_view4_model": "animodel/pet_bangtan_Suga.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -7010,7 +7010,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Pet : Sugar",
       "pet_view5_icon": "PetIconPack002#pet34_1",
       "pet_view5_model": "animodel/pet_bangtan_Suga.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -7048,7 +7048,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Pet : V",
         "iconKey": "PetIconPack002#pet35_1",
         "icon": {
           "id": 16091,
@@ -7070,7 +7070,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Pet : V",
         "iconKey": "PetIconPack002#pet35_1",
         "icon": {
           "id": 16091,
@@ -7092,7 +7092,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pet : V",
         "iconKey": "PetIconPack002#pet35_1",
         "icon": {
           "id": 16091,
@@ -7114,7 +7114,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pet : V",
         "iconKey": "PetIconPack002#pet35_1",
         "icon": {
           "id": 16091,
@@ -7136,7 +7136,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Pet : V",
         "iconKey": "PetIconPack002#pet35_1",
         "icon": {
           "id": 16091,
@@ -7185,7 +7185,7 @@
       "pet_need_material": "173",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Pet : V",
       "pet_view1_icon": "PetIconPack002#pet35_1",
       "pet_view1_model": "animodel/pet_bangtan_V.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -7193,7 +7193,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Pet : V",
       "pet_view2_icon": "PetIconPack002#pet35_1",
       "pet_view2_model": "animodel/pet_bangtan_V.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -7201,7 +7201,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pet : V",
       "pet_view3_icon": "PetIconPack002#pet35_1",
       "pet_view3_model": "animodel/pet_bangtan_V.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -7209,7 +7209,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pet : V",
       "pet_view4_icon": "PetIconPack002#pet35_1",
       "pet_view4_model": "animodel/pet_bangtan_V.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -7217,7 +7217,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Pet : V",
       "pet_view5_icon": "PetIconPack002#pet35_1",
       "pet_view5_model": "animodel/pet_bangtan_V.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -7255,7 +7255,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Pet : Hanny",
         "iconKey": "PetIconPack002#pet36_1",
         "icon": {
           "id": 16092,
@@ -7277,7 +7277,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Pet : Hanny",
         "iconKey": "PetIconPack002#pet36_1",
         "icon": {
           "id": 16092,
@@ -7299,7 +7299,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pet : Hanny",
         "iconKey": "PetIconPack002#pet36_1",
         "icon": {
           "id": 16092,
@@ -7321,7 +7321,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pet : Hanny",
         "iconKey": "PetIconPack002#pet36_1",
         "icon": {
           "id": 16092,
@@ -7343,7 +7343,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Pet : Hanny",
         "iconKey": "PetIconPack002#pet36_1",
         "icon": {
           "id": 16092,
@@ -7392,7 +7392,7 @@
       "pet_need_material": "173",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Pet : Hanny",
       "pet_view1_icon": "PetIconPack002#pet36_1",
       "pet_view1_model": "animodel/pet_hongjinyoung.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -7400,7 +7400,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Pet : Hanny",
       "pet_view2_icon": "PetIconPack002#pet36_1",
       "pet_view2_model": "animodel/pet_hongjinyoung.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -7408,7 +7408,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pet : Hanny",
       "pet_view3_icon": "PetIconPack002#pet36_1",
       "pet_view3_model": "animodel/pet_hongjinyoung.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -7416,7 +7416,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pet : Hanny",
       "pet_view4_icon": "PetIconPack002#pet36_1",
       "pet_view4_model": "animodel/pet_hongjinyoung.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -7424,7 +7424,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Pet : Hanny",
       "pet_view5_icon": "PetIconPack002#pet36_1",
       "pet_view5_model": "animodel/pet_hongjinyoung.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -7462,7 +7462,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Rudolph",
         "iconKey": "PetIconPack002#pet37_1",
         "icon": {
           "id": 16093,
@@ -7484,7 +7484,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Rudolph",
         "iconKey": "PetIconPack002#pet37_1",
         "icon": {
           "id": 16093,
@@ -7506,7 +7506,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Rudolph",
         "iconKey": "PetIconPack002#pet37_1",
         "icon": {
           "id": 16093,
@@ -7528,7 +7528,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Rudolph",
         "iconKey": "PetIconPack002#pet37_1",
         "icon": {
           "id": 16093,
@@ -7550,7 +7550,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Rudolph",
         "iconKey": "PetIconPack002#pet37_1",
         "icon": {
           "id": 16093,
@@ -7599,7 +7599,7 @@
       "pet_need_material": "166",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Rudolph",
       "pet_view1_icon": "PetIconPack002#pet37_1",
       "pet_view1_model": "animodel/pet_2014santa.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -7607,7 +7607,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Rudolph",
       "pet_view2_icon": "PetIconPack002#pet37_1",
       "pet_view2_model": "animodel/pet_2014santa.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -7615,7 +7615,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Rudolph",
       "pet_view3_icon": "PetIconPack002#pet37_1",
       "pet_view3_model": "animodel/pet_2014santa.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -7623,7 +7623,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Rudolph",
       "pet_view4_icon": "PetIconPack002#pet37_1",
       "pet_view4_model": "animodel/pet_2014santa.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -7631,7 +7631,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Rudolph",
       "pet_view5_icon": "PetIconPack002#pet37_1",
       "pet_view5_model": "animodel/pet_2014santa.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -7669,7 +7669,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Franken Bat",
         "iconKey": "PetIconPack002#pet38_1",
         "icon": {
           "id": 16094,
@@ -7691,7 +7691,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Franken Bat",
         "iconKey": "PetIconPack002#pet38_1",
         "icon": {
           "id": 16094,
@@ -7713,7 +7713,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Franken Bat",
         "iconKey": "PetIconPack002#pet38_1",
         "icon": {
           "id": 16094,
@@ -7735,7 +7735,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Franken Bat",
         "iconKey": "PetIconPack002#pet38_1",
         "icon": {
           "id": 16094,
@@ -7757,7 +7757,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Franken Bat",
         "iconKey": "PetIconPack002#pet38_1",
         "icon": {
           "id": 16094,
@@ -7808,7 +7808,7 @@
       "pet_need_material": "166",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Franken Bat",
       "pet_view1_icon": "PetIconPack002#pet38_1",
       "pet_view1_model": "animodel/pet_halloween_01.txt",
       "pet_view1_model_scale_x": "1.4f",
@@ -7816,7 +7816,7 @@
       "pet_view1_model_scale_z": "1.4f",
       "pet_view1_ani": "pet_halloween_01_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Franken Bat",
       "pet_view2_icon": "PetIconPack002#pet38_1",
       "pet_view2_model": "animodel/pet_halloween_01.txt",
       "pet_view2_model_scale_x": "1.4f",
@@ -7824,7 +7824,7 @@
       "pet_view2_model_scale_z": "1.4f",
       "pet_view2_ani": "pet_halloween_01_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Franken Bat",
       "pet_view3_icon": "PetIconPack002#pet38_1",
       "pet_view3_model": "animodel/pet_halloween_01.txt",
       "pet_view3_model_scale_x": "1.4f",
@@ -7832,7 +7832,7 @@
       "pet_view3_model_scale_z": "1.4f",
       "pet_view3_ani": "pet_halloween_01_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Franken Bat",
       "pet_view4_icon": "PetIconPack002#pet38_1",
       "pet_view4_model": "animodel/pet_halloween_01.txt",
       "pet_view4_model_scale_x": "1.4f",
@@ -7840,7 +7840,7 @@
       "pet_view4_model_scale_z": "1.4f",
       "pet_view4_ani": "pet_halloween_01_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Franken Bat",
       "pet_view5_icon": "PetIconPack002#pet38_1",
       "pet_view5_model": "animodel/pet_halloween_01.txt",
       "pet_view5_model_scale_x": "1.4f",
@@ -7878,7 +7878,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Witch Bathory",
         "iconKey": "PetIconPack002#pet39_1",
         "icon": {
           "id": 16095,
@@ -7900,7 +7900,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Witch Bathory",
         "iconKey": "PetIconPack002#pet39_1",
         "icon": {
           "id": 16095,
@@ -7922,7 +7922,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Witch Bathory",
         "iconKey": "PetIconPack002#pet39_1",
         "icon": {
           "id": 16095,
@@ -7944,7 +7944,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Witch Bathory",
         "iconKey": "PetIconPack002#pet39_1",
         "icon": {
           "id": 16095,
@@ -7966,7 +7966,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Witch Bathory",
         "iconKey": "PetIconPack002#pet39_1",
         "icon": {
           "id": 16095,
@@ -8017,7 +8017,7 @@
       "pet_need_material": "166",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Witch Bathory",
       "pet_view1_icon": "PetIconPack002#pet39_1",
       "pet_view1_model": "animodel/pet_halloween_02.txt",
       "pet_view1_model_scale_x": "1.4f",
@@ -8025,7 +8025,7 @@
       "pet_view1_model_scale_z": "1.4f",
       "pet_view1_ani": "pet_halloween_02_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Witch Bathory",
       "pet_view2_icon": "PetIconPack002#pet39_1",
       "pet_view2_model": "animodel/pet_halloween_02.txt",
       "pet_view2_model_scale_x": "1.4f",
@@ -8033,7 +8033,7 @@
       "pet_view2_model_scale_z": "1.4f",
       "pet_view2_ani": "pet_halloween_02_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Witch Bathory",
       "pet_view3_icon": "PetIconPack002#pet39_1",
       "pet_view3_model": "animodel/pet_halloween_02.txt",
       "pet_view3_model_scale_x": "1.4f",
@@ -8041,7 +8041,7 @@
       "pet_view3_model_scale_z": "1.4f",
       "pet_view3_ani": "pet_halloween_02_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Witch Bathory",
       "pet_view4_icon": "PetIconPack002#pet39_1",
       "pet_view4_model": "animodel/pet_halloween_02.txt",
       "pet_view4_model_scale_x": "1.4f",
@@ -8049,7 +8049,7 @@
       "pet_view4_model_scale_z": "1.4f",
       "pet_view4_ani": "pet_halloween_02_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Witch Bathory",
       "pet_view5_icon": "PetIconPack002#pet39_1",
       "pet_view5_model": "animodel/pet_halloween_02.txt",
       "pet_view5_model_scale_x": "1.4f",
@@ -8087,7 +8087,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Jack O' Lantern",
         "iconKey": "PetIconPack002#pet40_1",
         "icon": {
           "id": 16096,
@@ -8109,7 +8109,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Jack O' Lantern",
         "iconKey": "PetIconPack002#pet40_1",
         "icon": {
           "id": 16096,
@@ -8131,7 +8131,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Jack O' Lantern",
         "iconKey": "PetIconPack002#pet40_1",
         "icon": {
           "id": 16096,
@@ -8153,7 +8153,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Jack O' Lantern",
         "iconKey": "PetIconPack002#pet40_1",
         "icon": {
           "id": 16096,
@@ -8175,7 +8175,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Jack O' Lantern",
         "iconKey": "PetIconPack002#pet40_1",
         "icon": {
           "id": 16096,
@@ -8226,7 +8226,7 @@
       "pet_need_material": "166",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Jack O' Lantern",
       "pet_view1_icon": "PetIconPack002#pet40_1",
       "pet_view1_model": "animodel/pet_halloween_03.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -8234,7 +8234,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "pet_halloween_03_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Jack O' Lantern",
       "pet_view2_icon": "PetIconPack002#pet40_1",
       "pet_view2_model": "animodel/pet_halloween_03.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -8242,7 +8242,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "pet_halloween_03_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Jack O' Lantern",
       "pet_view3_icon": "PetIconPack002#pet40_1",
       "pet_view3_model": "animodel/pet_halloween_03.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -8250,7 +8250,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "pet_halloween_03_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Jack O' Lantern",
       "pet_view4_icon": "PetIconPack002#pet40_1",
       "pet_view4_model": "animodel/pet_halloween_03.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -8258,7 +8258,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "pet_halloween_03_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Jack O' Lantern",
       "pet_view5_icon": "PetIconPack002#pet40_1",
       "pet_view5_model": "animodel/pet_halloween_03.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -8296,7 +8296,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Crescent Little Bat",
         "iconKey": "PetIconPack002#pet41_1",
         "icon": {
           "id": 16097,
@@ -8318,7 +8318,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Crescent Little Bat",
         "iconKey": "PetIconPack002#pet41_1",
         "icon": {
           "id": 16097,
@@ -8340,7 +8340,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Crescent Little Bat",
         "iconKey": "PetIconPack002#pet41_1",
         "icon": {
           "id": 16097,
@@ -8362,7 +8362,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Crescent Little Bat",
         "iconKey": "PetIconPack002#pet41_1",
         "icon": {
           "id": 16097,
@@ -8384,7 +8384,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Crescent Little Bat",
         "iconKey": "PetIconPack002#pet41_1",
         "icon": {
           "id": 16097,
@@ -8435,7 +8435,7 @@
       "pet_need_material": "166",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Crescent Little Bat",
       "pet_view1_icon": "PetIconPack002#pet41_1",
       "pet_view1_model": "animodel/pet_2019halloween_01.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -8443,7 +8443,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_2019halloween_01_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Crescent Little Bat",
       "pet_view2_icon": "PetIconPack002#pet41_1",
       "pet_view2_model": "animodel/pet_2019halloween_01.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -8451,7 +8451,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_2019halloween_01_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Crescent Little Bat",
       "pet_view3_icon": "PetIconPack002#pet41_1",
       "pet_view3_model": "animodel/pet_2019halloween_01.txt",
       "pet_view3_model_scale_x": "1.0f",
@@ -8459,7 +8459,7 @@
       "pet_view3_model_scale_z": "1.0f",
       "pet_view3_ani": "pet_2019halloween_01_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Crescent Little Bat",
       "pet_view4_icon": "PetIconPack002#pet41_1",
       "pet_view4_model": "animodel/pet_2019halloween_01.txt",
       "pet_view4_model_scale_x": "1.0f",
@@ -8467,7 +8467,7 @@
       "pet_view4_model_scale_z": "1.0f",
       "pet_view4_ani": "pet_2019halloween_01_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Crescent Little Bat",
       "pet_view5_icon": "PetIconPack002#pet41_1",
       "pet_view5_model": "animodel/pet_2019halloween_01.txt",
       "pet_view5_model_scale_x": "1.0f",
@@ -8505,7 +8505,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Crescent Little Cat",
         "iconKey": "PetIconPack002#pet42_1",
         "icon": {
           "id": 16098,
@@ -8527,7 +8527,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Crescent Little Cat",
         "iconKey": "PetIconPack002#pet42_1",
         "icon": {
           "id": 16098,
@@ -8549,7 +8549,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Crescent Little Cat",
         "iconKey": "PetIconPack002#pet42_1",
         "icon": {
           "id": 16098,
@@ -8571,7 +8571,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Crescent Little Cat",
         "iconKey": "PetIconPack002#pet42_1",
         "icon": {
           "id": 16098,
@@ -8593,7 +8593,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Crescent Little Cat",
         "iconKey": "PetIconPack002#pet42_1",
         "icon": {
           "id": 16098,
@@ -8644,7 +8644,7 @@
       "pet_need_material": "166",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Crescent Little Cat",
       "pet_view1_icon": "PetIconPack002#pet42_1",
       "pet_view1_model": "animodel/pet_2019halloween_02.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -8652,7 +8652,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_2019halloween_02_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Crescent Little Cat",
       "pet_view2_icon": "PetIconPack002#pet42_1",
       "pet_view2_model": "animodel/pet_2019halloween_02.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -8660,7 +8660,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_2019halloween_02_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Crescent Little Cat",
       "pet_view3_icon": "PetIconPack002#pet42_1",
       "pet_view3_model": "animodel/pet_2019halloween_02.txt",
       "pet_view3_model_scale_x": "1.0f",
@@ -8668,7 +8668,7 @@
       "pet_view3_model_scale_z": "1.0f",
       "pet_view3_ani": "pet_2019halloween_02_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Crescent Little Cat",
       "pet_view4_icon": "PetIconPack002#pet42_1",
       "pet_view4_model": "animodel/pet_2019halloween_02.txt",
       "pet_view4_model_scale_x": "1.0f",
@@ -8676,7 +8676,7 @@
       "pet_view4_model_scale_z": "1.0f",
       "pet_view4_ani": "pet_2019halloween_02_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Crescent Little Cat",
       "pet_view5_icon": "PetIconPack002#pet42_1",
       "pet_view5_model": "animodel/pet_2019halloween_02.txt",
       "pet_view5_model_scale_x": "1.0f",
@@ -8714,7 +8714,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Crescent Little Ghost",
         "iconKey": "PetIconPack002#pet43_1",
         "icon": {
           "id": 16099,
@@ -8736,7 +8736,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Crescent Little Ghost",
         "iconKey": "PetIconPack002#pet43_1",
         "icon": {
           "id": 16099,
@@ -8758,7 +8758,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Crescent Little Ghost",
         "iconKey": "PetIconPack002#pet43_1",
         "icon": {
           "id": 16099,
@@ -8780,7 +8780,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Crescent Little Ghost",
         "iconKey": "PetIconPack002#pet43_1",
         "icon": {
           "id": 16099,
@@ -8802,7 +8802,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Crescent Little Ghost",
         "iconKey": "PetIconPack002#pet43_1",
         "icon": {
           "id": 16099,
@@ -8853,7 +8853,7 @@
       "pet_need_material": "166",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Crescent Little Ghost",
       "pet_view1_icon": "PetIconPack002#pet43_1",
       "pet_view1_model": "animodel/pet_2019halloween_03.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -8861,7 +8861,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_2019halloween_03_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Crescent Little Ghost",
       "pet_view2_icon": "PetIconPack002#pet43_1",
       "pet_view2_model": "animodel/pet_2019halloween_03.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -8869,7 +8869,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_2019halloween_03_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Crescent Little Ghost",
       "pet_view3_icon": "PetIconPack002#pet43_1",
       "pet_view3_model": "animodel/pet_2019halloween_03.txt",
       "pet_view3_model_scale_x": "1.0f",
@@ -8877,7 +8877,7 @@
       "pet_view3_model_scale_z": "1.0f",
       "pet_view3_ani": "pet_2019halloween_03_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Crescent Little Ghost",
       "pet_view4_icon": "PetIconPack002#pet43_1",
       "pet_view4_model": "animodel/pet_2019halloween_03.txt",
       "pet_view4_model_scale_x": "1.0f",
@@ -8885,7 +8885,7 @@
       "pet_view4_model_scale_z": "1.0f",
       "pet_view4_ani": "pet_2019halloween_03_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Crescent Little Ghost",
       "pet_view5_icon": "PetIconPack002#pet43_1",
       "pet_view5_model": "animodel/pet_2019halloween_03.txt",
       "pet_view5_model_scale_x": "1.0f",
@@ -8923,7 +8923,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Little Bat",
         "iconKey": "PetIconPack003#pet44_1",
         "icon": {
           "id": 16102,
@@ -8945,7 +8945,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Little Bat",
         "iconKey": "PetIconPack003#pet44_1",
         "icon": {
           "id": 16102,
@@ -8967,7 +8967,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Little Bat",
         "iconKey": "PetIconPack003#pet44_1",
         "icon": {
           "id": 16102,
@@ -8989,7 +8989,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Little Bat",
         "iconKey": "PetIconPack003#pet44_1",
         "icon": {
           "id": 16102,
@@ -9011,7 +9011,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Little Bat",
         "iconKey": "PetIconPack003#pet44_1",
         "icon": {
           "id": 16102,
@@ -9062,7 +9062,7 @@
       "pet_need_material": "166",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Little Bat",
       "pet_view1_icon": "PetIconPack003#pet44_1",
       "pet_view1_model": "animodel/pet_2019halloween_04.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -9070,7 +9070,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_2019halloween_01_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Little Bat",
       "pet_view2_icon": "PetIconPack003#pet44_1",
       "pet_view2_model": "animodel/pet_2019halloween_04.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -9078,7 +9078,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_2019halloween_01_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Little Bat",
       "pet_view3_icon": "PetIconPack003#pet44_1",
       "pet_view3_model": "animodel/pet_2019halloween_04.txt",
       "pet_view3_model_scale_x": "1.0f",
@@ -9086,7 +9086,7 @@
       "pet_view3_model_scale_z": "1.0f",
       "pet_view3_ani": "pet_2019halloween_01_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Little Bat",
       "pet_view4_icon": "PetIconPack003#pet44_1",
       "pet_view4_model": "animodel/pet_2019halloween_04.txt",
       "pet_view4_model_scale_x": "1.0f",
@@ -9094,7 +9094,7 @@
       "pet_view4_model_scale_z": "1.0f",
       "pet_view4_ani": "pet_2019halloween_01_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Little Bat",
       "pet_view5_icon": "PetIconPack003#pet44_1",
       "pet_view5_model": "animodel/pet_2019halloween_04.txt",
       "pet_view5_model_scale_x": "1.0f",
@@ -9132,7 +9132,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Little Cat",
         "iconKey": "PetIconPack003#pet45_1",
         "icon": {
           "id": 16103,
@@ -9154,7 +9154,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Little Cat",
         "iconKey": "PetIconPack003#pet45_1",
         "icon": {
           "id": 16103,
@@ -9176,7 +9176,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Little Cat",
         "iconKey": "PetIconPack003#pet45_1",
         "icon": {
           "id": 16103,
@@ -9198,7 +9198,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Little Cat",
         "iconKey": "PetIconPack003#pet45_1",
         "icon": {
           "id": 16103,
@@ -9220,7 +9220,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Little Cat",
         "iconKey": "PetIconPack003#pet45_1",
         "icon": {
           "id": 16103,
@@ -9271,7 +9271,7 @@
       "pet_need_material": "166",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Little Cat",
       "pet_view1_icon": "PetIconPack003#pet45_1",
       "pet_view1_model": "animodel/pet_2019halloween_05.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -9279,7 +9279,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_2019halloween_02_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Little Cat",
       "pet_view2_icon": "PetIconPack003#pet45_1",
       "pet_view2_model": "animodel/pet_2019halloween_05.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -9287,7 +9287,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_2019halloween_02_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Little Cat",
       "pet_view3_icon": "PetIconPack003#pet45_1",
       "pet_view3_model": "animodel/pet_2019halloween_05.txt",
       "pet_view3_model_scale_x": "1.0f",
@@ -9295,7 +9295,7 @@
       "pet_view3_model_scale_z": "1.0f",
       "pet_view3_ani": "pet_2019halloween_02_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Little Cat",
       "pet_view4_icon": "PetIconPack003#pet45_1",
       "pet_view4_model": "animodel/pet_2019halloween_05.txt",
       "pet_view4_model_scale_x": "1.0f",
@@ -9303,7 +9303,7 @@
       "pet_view4_model_scale_z": "1.0f",
       "pet_view4_ani": "pet_2019halloween_02_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Little Cat",
       "pet_view5_icon": "PetIconPack003#pet45_1",
       "pet_view5_model": "animodel/pet_2019halloween_05.txt",
       "pet_view5_model_scale_x": "1.0f",
@@ -9341,7 +9341,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Little Ghost",
         "iconKey": "PetIconPack003#pet46_1",
         "icon": {
           "id": 16104,
@@ -9363,7 +9363,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Little Ghost",
         "iconKey": "PetIconPack003#pet46_1",
         "icon": {
           "id": 16104,
@@ -9385,7 +9385,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Little Ghost",
         "iconKey": "PetIconPack003#pet46_1",
         "icon": {
           "id": 16104,
@@ -9407,7 +9407,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Little Ghost",
         "iconKey": "PetIconPack003#pet46_1",
         "icon": {
           "id": 16104,
@@ -9429,7 +9429,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Little Ghost",
         "iconKey": "PetIconPack003#pet46_1",
         "icon": {
           "id": 16104,
@@ -9480,7 +9480,7 @@
       "pet_need_material": "166",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Little Ghost",
       "pet_view1_icon": "PetIconPack003#pet46_1",
       "pet_view1_model": "animodel/pet_2019halloween_06.txt",
       "pet_view1_model_scale_x": "1.0f",
@@ -9488,7 +9488,7 @@
       "pet_view1_model_scale_z": "1.0f",
       "pet_view1_ani": "pet_2019halloween_03_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Little Ghost",
       "pet_view2_icon": "PetIconPack003#pet46_1",
       "pet_view2_model": "animodel/pet_2019halloween_06.txt",
       "pet_view2_model_scale_x": "1.0f",
@@ -9496,7 +9496,7 @@
       "pet_view2_model_scale_z": "1.0f",
       "pet_view2_ani": "pet_2019halloween_03_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Little Ghost",
       "pet_view3_icon": "PetIconPack003#pet46_1",
       "pet_view3_model": "animodel/pet_2019halloween_06.txt",
       "pet_view3_model_scale_x": "1.0f",
@@ -9504,7 +9504,7 @@
       "pet_view3_model_scale_z": "1.0f",
       "pet_view3_ani": "pet_2019halloween_03_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Little Ghost",
       "pet_view4_icon": "PetIconPack003#pet46_1",
       "pet_view4_model": "animodel/pet_2019halloween_06.txt",
       "pet_view4_model_scale_x": "1.0f",
@@ -9512,7 +9512,7 @@
       "pet_view4_model_scale_z": "1.0f",
       "pet_view4_ani": "pet_2019halloween_03_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Little Ghost",
       "pet_view5_icon": "PetIconPack003#pet46_1",
       "pet_view5_model": "animodel/pet_2019halloween_06.txt",
       "pet_view5_model_scale_x": "1.0f",
@@ -14088,7 +14088,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Gatot Kaca",
         "iconKey": "Foreign_pack_08#pet_gatotkaca",
         "icon": {
           "id": 6962,
@@ -14110,7 +14110,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Gatot Kaca",
         "iconKey": "Foreign_pack_08#pet_gatotkaca",
         "icon": {
           "id": 6962,
@@ -14132,7 +14132,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Gatot Kaca",
         "iconKey": "Foreign_pack_08#pet_gatotkaca",
         "icon": {
           "id": 6962,
@@ -14154,7 +14154,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Gatot Kaca",
         "iconKey": "Foreign_pack_08#pet_gatotkaca",
         "icon": {
           "id": 6962,
@@ -14176,7 +14176,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Gatot Kaca",
         "iconKey": "Foreign_pack_08#pet_gatotkaca",
         "icon": {
           "id": 6962,
@@ -14225,7 +14225,7 @@
       "pet_need_material": "166",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Gatot Kaca",
       "pet_view1_icon": "Foreign_pack_08#pet_gatotkaca",
       "pet_view1_model": "animodel/pet_gatokaca.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -14233,7 +14233,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Gatot Kaca",
       "pet_view2_icon": "Foreign_pack_08#pet_gatotkaca",
       "pet_view2_model": "animodel/pet_gatokaca.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -14241,7 +14241,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Gatot Kaca",
       "pet_view3_icon": "Foreign_pack_08#pet_gatotkaca",
       "pet_view3_model": "animodel/pet_gatokaca.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -14249,7 +14249,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Gatot Kaca",
       "pet_view4_icon": "Foreign_pack_08#pet_gatotkaca",
       "pet_view4_model": "animodel/pet_gatokaca.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -14257,7 +14257,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Gatot Kaca",
       "pet_view5_icon": "Foreign_pack_08#pet_gatotkaca",
       "pet_view5_model": "animodel/pet_gatokaca.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -14295,7 +14295,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Pentjak Silat",
         "iconKey": "Foreign_pack_08#pet_pentjaksilat",
         "icon": {
           "id": 6952,
@@ -14317,7 +14317,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Pentjak Silat",
         "iconKey": "Foreign_pack_08#pet_pentjaksilat",
         "icon": {
           "id": 6952,
@@ -14339,7 +14339,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Pentjak Silat",
         "iconKey": "Foreign_pack_08#pet_pentjaksilat",
         "icon": {
           "id": 6952,
@@ -14361,7 +14361,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Pentjak Silat",
         "iconKey": "Foreign_pack_08#pet_pentjaksilat",
         "icon": {
           "id": 6952,
@@ -14383,7 +14383,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Pentjak Silat",
         "iconKey": "Foreign_pack_08#pet_pentjaksilat",
         "icon": {
           "id": 6952,
@@ -14432,7 +14432,7 @@
       "pet_need_material": "166",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Pentjak Silat",
       "pet_view1_icon": "Foreign_pack_08#pet_pentjaksilat",
       "pet_view1_model": "animodel/pet_pentjaksilat.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -14440,7 +14440,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "booster.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Pentjak Silat",
       "pet_view2_icon": "Foreign_pack_08#pet_pentjaksilat",
       "pet_view2_model": "animodel/pet_pentjaksilat.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -14448,7 +14448,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "booster.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Pentjak Silat",
       "pet_view3_icon": "Foreign_pack_08#pet_pentjaksilat",
       "pet_view3_model": "animodel/pet_pentjaksilat.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -14456,7 +14456,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "booster.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Pentjak Silat",
       "pet_view4_icon": "Foreign_pack_08#pet_pentjaksilat",
       "pet_view4_model": "animodel/pet_pentjaksilat.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -14464,7 +14464,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "booster.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Pentjak Silat",
       "pet_view5_icon": "Foreign_pack_08#pet_pentjaksilat",
       "pet_view5_model": "animodel/pet_pentjaksilat.txt",
       "pet_view5_model_scale_x": "0.65f",
@@ -14502,7 +14502,7 @@
     "views": [
       {
         "rank": 1,
-        "name": "STR(1)",
+        "name": "Garuda",
         "iconKey": "PetIconPack002#pet_garuda",
         "icon": {
           "id": 16062,
@@ -14524,7 +14524,7 @@
       },
       {
         "rank": 2,
-        "name": "STR(2)",
+        "name": "Garuda",
         "iconKey": "PetIconPack002#pet_garuda",
         "icon": {
           "id": 16062,
@@ -14546,7 +14546,7 @@
       },
       {
         "rank": 3,
-        "name": "STR(3)",
+        "name": "Garuda",
         "iconKey": "PetIconPack002#pet_garuda",
         "icon": {
           "id": 16062,
@@ -14568,7 +14568,7 @@
       },
       {
         "rank": 4,
-        "name": "STR(4)",
+        "name": "Garuda",
         "iconKey": "PetIconPack002#pet_garuda",
         "icon": {
           "id": 16062,
@@ -14590,7 +14590,7 @@
       },
       {
         "rank": 5,
-        "name": "STR(5)",
+        "name": "Garuda",
         "iconKey": "PetIconPack002#pet_garuda",
         "icon": {
           "id": 16062,
@@ -14639,7 +14639,7 @@
       "pet_need_material": "161",
       "icon_cnt": "5",
       "pet_view1_rank": "1",
-      "pet_view1_name": "STR(1)",
+      "pet_view1_name": "Garuda",
       "pet_view1_icon": "PetIconPack002#pet_garuda",
       "pet_view1_model": "animodel/pet_garuda.txt",
       "pet_view1_model_scale_x": "0.45f",
@@ -14647,7 +14647,7 @@
       "pet_view1_model_scale_z": "0.45f",
       "pet_view1_ani": "pet_garuda_delay.ani",
       "pet_view2_rank": "2",
-      "pet_view2_name": "STR(2)",
+      "pet_view2_name": "Garuda",
       "pet_view2_icon": "PetIconPack002#pet_garuda",
       "pet_view2_model": "animodel/pet_garuda.txt",
       "pet_view2_model_scale_x": "0.50f",
@@ -14655,7 +14655,7 @@
       "pet_view2_model_scale_z": "0.50f",
       "pet_view2_ani": "pet_garuda_delay.ani",
       "pet_view3_rank": "3",
-      "pet_view3_name": "STR(3)",
+      "pet_view3_name": "Garuda",
       "pet_view3_icon": "PetIconPack002#pet_garuda",
       "pet_view3_model": "animodel/pet_garuda.txt",
       "pet_view3_model_scale_x": "0.55f",
@@ -14663,7 +14663,7 @@
       "pet_view3_model_scale_z": "0.55f",
       "pet_view3_ani": "pet_garuda_delay.ani",
       "pet_view4_rank": "4",
-      "pet_view4_name": "STR(4)",
+      "pet_view4_name": "Garuda",
       "pet_view4_icon": "PetIconPack002#pet_garuda",
       "pet_view4_model": "animodel/pet_garuda.txt",
       "pet_view4_model_scale_x": "0.60f",
@@ -14671,7 +14671,7 @@
       "pet_view4_model_scale_z": "0.60f",
       "pet_view4_ani": "pet_garuda_delay.ani",
       "pet_view5_rank": "5",
-      "pet_view5_name": "STR(5)",
+      "pet_view5_name": "Garuda",
       "pet_view5_icon": "PetIconPack002#pet_garuda",
       "pet_view5_model": "animodel/pet_garuda.txt",
       "pet_view5_model_scale_x": "0.65f",

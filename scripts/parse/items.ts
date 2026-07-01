@@ -3,6 +3,7 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { getServerConfigDir, getServerDataDir } from "../config";
 import { readPlainIni, normalizeNumber } from "../lib/ini-loader";
+import { loadStringTable, resolveStrFields } from "../lib/str-resolver";
 import { readJson, writeJson } from "../lib/utils";
 
 const ITEM_INI_NAME = "sp2_etcitem_info.ini";
@@ -200,8 +201,17 @@ export async function parseItems(alias: string): Promise<void> {
 
   console.log(`[${alias}] Reading ${ITEM_INI_NAME}`);
   const text = await readServerItemIni(configDir);
+  const stringTable = await loadStringTable(alias);
 
-  const sections = parseRawItemSections(text);
+  const sections = parseRawItemSections(text).map((section) => ({
+    ...section,
+    fields: resolveStrFields(
+      section.fields,
+      "sp2_etcitem_info",
+      section.section,
+      stringTable,
+    ),
+  }));
   const rawPath = path.join(dataDir, "etc-items-raw.json");
   await writeJson(rawPath, sections);
   console.log(`[${alias}] Wrote ${sections.length} raw sections to ${rawPath}`);

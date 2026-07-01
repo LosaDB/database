@@ -8,6 +8,7 @@ import {
   getServerPublicImageDir,
 } from "../config";
 import { readPlainIni, normalizeNumber } from "../lib/ini-loader";
+import { loadStringTable, resolveStrFields } from "../lib/str-resolver";
 import { exists, readJson, writeJson } from "../lib/utils";
 
 const HERO_INI_NAME = "sp2_setitem_info.ini";
@@ -200,6 +201,7 @@ export async function parseHeroes(alias: string): Promise<void> {
 
   console.log(`[${alias}] Reading ${HERO_INI_NAME}`);
   const text = await readHeroIni(configDir);
+  const stringTable = await loadStringTable(alias);
 
   // Load icon map so we can copy soldier selection icons into the per-hero
   // image directory using the client's SoldierIconPack naming convention.
@@ -225,6 +227,13 @@ export async function parseHeroes(alias: string): Promise<void> {
     if (!currentSection) return;
     const index = parseSectionIndex(currentSection);
     if (index === null) return;
+
+    currentFields = resolveStrFields(
+      currentFields,
+      "sp2_setitem_info",
+      currentSection,
+      stringTable,
+    );
 
     const name = currentFields.name?.trim();
     if (!name) return;
